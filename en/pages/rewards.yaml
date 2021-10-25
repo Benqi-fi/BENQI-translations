@@ -1,0 +1,24 @@
+header:
+  title: Rewards
+  description: Earn rewards by using the protocol and/or depositing your Pangolin DEX Liquidity Provider (PGL) tokens.
+rewards:
+  protocol:
+    title: Protocol Rewards ({{token}})
+    fields:
+      unclaimed: Unclaimed
+      unclaimedValue: Unclaimed Value
+    actions:
+      claim: Claim
+  pgl:
+    title: Pangolin DEX Rewards (QI-AVAX PGL)
+    fields:
+      depositedTokens: Deposited Tokens
+      depositedValue: Deposited Value
+      pglBreakdown: PGL Breakdown
+      totalDepositedValue: Total Deposited Value
+      unclaimedRewards: Unclaimed Rewards
+      apr: APR
+    actions:
+      withdraw: Withdraw
+      deposit: Deposit
+      claim: Claim

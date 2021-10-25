@@ -1,0 +1,132 @@
+header:
+  netApy: Net APY
+tabs:
+  supply:
+    label: Supply
+    form:
+      availableWalletBalance: Available
+      buttons:
+        deposit: Deposit
+        depositMaxBalance: Max
+        approve: Approve & Deposit
+    info:
+      depositRates:
+        label: Deposit Rates
+        distributionApy: Distribution APY
+      collateralFactor: Collateral Factor
+      useAsCollateral: Use as Collateral
+    notifications:
+      wavaxDetected:
+        title: WAVAX tokens detected
+        message: Your wallet has WAVAX tokens but BENQI uses the native AVAX.
+      oldTokensDetected:
+        title: Old AEB bridge tokens detected
+        message: You have some tokens from the old Avalanche-Ethereum bridge in your wallet.
+          Please convert them to the new tokens to use them in BENQI.
+        links:
+          convert: Convert on {{url}}.
+      approveTransacting:
+        title: Approve {{token}} transaction
+        message: Before depositing {{token}}, you need to approve the first transaction.
+      allowanceTooLow:
+        title: Increase {{token}} allowance
+        message: Before depositing {{token}}, you need to increase the allowance to complete
+          the transaction.
+    transactions:
+      deposit:
+        confirm:
+          title: Confirm Deposit Transaction
+          message: Confirm deposit transaction for {{amount}} {{token}}
+        finished:
+          success:
+            title: Token Deposited
+            message: Deposited {{amount}} {{token}}
+          failure:
+            message: Failed to deposit tokens
+      approve:
+        confirm:
+          title: Approve {{token}} transaction
+          message: Before depositing {{token}}, you need to approve the first transaction.
+        rejected:
+          message: Transaction approval cancelled.
+        finished:
+          success:
+            message: Approved! Please wait for deposit transaction to begin.
+  borrow:
+    label: Borrow
+    form:
+      borrowLimit: Borrow Limit
+      healthAfterBorrowing: Health After Borrowing
+      buttons:
+        borrow: Borrow
+    info:
+      borrowRates: Borrow Rates
+      borrowLimit:
+        label: Borrow Limit
+        limitUsed: Limit Used
+      borrowCap: Market Borrow Cap
+      liquidity: Pool Liquidity
+    notifications:
+      borrowCapReached:
+        title: Borrow Cap Reached
+        message: The pool has currently reached it's borrow cap. To ensure that the pool
+          has sufficient liquidity, no additional borrowings can be made above the borrow cap.
+        supplyNote: Please note that {{token}} can still be supplied to the protocol.
+      insufficientLiquidity:
+        title: Not enough available assets
+        mesage: The market does not have enough free assets to borrow.
+      borrowLimitExceeded:
+        title: The borrow amount is too high
+        message: Your borrow limit is too low to complete this borrow.
+      borrowLimitWarning:
+        title: Please beware of liquidation risk
+        message: Your borrow will exceed 80 % of your limit. If your Borrow Limit <InfoButton /> is
+          at or exceeds 100%, a portion of your collateral could be liquidated to repay
+          part of your borrow.
+      noCollateral:
+        title: No collateralized assets
+        message: Please <0>enable</0> your supplied assets as collateral to borrow.
+    transaction:
+      confirm:
+        title: Confirm Borrow Transaction
+        message: Confirm borrow transaction for {{amount}} {{token}}.
+      finished:
+        success:
+          message: "{{amount}} {{token}} borrowed!"
+        failure:
+          message: Borrowing Failed
+tables:
+  limitUsed: Limit Used
+  sorting:
+    usdValue: USD value
+  supply:
+    label: Supplied
+    noAssets: No supplied assets
+    columns:
+      asset: Asset
+      collateral: Collateral
+      supplyApy: Supply APY
+      supplied: Supplied
+      apy: APY
+      value: Supplied Value
+    footer:
+      total: Total Supplied
+      borrowLimitUsed: Limit Used
+    actions:
+      withdraw: Withdraw
+  borrow:
+    label: Borrowed
+    noAssets: No borrowed assets
+    columns:
+      asset: Asset
+      apy: APY
+      borrowApy: Borrow APY
+      borrowed: Borrowed
+      borrowedValue: Borrowed Value
+    footer:
+      health: Health
+      borrowLimit: Limit
+      borrowLimitUsed: Limit Used
+      totalBorrowed: Total Borrowed
+    actions:
+      repay: Repay

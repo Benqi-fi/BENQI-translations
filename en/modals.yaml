@@ -1,0 +1,239 @@
+CollateralModal:
+  title: Enable as Collateral
+  message: Each asset used as collateral increases your borrowing limit. Please
+    be aware that collateralized assets can be liquidated if your Health <0></0> goes
+    to 1.
+  actions:
+    enableCollateral: Use {{token}} as Collateral
+CollateralToggleSpinnerModal:
+  confirm:
+    enabling:
+      title: Enabling
+      message: Confirm enabling {{token}} to be used as collateral
+    disabling:
+      title: Disabling as Collateral
+      message: Confirm disabling {{token}} to be used as collateral
+  confirmed:
+    title: Waiting for Block
+    message: Waiting for the transaction to be commited into a block
+  rejected:
+    title: Transaction rejected
+    message: Transaction rejected, collateral not affected
+  finished:
+    enabling:
+      success:
+        title: Collateral Enabled
+        message: Collateral enabled for {{token}}
+      failure:
+        title: Failed to Enable Collateral
+        message: Failed to enable collateral for {{token}}
+    disabling:
+      success:
+        title: Collateral Disabled
+        message: Collateral disabled for {{token}}
+      failure:
+        title: Failed to Disable Collateral
+        message: Failed to disable collateral for {{token}}
+DistributionApyInfoModal:
+  info:
+    supply: Annualized projected return rewarded in QI and AVAX for supplying assets
+    borrow: Annualized projected return rewarded in QI and AVAX for borrowing assets
+  rewards:
+    qi: QI Rewards
+    avax: AVAX Rewards
+  distributionApy: Distribution APY
+HealthFactorInfoModal:
+  title: Health
+  text: <0>Health represents the safety of a loan, defined as the proportion
+    of deposited collateral against the value of the loan.</0><1>A higher value indicates
+    that the user's funds have greater safety from liquidation. However, if Health
+    reaches 1, the user's collateral can be liquidated.</1>
+BorrowLimitInfoModal:
+  title: Borrow Limit
+  text: Borrow Limit represents the maximum amount you can borrow based on the value
+    of your deposited collateral and the available liquidity.
+RedeemPglModal:
+  title: Withdraw Deposited PGL Tokens
+  depositedAmount: Deposited
+  max: Max
+  actions:
+    withdraw: Withdraw
+RepayModal:
+  title: Repay
+  notifications:
+    insufficientBalance:
+      title: Insufficient wallet balance
+      message: You do not have enough {{token}} in your wallet.
+    repaymentAmountTooLarge:
+      title: Too large repayment
+      message: Your loan amount is lower than the attempted repayment.
+    repaymentExcess:
+      message: "Note: Due to continuously accruing interest, the repaid amount
+        will be slightly larger than the value displayed to fully repay and close this
+        borrow position."
+    approveTransacting:
+      title: Approve {{token}} transacting
+      message: To repay your outstanding loan, you need to approve transacting your {{token}}.
+    insufficientAllowance:
+      title: Increase {{token}} allowance
+      message: To repay your outstanding loan, you need to increase the allowance to
+        transact your {{token}}.
+  availableToRepay: Available to Repay
+  repayAll:
+    title: Repay full {{token}} loan
+    label: Max
+  actions:
+    repay: Repay
+    approve: Approve
+  transactions:
+    repay:
+      confirm:
+        title: Confirm Repayment
+        message: Confirm repayment for {{amount}} {{token}}
+      confirmed:
+        title: Repayment confirmed
+        message: Waiting for the transaction to be finalized
+      rejected:
+        title: Transaction Rejected
+        message: Repayment not completed
+      finished:
+        success:
+          title: Repaid
+          message: Repaid {{amount}} {{token}}
+        failure:
+          title: Repayment Failed
+          message: Failed to repay load
+    approve:
+      confirm:
+        title: Confirm Approval Transaction
+        message: Confirm transaction to set spending allowance
+      confirmed:
+        title: Approval Transaction Confirmed
+        message: Waiting for the transaction to be finalized
+      rejected:
+        title: Approval Rejected
+        message: Approval to transact tokens rejected
+      finished:
+        success:
+          title: Allowance Set
+          message: Transaction allowance set. You can proceed to repay your loan.
+        failure:
+          title: Failed to Set Allowance
+          message: Setting transaction allowance failed.
+SwitchNetworkModal:
+  title: Wrong Network
+  message: Please connect to the Avalanche network.
+  buttons:
+    changeNetwork: Switch to Avalanche
+TransactionModal:
+  status:
+    confirm:
+      title: Confirm Transaction
+      message: Confirm transaction
+    confirmed:
+      title: Waiting for Block
+      message: Waiting for the transaction to be committed into a block
+    rejected:
+      title: Transaction Rejected
+      message: Transaction rejected
+    finished:
+      success:
+        title: Transaction Completed
+        message: Transaction completed
+      failure:
+        title: Transaction Failed
+        message: Transaction failed
+  viewTransaction: View transaction on the C-Chain Explorer
+WithdrawModal:
+  title: Withdraw
+  availableToWithdraw: Available to Withdraw
+  withdrawAll:
+    title: Redeem all supplied {{token}}
+    label: Max
+  healthAfterWithdrawal: Health After Withdrawal
+  notifications:
+    insufficientLiquidity:
+      title: Insufficient market liquidity
+      message: There is not enough available asset in the pool to be withdrawn.
+    insufficientHealthAfterWithdrawal:
+      title: New position will be liquidated
+      message: Unable to withdraw this amount as your Health will fall below 1 and
+        your position could be liquidated.
+    withdrawalTooLarge:
+      title: Insufficient supply balance
+      message: Your supply balance is lower than the attempted withdrawal.
+  actions:
+    withdraw: Withdraw
+  transaction:
+    confirm:
+      title: Confirm Withdrawal
+      message: Confirm withdrawal for {{amount}} {{token}}
+    finished:
+      success:
+        title: Tokens Withdrawn
+        message: "{{amount}} {{token}} withdrawn!"
+      failure:
+        title: Withdrawal Failed
+        message: Withdrawal failed
+AccountModal:
+  title: Account
+  connectedWallet:
+    label: Connected Wallet
+    actions:
+      viewOnExplorer: View on Explorer
+      copyAddress:
+        label: Copy Address
+        response:
+          success: Copied!
+  network: Network
+BreakdownModal:
+  title: Your QI Breakdown
+  fields:
+    balance: Balance
+    unclaimed: Unclaimed
+  actions:
+    claim: Claim
+DepositPglModal:
+  title: Deposit PGL Tokens
+  sectionSeparator: and
+  sections:
+    addLiquidity:
+      title: Add Liquidity
+      form:
+        header:
+          balance: Balance
+        actions:
+          depositMaxQiAvaxAmount: Max
+          deposit: Deposit
+          removeLiquidity: Remove Liquidity on Pangolin
+          approveTransacting: Approve
+      info:
+        qiPerAvax: QI per AVAX
+        avaxPerQi: AVAX per QI
+        slippage: Slippage
+        poolShare: Pool Share
+    depositPgl:
+      title: Deposit QI-AVAX PGL Tokens
+      form:
+        header:
+          balance: Balance
+        actions:
+          depositMaxPglAmount: Max
+          deposit: Deposit
+          approveTransacting: Approve
+      info:
+        apr: Supply APR
+collateralFactor:
+  title: Collateral Factor
+  description: Maximum amount that can be borrowed from the BENQI Protocol with
+    this asset used as collateral.
+depositApy:
+  title: Deposit APY
+  description: Annualized projected return of supplying liquidity.
+borrowApy:
+  title: Borrow APY
+  description: Annualized projected cost of borrowing.
+borrowLimit:
+  title: Borrow Limit
+  description: Borrow Limit represents the maximum amount you can borrow based
+    on the value of your deposited collateral and the available liquidity.

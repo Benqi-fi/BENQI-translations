@@ -1,0 +1,51 @@
+header:
+  links:
+    backToOverview: Back to Overview
+    markets: Supply & Borrow
+totalSupply: Total Supply
+totalBorrows: Total Borrows
+tokenSelector:
+  switchToken: Switch Token
+graphs:
+  market:
+    title: Supply & Borrows
+    series:
+      supply:
+        label: Total Supply
+      borrows:
+        label: Total Borrows
+      utilization:
+        label: Utilization
+  price:
+    title: Price
+  interestRate:
+    title: Interest Rate
+    series:
+      utilization:
+        title: Utilization {{percentage}} %
+      supplyApy:
+        label: Supply APY
+      borrowApy:
+        label: Borrow APY
+    annotations:
+      utilization:
+        label: Utilization {{percentage}} %
+cards:
+  supply: Supply
+  borrows: Borrows
+  apy: APY
+  distributionApy: Distribution APY
+marketInfo:
+  title: Market Info
+  price: Price
+  numberOfSuppliers: "# Suppliers"
+  numberOfBorrowers: "# Borrowers"
+  reserveFactor: Reserve Factor
+  collateralFactor: Collateral Factor
+  borrowCap:
+    label: Borrow Cap
+    unlimited: No limit
+  liquidity: Liquidity
+  dailyRewards: 24h Rewards
+  qiTokenMinted: "{{token}} Minted"
+  exchangeRate: Exchange Rate

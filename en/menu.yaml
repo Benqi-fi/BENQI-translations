@@ -1,0 +1,19 @@
+mobile:
+  toggle: Toggle Menu
+links:
+  pages:
+    markets: Markets
+    overview: Overview
+    rewards: Rewards
+  external:
+    avalancheBridge:
+      label: Bridge
+      title: Go to Avalanche Bridge
+    celerBridge:
+      label: cBridge
+      title: Go to Celer Bridge
+    coinMarketCap:
+      label: CoinMarketCap
+      title: View QI on CoinMarketCap
+footer:
+  betaWarning: <0>This project is in beta.</0><1>Use at your own risk.</1>
