@@ -1,0 +1,32 @@
+header:
+  title: 总览
+footer:
+  analyticsHelp: 点击任何资产即可查看分析
+banners:
+  supply: 总供应量
+  borrow: 借款总额
+  status:
+    borrowLimit: 借贷限额
+    health: Health 指标
+    remaining: 剩余
+tables:
+  supply:
+    title: 已供应
+  borrow:
+    title: 已借出
+  market:
+    groups:
+      supply: 供应
+      borrow: 借贷
+    columns:
+      asset: 资产
+      totalApy: 总 APY
+      totalSupplyApy: 总供应量 APY
+      totalBorrowApy: 借款总额 APY
+      totalSupply: 总供应量
+      totalBorrow: 借款总额
+      totalLiquidity: 总流动性
+    actions:
+      goToAnalytics: Go to {{token}} analytics page
+  sorting:
+    usdValue: USD 价值

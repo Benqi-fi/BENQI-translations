@@ -1,0 +1,25 @@
+benqi: BENQI
+sorting:
+  direction:
+    asc: 升序
+    desc: 降序
+  sortBy: 排序方式 {{direction}} {{sortBy}}
+  sortByLabel: 排序方式
+pangolin: Pangolin
+apy:
+  apy: APY (年收益率)
+  supplyApy: 供应 APY
+  borrowApy: 借贷 APY
+  distributionApy: 分配 APY
+domainWarning: 在与应用程序进行交互之前，请确保您处于 <0>app.benqi.fi</0> 上。为确保安全，请将 BENQI
+  加入书签。 BENQI 不会索取您提供的助记词或私钥。请勿泄露以上个人账号的相关信息，以避免给您带来不必要的损失。
+currencies:
+  usd:
+    label: USD
+    symbol: $
+wallets:
+  metamask: MetaMask
+  trustWallet: Trust 钱包
+  coinbase: Coinbase 钱包
+  coin98: Coin98
+  walletConnect: WalletConnect

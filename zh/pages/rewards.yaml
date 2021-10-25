@@ -1,0 +1,24 @@
+header:
+  title: 奖励
+  description: 通过使用协议和/或存入您的 Pangolin DEX Liquidity Provider (PGL) 代币，赚取奖励。
+rewards:
+  protocol:
+    title: 协议奖励 ({{token}})
+    fields:
+      unclaimed: 未领取
+      unclaimedValue: 未领取价值
+    actions:
+      claim: 领取
+  pgl:
+    title: Pangolin DEX 奖励 (QI-AVAX PGL)
+    fields:
+      depositedTokens: 存款代币
+      depositedValue: 存款价值
+      pglBreakdown: PGL 细目
+      totalDepositedValue: 总存款价值
+      unclaimedRewards: 未领取奖励
+      apr: APR (年利率)
+    actions:
+      withdraw: 提取
+      deposit: 存入
+      claim: 领取

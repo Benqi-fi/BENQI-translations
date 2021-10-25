@@ -1,0 +1,51 @@
+header:
+  links:
+    backToOverview: 返回总览
+    markets: 提供或借贷
+totalSupply: 总供应量
+totalBorrows: 借款总额
+tokenSelector:
+  switchToken: 切换币
+graphs:
+  market:
+    title: 供应或借贷
+    series:
+      supply:
+        label: 总供应量
+      borrows:
+        label: 借款总额
+      utilization:
+        label: 使用率
+  price:
+    title: 价格
+  interestRate:
+    title: 利率
+    series:
+      utilization:
+        title: 使用 {{percentage}} %
+      supplyApy:
+        label: 总供应量 APY
+      borrowApy:
+        label: 借款总额 APY
+    annotations:
+      utilization:
+        label: 使用 {{percentage}} %
+cards:
+  supply: 供应
+  borrows: 借贷
+  apy: APY
+  distributionApy: 分配APY
+marketInfo:
+  title: 市场信息
+  price: 价格
+  numberOfSuppliers: "# 供应商"
+  numberOfBorrowers: "# 借款人"
+  reserveFactor: 储备系数
+  collateralFactor: 质押品系数
+  borrowCap:
+    label: 借贷限额
+    unlimited: 无限
+  liquidity: 流动性
+  dailyRewards: 24小时奖励
+  qiTokenMinted: "{{token}} 已铸造"
+  exchangeRate: 汇率

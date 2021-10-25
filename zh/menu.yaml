@@ -1,0 +1,19 @@
+mobile:
+  toggle: 菜单切换
+links:
+  pages:
+    markets: 市场
+    overview: 总览
+    rewards: 奖励
+  external:
+    avalancheBridge:
+      label: 跨链桥
+      title: 前往 Avalanche 跨链桥
+    celerBridge:
+      label: cBridge
+      title: cBridge 入口
+    coinMarketCap:
+      label: CoinMarketCap
+      title: 在 CoinMarketCap 上查看 QI
+footer:
+  betaWarning: <0>该项目处于测试阶段。</0><1>使用风险自负。</1>

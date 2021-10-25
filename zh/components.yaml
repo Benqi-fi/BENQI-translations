@@ -1,0 +1,25 @@
+AddQiTokenToMetaMaskButton:
+  label: 添加QI代币
+  title: 将 BENQI 添加到您的 MetaMask 钱包
+  metamask:
+    alt: MetaMask
+AssetInputForm:
+  buttons:
+    max:
+      label: 最高限额
+      title: 添加最高限额的 {{token}}
+SimpleBalanceTable:
+  columns:
+    asset: 资产
+    balance: 余额
+BorrowLimitProgressBar:
+  borrowLimitUsed: "{{limit}} % 已使用您的借款限额"
+CollateralToggle:
+  title:
+    zeroCollateralFactor: "{{token}} 不能用作质押品"
+    outstandingLoans: 无法禁用 {{token}} 的抵押品，因为您有未偿还的贷款
+    insufficientHealth: 无法禁用 {{token}} 的质押品，因为您的 Health 指标会低于 1
+    enable: 启用 {{token}} 作为质押品
+    disable: 禁用 {{token}} 作为质押品
+ConnectPage:
+  text: 请连接您的钱包

@@ -1,0 +1,123 @@
+header:
+  netApy: Net APY
+tabs:
+  supply:
+    label: 供应
+    form:
+      availableWalletBalance: 可质押
+      buttons:
+        deposit: 存入
+        depositMaxBalance: Max
+        approve: 批准和存入
+    info:
+      depositRates:
+        label: 存款利率
+        distributionApy: 分配 APY
+      collateralFactor: 质押品系数
+      useAsCollateral: 质押资产
+    notifications:
+      wavaxDetected:
+        title: 检测到 WAVAX 代币
+        message: 您的钱包有 WAVAX 代币，但 BENQI 使用原生 AVAX。
+      oldTokensDetected:
+        title: 检测到旧 AEB 桥代币
+        message: 您的钱包里有一些来自旧 Avalanche-Ethereum 桥的代币。请将它们转换为新代币, 以便在 BENQI 中使用。
+        links:
+          convert: 转换 {{url}}
+      approveTransacting:
+        title: 批准 {{token}} 交易
+        message: 在存入 {{token}} 之前，您需要批准第一笔交易。
+      allowanceTooLow:
+        title: 增加 {{token}} 额度
+        message: 在存入 {{token}} 之前，您需要增加配额才能完成交易。
+    transactions:
+      deposit:
+        confirm:
+          title: 确认存款交易
+          message: 确认 {{amount}} {{token}} 的存款交易
+        finished:
+          success:
+            title: 代币存款
+            message: 存入 {{amount}} {{token}}
+          failure:
+            message: 代币存入失败
+      approve:
+        confirm:
+          title: 批准 {{token}} 交易
+          message: 在存入 {{token}} 之前，您需要批准第一笔交易。
+        rejected:
+          message: 交易批准已取消。.
+        finished:
+          success:
+            message: 已批准！请等待存款交易开始。
+  borrow:
+    label: 借贷
+    form:
+      borrowLimit: 借贷限额
+      healthAfterBorrowing: 借贷后 Health 指标
+      buttons:
+        borrow: 借贷
+    info:
+      borrowRates: 借贷利率
+      borrowLimit:
+        label: 借款限额
+        limitUsed: 使用限额
+      borrowCap: 借贷限额
+      liquidity: 流动性
+    notifications:
+      borrowCapReached:
+        title: 达到借贷限额
+        message: 该池目前已达到其借用上限。为确保资金池有足够的流动性，不得在借款上限之上进行额外借款。
+        supplyNote: 请注意，{{token}} 仍然可以供应给协议。
+      insufficientLiquidity:
+        title: 可用资产不足
+        mesage: 市场没有足够的自由资产可以借入。.
+      borrowLimitExceeded:
+        title: 借款金额过高
+        message: 您的借用限额太低，无法完成此借用。
+      borrowLimitWarning:
+        title: 请注意被平仓的风险
+        message: 您的借款将超过限额的 80%。如果您的借款限额 <0></0> 达到或超过 100%，您的部分质押品可能会被清算以偿还部分借款。
+      noCollateral:
+        title: 无质押资产
+        message: 请<0>启用</0>您提供的资产作为质押品进行借贷。
+    transaction:
+      confirm:
+        title: 确认借款交易
+        message: 确认 {{amount}} {{token}} 的借款交易。
+      finished:
+        success:
+          message: "已借出 {{amount}} {{token}}"
+        failure:
+          message: 借款失败
+tables:
+  limitUsed: 使用限额
+  sorting:
+    usdValue: USD 价值
+  supply:
+    label: 已供应
+    noAssets: 无供应资产
+    columns:
+      asset: 资产
+      collateral: 质押
+      supplied: 已供应
+      value: 供应价值
+    footer:
+      total: 总供应量
+      borrowLimitUsed: 使用限额
+    actions:
+      withdraw: 提取
+  borrow:
+    label: 已借出
+    noAssets: 无借入资产
+    columns:
+      asset: 资产
+      borrowed: 已借出
+      borrowedValue: 借入价值
+    footer:
+      health: Health 指标
+      borrowLimit: 借贷限额
+      borrowLimitUsed: 使用限额
+      totalBorrowed: 总借贷量
+    actions:
+      repay: 还款

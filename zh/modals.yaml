@@ -1,0 +1,227 @@
+CollateralModal:
+  title: 质押资产
+  message: 用作质押品的每项资产都会增加您的借款限额。请注意，如果您的 <0></0> 指标 ≤ 1， 您的质押资产可以被清算。
+  actions:
+    enableCollateral: 使用 {{token}} 作为质押品
+CollateralToggleSpinnerModal:
+  confirm:
+    enabling:
+      title: 作为质押启用
+      message: 确认启用 {{token}} 作为质押品
+    disabling:
+      title: 禁用作为质押品
+      message: 确认禁用 {{token}} 作为质押品
+  confirmed:
+    title: 请稍等
+    message: 请等待区块链交易通过
+  rejected:
+    title: 交易被拒绝
+    message: 交易被拒绝，质押品不受影响
+  finished:
+    enabling:
+      success:
+        title: 启用质押品
+        message: 为 {{token}} 启用质押品
+      failure:
+        title: 无法启用质押品
+        message: 未能为 {{token}} 启用质押品
+    disabling:
+      success:
+        title: 质押品禁用
+        message: "{{token}} 的质押品被禁用"
+      failure:
+        title: 无法禁用质押品
+        message: 未能为 {{token}} 禁用质押品
+DistributionApyInfoModal:
+  info:
+    supply: 通过供应资产得到的 Qi 和 AVAX 预计年利率回报
+    borrow: 通过借贷资产得到的Qi 和 AVAX 预计年利率回报
+  rewards:
+    qi: QI 奖励
+    avax: AVAX 奖励
+HealthFactorInfoModal:
+  title: Health
+  text: "<0>Health</0> 指标代表贷款的安全性，定义为存款质押品占贷款价值的比例。
+    较高的数值表示用户被持仓的可能性较低。但是, 如果 <0>Health</0> 指标 ≤ 1，协议则可以清算用户的质押品。"
+BorrowLimitInfoModal:
+  title: 借款限额
+  text: 借贷限额代表您存入的质押品的价值和可用流动性借入的最大金额。
+RedeemPglModal:
+  title: 提取现存的 PGL 代币
+  depositedAmount: 存入
+  max: 最高限额
+  actions:
+    withdraw: 提取
+RepayModal:
+  title: 还款
+  notifications:
+    insufficientBalance:
+      title: 钱包余额不足
+      message: 您的钱包中没有足够的 {{token}}。
+    repaymentAmountTooLarge:
+      title: 还款额过大
+      message: 您的贷款金额低于尝试还款。
+    repaymentExcess:
+      message: 注：随着利息持续产生，还款金额会略大于显示金额，介入仓位将全额还款并平仓。
+    approveTransacting:
+      title: 批准 {{token}} 交易
+      message: 要偿还未偿还的贷款，您需要批准交易您的 {{token}}。
+    insufficientAllowance:
+      title: 增加 {{token}} 额度
+      message: 要偿还未偿还的贷款，您需要增加津贴以处理您的 {{token}}。
+  availableToRepay: 可偿还
+  repayAll:
+    title: 偿还全部 {{token}} 贷款
+    label: Max
+  actions:
+    repay: 还款
+    approve: 批准
+  transactions:
+    repay:
+      confirm:
+        title: 确认还款
+        message: 确认还款 {{amount}} {{token}}
+      confirmed:
+        title: Repayment confirmed
+        message: 请等待区块链交易通过
+      rejected:
+        title: 还款失败
+        message: 未能偿还贷款
+      finished:
+        success:
+          title: 已偿还
+          message: 借贷的 {{amount}} {{token}} 已偿还
+        failure:
+          title: 还款失败
+          message: 未能偿还贷款
+    approve:
+      confirm:
+        title: 批准 {{token}} 交易
+        message: Confirm transaction to set spending allowance
+      confirmed:
+        title: Approval Transaction Confirmed
+        message: 请等待区块链交易通过
+      rejected:
+        title: 确认被拒绝
+        message: 交易批准已取消。
+      finished:
+        success:
+          title: 已批准！
+          message: Transaction allowance set. You can proceed to repay your loan.
+        failure:
+          title: Failed to Set Allowance
+          message: Setting transaction allowance failed.
+SwitchNetworkModal:
+  title: 错误的网络
+  message: 请连接到 Avalanche 网络。
+  buttons:
+    changeNetwork: 切换到 Avalanche
+TransactionModal:
+  status:
+    confirm:
+      title: 确认交易
+      message: 确认交易
+    confirmed:
+      title: 请稍等
+      message: 请等待区块链交易通过
+    rejected:
+      title: 交易被拒绝
+      message: 交易被拒绝
+    finished:
+      success:
+        title: 交易成功
+        message: 交易成功
+      failure:
+        title: 交易失败
+        message: 交易失败
+  viewTransaction: 在 C-Chain Explorer 上查看交易
+WithdrawModal:
+  title: 提取
+  availableToWithdraw: 可提现
+  withdrawAll:
+    title: 兑换所有供应的 {{token}}
+    label: Max
+  healthAfterWithdrawal: 提取后的 Health 指标
+  notifications:
+    insufficientLiquidity:
+      title: 市场流动性不足
+      message: 池中没有足够的可用资产被提取。
+    insufficientHealthAfterWithdrawal:
+      title: 新仓位将被平仓
+      message: 无法提取此金额，因为您的 Health 指标将会低于 1，导致您的持仓被清算。
+    withdrawalTooLarge:
+      title: 供应余额不足
+      message: 您的供应余额低于尝试的提款金额。
+  actions:
+    withdraw: 提取
+  transaction:
+    confirm:
+      title: 确认提款
+      message: 确认取款 {{amount}} {{token}}
+    finished:
+      success:
+        title: 代币撤回
+        message: "{{amount}} {{token}} 撤回!"
+      failure:
+        title: 提款失败
+        message: 提款失败
+AccountModal:
+  title: 帐户
+  connectedWallet:
+    label: 连接钱包
+    actions:
+      viewOnExplorer: 在资源管理器上查看
+      copyAddress:
+        label: 复制地址
+        response:
+          success: 已复制!
+  network: 网络
+BreakdownModal:
+  title: 您的 QI 细目
+  fields:
+    balance: 余额
+    unclaimed: 未领取
+  actions:
+    claim: 领取
+DepositPglModal:
+  title: 存入 PGL 代币
+  sectionSeparator: 和
+  sections:
+    addLiquidity:
+      title: 增加流动性
+      form:
+        header:
+          balance: 余额
+        actions:
+          depositMaxQiAvaxAmount: Max
+          deposit: 存入
+          removeLiquidity: 去除在 Pangolin 的流动性
+          approveTransacting: 批准
+      info:
+        qiPerAvax: 每 QI 的 AVAX
+        avaxPerQi: 每 AVAX 的 QI
+        slippage: 滑移
+        poolShare: 市场份额
+    depositPgl:
+      title: 存入 QI-AVAX PGL 代币
+      form:
+        header:
+          balance: 余额
+        actions:
+          depositMaxPglAmount: Max
+          deposit: 存入
+          approveTransacting: 批准
+      info:
+        apr: 供应 APR
+collateralFactor:
+  title: 质押品系数
+  description: 该资产用作质押， 可向 BENQI 借款的最高数额。
+depositApy:
+  title: 供应 APY
+  description: 按年计算的供应流动资金的预期回报率。
+borrowApy:
+  title: 借贷 APY
+  description: 按年度计算的预计借贷成本。
+borrowLimit:
+  title: 借款限额
+  description: 借贷限额代表您存入的质押品的价值和可用流动性借入的最大金额。
