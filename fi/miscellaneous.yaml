@@ -1,0 +1,30 @@
+benqi: BENQI
+sorting:
+  direction:
+    asc: nousevasti
+    desc: laskevasti
+  sortBy: Lajittele {{direction}} kentän {{sortBy}} mukaisesti
+  sortByLabel: Lajittele
+pangolin: Pangolin
+apy:
+  apy: Korko
+  supplyApy: Talletuskorko
+  borrowApy: Lainakorko
+  distributionApy: Vuotuiset palkkiot
+images:
+  alt:
+    info: Lisätietokuvake
+    token: Token-kuva
+domainWarning: Varmista, että olet sivustolla <0>app.benqi.fi</0> ennen kuin käytät
+  sovellusta - talleta se kirjanmerkiksi kaiken varalta. BENQI ei koskaan kysy lompakkosi
+  siemenlausetta tai salaista avainta. Älä koskaan luovuta näitä kenellekään.
+currencies:
+  usd:
+    label: USD
+    symbol: $
+wallets:
+  metamask: MetaMask
+  trustWallet: Trust Wallet
+  coinbase: Coinbase Wallet
+  coin98: Coin98
+  walletConnect: WalletConnect

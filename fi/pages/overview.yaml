@@ -1,0 +1,32 @@
+header:
+  title: Yleiskatsaus
+footer:
+  analyticsHelp: Klikkaa tokenia avataksesi tilastosivun.
+banners:
+  supply: Talletukset yhteensä
+  borrow: Lainat yhteensä
+  status:
+    borrowLimit: Lainarajasi
+    health: Lainan kunto
+    remaining: Jäljellä
+tables:
+  supply:
+    title: Talletettu
+  borrow:
+    title: Lainattu
+  market:
+    groups:
+      supply: Talletukset
+      borrow: Lainat
+    columns:
+      asset: Token
+      totalApy: Kokonaiskorko
+      totalSupplyApy: Kokonaistalletuskorko
+      totalBorrowApy: Kokonaislainakorko
+      totalSupply: Talletettu
+      totalBorrow: Lainattu
+      totalLiquidity: Likviditeetti
+    actions:
+      goToAnalytics: Avaa {{token}}-tokenin tilastosivu
+  sorting:
+    usdValue: USD-arvo

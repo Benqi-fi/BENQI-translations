@@ -1,0 +1,130 @@
+header:
+  netApy: Kokonaiskorko
+tabs:
+  supply:
+    label: Talleta
+    form:
+      availableWalletBalance: Saatavilla
+      buttons:
+        deposit: Talleta
+        depositMaxBalance: Maks.
+        approve: Hyväksy & Talleta
+    info:
+      depositRates:
+        label: Talletuskorot
+        distributionApy: Vuotuiset palkkiot
+      collateralFactor: Vakuusaste
+      useAsCollateral: Käytä vakuutena
+    notifications:
+      wavaxDetected:
+        title: WAVAX-tokeneita havaittu
+        message: Lompakossasi on WAVAX-tokeneita, mutta BENQI käyttää AVAX-tokeneita.
+      oldTokensDetected:
+        title: Havaittu vanhoja AEB-sillan tokeneita
+        message:  Lompakossasi on vanhoja Avalanche-Ethereum-sillan tokeneita. Ole hyvä
+          ja vaihda tokenit uusiin käyttääksesi niitä BENQI:ssä.
+        links:
+          convert: Muunna sivustolla {{url}}.
+      approveTransacting:
+        title: Hyväksy {{token}}:n käyttö
+        message: Ennen {{token}}-tokenien talletusta sinun täytyy hyväksyä tokenien käyttö.
+      allowanceTooLow:
+        title: Kasvata {{token}}-tokenien käyttörajaa
+        message: Ennen {{token}}-tokenien talletusta sinun täytyy kasvattaa tokenien käyttörajaa.
+    transactions:
+      deposit:
+        confirm:
+          title: Hyväksy talletustransaktio
+          message: Hyväksy {{amount}} {{token}}-tokenin talletus
+        finished:
+          success:
+            title: Tokenien talletus onnistui
+            message: Talletettu {{amount}} {{token}}
+          failure:
+            message: Talletus epäonnistui
+      approve:
+        confirm:
+          title: Hyväksy {{token}}-tokenien käyttö
+          message: Ennen {{token}}-tokenien talletusta sinun tulee hyväksyä tokenien käyttö.
+        rejected:
+          message: Hyväksyntä peruutettu
+        finished:
+          success:
+            message: Hyväksytty! Ole hyvä ja odota talletustransaktiota.
+  borrow:
+    label: Lainaa
+    form:
+      borrowLimit: Lainaraja
+      healthAfterBorrowing: Uusi lainan kunto
+      buttons:
+        borrow: Lainaa
+    info:
+      borrowRates: Lainaustiedot
+      borrowLimit:
+        label: Lainaraja
+        limitUsed: Lainarajasta käytetty
+      borrowCap: Markkinan lainaraja
+      liquidity: Markkinan likviditeetti
+    notifications:
+      borrowCapReached:
+        title: Markkinan lainaraja on täyttynyt
+        message: Markkinan lainaraja on täyttynyt. Jotta markkinan likvideetti säilyy tarpeeksi
+          suurena, lainaaminen ei ole tällä hetkellä käytössä.
+        supplyNote: Huomioi, että {{token}}-tokeneita voi silti tallettaa.
+      insufficientLiquidity:
+        title: Tokeneita ei tarpeeksi saatavilla
+        mesage: Markkinan likviditeetti ei ole tarpeeksi suuri annetun määrän lainaamiseksi.
+      borrowLimitExceeded:
+        title: Liian suuri laina
+        message: Lainarajasi ei ole tarpeeksi suuri tämän lainan ottamiseksi.
+      borrowLimitWarning:
+        title: Huomioi likvidointiriski
+        message: Uusi lainoitusasteesi ylittää 80 %. Jos lainarajasi <InfoButton /> saavuttaa 100 %,
+          osa takeeksi merkitsemistäsi tokeneista voidaan likvidoida lainan takaisin maksamiseksi.
+      noCollateral:
+        title: Ei lainan vakuuksia
+        message: Ole hyvä ja <0>ota käyttöön</0> lainantakeita lainataksesi tokeneita.
+    transaction:
+      confirm:
+        title: Hyväksy lainaustransaktio
+        message: Hyväksy {{amount}} {{token}} lainaus.
+      finished:
+        success:
+          message: "{{amount}} {{token}} lainattu!"
+        failure:
+          message: Lainaus epäonnistui
+tables:
+  limitUsed: Lainarajasta käytetty
+  sorting:
+    usdValue: USD-arvo
+  supply:
+    label: Talletettu
+    noAssets: Ei talletuksia
+    columns:
+      asset: Token
+      collateral: Vakuus
+      supplyApy: Talletuskorko
+      supplied: Talletettu
+      apy: Korko
+      value: Talletusten arvo
+    footer:
+      total: Kokonaistalletus
+      borrowLimitUsed: Lainarajasta käytetty
+    actions:
+      withdraw: Nosta
+  borrow:
+    label: Lainattu
+    noAssets: Ei lainattuja tokeneita
+    columns:
+      asset: Token
+      apy: Korko
+      borrowApy: Lainakorko
+      borrowed: Lainattu
+      borrowedValue: Lainausten arvo
+    footer:
+      health: Lainan kunto
+      borrowLimit: Lainaraja
+      borrowLimitUsed: Lainarajasta käytetty
+      totalBorrowed: Kokonaislaina
+    actions:
+      repay: Maksa takaisin

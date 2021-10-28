@@ -1,0 +1,51 @@
+header:
+  links:
+    backToOverview: Takaisin yleiskatsaukseen
+    markets: Talleta & Lainaa
+totalSupply: Talletukset yhteensä
+totalBorrows: Lainat yhteensä
+tokenSelector:
+  switchToken: Vaihda tokenia
+graphs:
+  market:
+    title: Talletukset & Lainat
+    series:
+      supply:
+        label: Talletukset yhteensä
+      borrows:
+        label: Lainat yhteensä
+      utilization:
+        label: Käyttöaste
+  price:
+    title: Hinta
+  interestRate:
+    title: Korko
+    series:
+      utilization:
+        title: Käyttöaste {{percentage}} %
+      supplyApy:
+        label: Talletuskorko
+      borrowApy:
+        label: Lainakorko
+    annotations:
+      utilization:
+        label: Käyttöaste {{percentage}} %
+cards:
+  supply: Talletukset
+  borrows: Lainat
+  apy: Korko
+  distributionApy: Vuotuiset palkkiot
+marketInfo:
+  title: Markkinat
+  price: Hinta
+  numberOfSuppliers: Tallettajia
+  numberOfBorrowers: Lainaajia
+  reserveFactor: Protokollapalkkio
+  collateralFactor: Vakuusaste
+  borrowCap:
+    label: Lainaraja
+    unlimited: Ei rajaa
+  liquidity: Likviditeetti
+  dailyRewards: 24 h palkkiot
+  qiTokenMinted: "{{token}}-tokeneita"
+  exchangeRate: Vaihtokurssi

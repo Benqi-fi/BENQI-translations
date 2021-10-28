@@ -1,0 +1,24 @@
+header:
+  title: Palkkiot
+  description: Ansaitse palkkiota käyttämällä BENQI:ä tai tallettamalla Pangolin PGL-tokeneita.
+rewards:
+  protocol:
+    title: Protokollapalkkiot ({{token}})
+    fields:
+      unclaimed: Lunastamatta
+      unclaimedValue: Lunastamaton arvo
+    actions:
+      claim: Lunasta
+  pgl:
+    title: Pangolin DEX -palkkiot (QI-AVAX PGL)
+    fields:
+      depositedTokens: Talletetut tokenit
+      depositedValue: Talletettu arvo
+      pglBreakdown: PGL-koostumus
+      totalDepositedValue: Talletusten kokonaisarvo
+      unclaimedRewards: Lunastamatta
+      apr: Vuosikorko
+    actions:
+      withdraw: Nosta
+      deposit: Talleta
+      claim: Lunasta

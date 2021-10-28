@@ -1,0 +1,27 @@
+AddQiTokenToMetaMaskButton:
+  label: Lisää QI
+  title: Lisää QI-token MetaMaskiin
+  metamask:
+    alt: MetaMask
+AssetInputForm:
+  buttons:
+    max:
+      label: Maks.
+      title: Syötä suurin saatavilla oleva {{token}}-arvo
+SimpleBalanceTable:
+  columns:
+    asset: Token
+    balance: Kokonaissumma
+  footer:
+    totalBalance: "Kokonaissumma: ${{balance}}"
+BorrowLimitProgressBar:
+  borrowLimitUsed: "{{limit}} % käytetty lainarajasta"
+CollateralToggle:
+  title:
+    zeroCollateralFactor: "{{token}}-tokenia ei voi käyttää lainan vakuutena"
+    outstandingLoans: "{{token}}-tokenin käyttöä lainan takeena ei voida poistaa, koska sinulla on lainattuja {{token}}-tokeneita"
+    insufficientHealth: "{{token}}-tokenin käyttöä lainan takeena ei voida poistaa, koska lainasi likvidoitaisiin"
+    enable: Käytä {{token}}-tokenia lainan takeena
+    disable: Poista {{token}}-tokenin käyttö lainan takeena
+ConnectPage:
+  text: Ole hyvä ja yhdistä lompakkosi

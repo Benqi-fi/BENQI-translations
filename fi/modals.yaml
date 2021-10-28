@@ -1,0 +1,234 @@
+CollateralModal:
+  title: Käytä vakuutena
+  message: Jokainen vakuutena käytettävä token kasvattaa lainarajaasi. Ota huomioon, että vakuutena
+    käyttämäsi tokenit saatetaan lunastaa jos DFGDFGDFG <0></0> laskee alle yhteen.
+  actions:
+    enableCollateral: Käytä {{token}}-tokenia vakuutena
+CollateralToggleSpinnerModal:
+  confirm:
+    enabling:
+      title: Ota vakuus käyttöön
+      message: Vahvista {{token}}-tokenin käyttöönotto vakuutena
+    disabling:
+      title: Poista tokenin käyttö vakuutena
+      message: Vahvista {{token}}-tokenin käytöstä poistaminen vakuutena
+  confirmed:
+    title: Odotetaan vahvistusta
+    message: Odotetaan transaktion vahvistusta lohkoketjussa
+  rejected:
+    title: Vahvistus peruutettu
+    message: Transaktio peruutettu, tokenin tila vakuutena ei muuttunut.
+  finished:
+    enabling:
+      success:
+        title: Vakuus otettu käyttöön
+        message: "{{token}}-token on otettu käyttöön vakuutena"
+      failure:
+        title: Vakuuden käyttöönotto epäonnistui
+        message: "{{token}}-tokenin käyttöönotto vakuutena epäonnistui"
+    disabling:
+      success:
+        title: Vakuus poistettu käytöstä
+        message: "{{token}}-token poistettiin käytöstä vakuutena"
+      failure:
+        title: Vakuuden käytöstä poistaminen epäonnistui
+        message: "{{token}}-tokenin vakuuden poistaminen epäonnistui"
+DistributionApyInfoModal:
+  info:
+    supply: Vuosittainen ennuste QI- ja AVAX -palkkioista tarjotessa lainaa
+    borrow: Vuosittainen ennuste QI- ja AVAX -palkkioista lainatessa tokeneita
+  rewards:
+    qi: QI-palkkiot
+    avax: AVAX-palkkio
+  distributionApy: Vuotuiset palkkiot
+HealthFactorInfoModal:
+  title: Lainan kunto
+  textt: <1>Lainan kunto on lainan vakuutena käyttämiesi tokenien arvon suhde lainasi
+    kokonaismäärään, ja se kertoo lainasi vakaudesta.</0><1>Suuremmat arvot kuvaavat
+    parempaa turvallisuutta likvidoinneilta. Jos lainasi kunto laskee yhteen, lainan
+    vakuutena käyttämiäsi tokeneita saatetaan likvidoida.</1>
+BorrowLimitInfoModal:
+  title: Lainaraja
+  text: Lainaraja kertoo mahdollisen lainan enimmäismäärän lainen vakuutena käytettyjen
+    tokeneiden arvon perusteella.
+RedeemPglModal:
+  title: Nosta PGL-tokeneita
+  depositedAmount: Talletettu
+  max: Maks.
+  actions:
+    withdraw: Nosta
+RepayModal:
+  title: Maksa takaisin
+  notifications:
+    insufficientBalance:
+      title: Liian pieni balanssi
+      message: Lompakkosi {{token}}-tokenien määrä on liian alhainen.
+    repaymentAmountTooLarge:
+      title: Liian suuri takaisinmaksu
+      message: Lainasi suuruus on pienempi kuin yrittämäsi takaisinmaksu.
+    repaymentExcess:
+      message: "Huomautus: Jatkuvan korkojen kertymisen vuoksi takaisinmaksun todellinen
+        suuruus on hieman esitettyä arvoa suurempi, jotta koko laina voidaan maksaa pois."
+    approveTransacting:
+      title: Hyväksy {{token}}-tokenin käyttö
+      message: Maksaaksesi {{token}}-lainasi takaisin, sinun tulee hyväksyä {{token}}-tokenin käyttö.
+    insufficientAllowance:
+      title: Nosta {{token}}-tokenin käyttörajaa
+      message: Maksaaksesi {{token}}-lainasi takaisin, sinun tulee nostaa tokenin käyttörajaa.
+  availableToRepay: Takaisinmaksettavissa
+  repayAll:
+    title: Maksa täysi {{token}}-laina
+    label: Maks.
+  actions:
+    repay: Maksa takaisin
+    approve: Hyväksy
+  transactions:
+    repay:
+      confirm:
+        title: Hyväksy takaisinmaksu
+        message: Hyväksy {{amount}} {{token}} takaisinmaksu
+      confirmed:
+        title: Takaisinmaksu vahvistettu
+        message: Odotetaan takaisinmaksun valmistumista
+      rejected:
+        title: Vahvistus hylätty
+        message: Takaisinmaksua ei suoritettu
+      finished:
+        success:
+          title: Lainaa maksettu takaisin
+          message: Lainaa maksettiin takaisin {{amount}} {{token}}
+        failure:
+          title: Takaisinmaksu epäonnistui
+          message: Lainan takaisin maksaminen epäonnistui
+    approve:
+      confirm:
+        title: Hyväksy käyttörajan asettaminen
+        message: Hyväksy transaktio tokenin käyttörajan asettamiseksi
+      confirmed:
+        title: Käyttärajan asettaminen hyväksytty
+        message: Odotetaan transaktion valmistumista
+      rejected:
+        title: Hylätty
+        message: Käyttörajan asettaminen hylättiin
+      finished:
+        success:
+          title: Käyttöraja asetettu
+          message: Tokenin käyttöraja on nyt asetettu. Voit jatkaa lainan takaisinmaksua.
+        failure:
+          title: Käyttörajan asettaminen epäonnistui
+          message: Käyttörajan asettaminen epäonnistui.
+SwitchNetworkModal:
+  title: Väärä verkko
+  message: Ole hyvä ja yhdistä Avalanche-verkkoon.
+  buttons:
+    changeNetwork: Vaihda Avalanche-verkkoon
+TransactionModal:
+  status:
+    confirm:
+      title: Hyväksy transkatio
+      message: Vahvista transaktio lompakossasi
+    confirmed:
+      title: Odotetaan toteutumista
+      message: Odotetaan transaktion valmistumista
+    rejected:
+      title: Transaktio hylätty
+      message: Transaktio hylätty
+    finished:
+      success:
+        title: Transaktio valmis
+        message: Transkatio on valmis
+      failure:
+        title: Transaktio epäonnistui
+        message: Transaktion suorittaminen epäonnistui
+  viewTransaction: Näytä transaktio C-Chain Explorer:ssa
+WithdrawModal:
+  title: Nosta
+  availableToWithdraw: Nostettavissa
+  withdrawAll:
+    title: Nosta kaikki {{token}}
+    label: Maks.
+  healthAfterWithdrawal: Lainan kunto noston jälkeen
+  notifications:
+    insufficientLiquidity:
+      title: Riittämätön likviditeetti
+      message: Markkinan likviditeetti on pienempi kuin noston suuruus.
+    insufficientHealthAfterWithdrawal:
+      title: Likvidointivaara
+      message: Nostaminen ei onnistu, koska lainan kuntosi laskisi alle yhteen ja lainasi
+        likvidoitaisiin.
+    withdrawalTooLarge:
+      title: Ei tarpeeksi talletuksia
+      message: Talletusmääräsi on pienempi kuin nostettava määrä.
+  actions:
+    withdraw: Nosta
+  transaction:
+    confirm:
+      title: Vahvista nosto
+      message: Vahvista {{amount}} {{token}} nosto
+    finished:
+      success:
+        title: Nostettu
+        message: Nostettu {{amount}} {{token}}!
+      failure:
+        title: Nosto epäonnistui
+        message: Tokenien nosto epäonnistui
+AccountModal:
+  title: Lompakko
+  connectedWallet:
+    label: Yhdistetty lompakko
+    actions:
+      viewOnExplorer: Näytä Explorer:ssa
+      copyAddress:
+        label: Kopioi osoite
+        response:
+          success: Kopioitu!
+  network: Verkko
+BreakdownModal:
+  title: QI-balanssisi
+  fields:
+    balance: Balanssi
+    unclaimed: Nostamatta
+  actions:
+    claim: Nosta
+DepositPglModal:
+  title: Talleta PGL-tokeneita
+  sectionSeparator: ja
+  sections:
+    addLiquidity:
+      title: Lisää likviditeettiä
+      form:
+        header:
+          balance: Balanssi
+        actions:
+          depositMaxQiAvaxAmount: Maks.
+          deposit: Talleta
+          removeLiquidity: Vähennä likviditeettiä Pangolinissa
+          approveTransacting: Hyväksy
+      info:
+        qiPerAvax: QI per AVAX
+        avaxPerQi: AVAX per QI
+        slippage: Muuntotoleranssi
+        poolShare: Osuus altaasta
+    depositPgl:
+      title: Talleta QI-AVAX PGL -tokeneita
+      form:
+        header:
+          balance: Balanssi
+        actions:
+          depositMaxPglAmount: Maks.
+          deposit: Talleta
+          approveTransacting: Hyväksy
+      info:
+        apr: Vuosituotto
+collateralFactor:
+  title: Lainan vakuusaste
+  description: Lainan suurin määrä, joka voidaan ottaa tätä lainan vakuutta vasten.
+depositApy:
+  title: Talletuskorko
+  description: Vuosittainen talletuskorkoennuste
+borrowApy:
+  title: Lainakorko
+  description: Vuosittainen lainakorkoennuste
+borrowLimit:
+  title: Lainaraja
+  description: Lainaraja kertoo lainattavan enimmäismäärän arvon lainan takeidesi arvon perusteella.

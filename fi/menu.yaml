@@ -1,0 +1,19 @@
+mobile:
+  toggle: Avaa tai sulje valikko
+links:
+  pages:
+    markets: Markkinat
+    overview: Yleiskatsaus
+    rewards: Palkkiot
+  external:
+    avalancheBridge:
+      label: Bridge
+      title: Avaa Avalanche Bridge
+    celerBridge:
+      label: cBridge
+      title: Avaa Celer Bridge
+    coinMarketCap:
+      label: CoinMarketCap
+      title: Näytä QI CoinMarketCap-sivustolla
+footer:
+  betaWarning: <0>Tämä ohjelma on beta-versio.</0><1>Käytä vain omalla vastuullasi.</1>
