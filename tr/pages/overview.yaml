@@ -1,0 +1,32 @@
+header:
+  title: Genel Bakış
+footer:
+  analyticsHelp: Analitik verileri görmek için token’a tıklayın.
+banners:
+  supply: Toplam Yatırılan
+  borrow: Toplam Borç
+  status:
+    borrowLimit: Borç Limitiniz
+    health: Sağlık
+    remaining: Kalan
+tables:
+  supply:
+    title: Yatırılan
+  borrow:
+    title: Borç Alınan
+  market:
+    groups:
+      supply: Arz
+      borrow: Borç
+    columns:
+      asset: Kripto Varlık
+      totalApy: Toplam APY
+      totalSupplyApy: Toplam Yatırım APY
+      totalBorrowApy: Toplam Borç APY
+      totalSupply: Toplam Yatırım
+      totalBorrow: Toplam Borç
+      totalLiquidity: Toplam likidite
+    actions:
+      goToAnalytics: "{{token}} analitik sayfasına git"
+  sorting:
+    usdValue: USD değeri

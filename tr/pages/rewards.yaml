@@ -1,0 +1,24 @@
+header:
+  title: Ödüller
+  description: Protokolü kullanarak yada PGL tokenlarınızı yatırarak ödüller kazanın
+rewards:
+  protocol:
+    title: Protokol ödülleri ({{token}})
+    fields:
+      unclaimed: Talep edilebilir miktar
+      unclaimedValue: Talep edilebilir miktarın değeri
+    actions:
+      claim: Talep et
+  pgl:
+    title: Pangolin Dex Ödülleri (QI-AVAX PGL)
+    fields:
+      depositedTokens: Yatırılan tokenlar
+      depositedValue: Yatırılan değer
+      pglBreakdown: PGL Varlık Analizi
+      totalDepositedValue: Genel Bakış
+      unclaimedRewards: Talep edilebilir ödüller
+      apr: APR
+    actions:
+      withdraw: Para çek
+      deposit: Para yatır
+      claim: Talep et

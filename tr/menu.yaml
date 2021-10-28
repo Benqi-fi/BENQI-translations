@@ -1,0 +1,19 @@
+mobile:
+  toggle: Geçiş Menüsü
+links:
+  pages:
+    markets: Piyasalar
+    overview: Genel Bakış
+    rewards: Ödüller
+  external:
+    avalancheBridge:
+      label: Bridge
+      title: Avalanche Bridge'e git
+    celerBridge:
+      label: cBridge
+      title: Celer Bridge'e git
+    coinMarketCap:
+      label: CoinMarketCap
+      title: QI 'yi CoinMarketCap'de incele
+footer:
+  betaWarning: <0>Bu proje henüz BETA aşamasındadır.</0><1>Lütfen kendi riskinizde kullanın.</1>

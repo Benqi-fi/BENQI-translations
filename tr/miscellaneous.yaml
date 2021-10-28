@@ -1,0 +1,30 @@
+benqi: BENQI
+sorting:
+  direction:
+    asc: artan
+    desc: azalan
+  sortBy: Sırala {{direction}} {{sortBy}}
+  sortByLabel: Sırala
+pangolin: Pangolin
+apy:
+  apy: APY
+  supplyApy: Mevduat APY
+  borrowApy: Borç APY
+  distributionApy: Dağıtım Oranı
+images:
+  alt:
+    info: Bilgi Simgesi
+    token: Token Simgesi
+domainWarning: Uygulamayı kullanmadan önce lütfen <0>app.benqi.fi</0> 'de olduğunuzdan
+  emin olun - güvende olmak için yer imine ekleyin. BENQI size asla kurtarma kelimelerini
+  veya özel anahtarınızı sormaz. Bu bilgileri kimseyle paylaşmayın.
+currencies:
+  usd:
+    label: USD
+    symbol: $
+wallets:
+  metamask: MetaMask
+  trustWallet: Trust Wallet
+  coinbase: Coinbase Wallet
+  coin98: Coin98
+  walletConnect: WalletConnect

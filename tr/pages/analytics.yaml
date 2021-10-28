@@ -1,0 +1,51 @@
+header:
+  links:
+    backToOverview: Genel Bakışa Geri Dön
+    markets: Yatır & Borç Al
+totalSupply: Toplam Yatırılan
+totalBorrows: Toplam Alınan Borç
+tokenSelector:
+  switchToken: Token Değiştir
+graphs:
+  market:
+    title: Yatırılan & Borç
+    series:
+      supply:
+        label: Toplam Yatırılan
+      borrows:
+        label: Toplam Borç
+      utilization:
+        label: Kullanım
+  price:
+    title: Fiyat
+  interestRate:
+    title: Faiz Oranı
+    series:
+      utilization:
+        title: Kullanım {{percentage}} %
+      supplyApy:
+        label: Mevduat APY
+      borrowApy:
+        label: Borç APY
+    annotations:
+      utilization:
+        label: Kullanım {{percentage}} %
+cards:
+  supply: Yatırılan
+  borrows: Borç
+  apy: APY
+  distributionApy: Dağıtım Oranı (APY)
+marketInfo:
+  title: Piyasa Bilgisi
+  price: Fiyat
+  numberOfSuppliers: "# Para Yatıran"
+  numberOfBorrowers: "# Borç Alan"
+  reserveFactor: Rezerv Faktörü
+  collateralFactor: Teminat Yüzdesi
+  borrowCap:
+    label: Borç Sınırı
+    unlimited: Limit Yok
+  liquidity: Likidite
+  dailyRewards: 24 saat Ödülleri
+  qiTokenMinted: "{{token}} Oluşturuldu"
+  exchangeRate: Döviz Kuru

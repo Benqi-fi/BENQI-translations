@@ -1,0 +1,29 @@
+AddQiTokenToMetaMaskButton:
+  label: QI ekle
+  title: QI token'ı MetaMask cüzdanına ekle
+  metamask:
+    alt: MetaMask
+AssetInputForm:
+  buttons:
+    max:
+      label: Maksimum
+      title: Maksimum mevcut {{token}} miktarını gir
+SimpleBalanceTable:
+  columns:
+    asset: Varlık
+    balance: Bakiye
+  footer:
+    totalBalance: "Bakiye: ${{balance}}"
+BorrowLimitProgressBar:
+  borrowLimitUsed: "Borç limitinizin % {{limit}}' ini kullandınız"
+CollateralToggle:
+  title:
+    zeroCollateralFactor: "{{token}} teminat olarak kullanılamaz"
+    outstandingLoans: Aktif borcunuz olduğu için teminat olarak {{token}} kullanımı
+      devre dışı bırakılamaz
+    insufficientHealth: Sağlık durumu 1'in altına düşeceği için teminat
+      olarak {{token}} kullanımını devre dışı bırakılamaz
+    enable: Teminat olarak {{token}} kullanımını etkinleştir
+    disable: Teminat olarak {{token}} kullanımını devre dışı bırak
+ConnectPage:
+  text: Lütfen cüzdanınızı bağlayın

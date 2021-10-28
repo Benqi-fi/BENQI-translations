@@ -1,0 +1,234 @@
+CollateralModal:
+  title: Teminat olarak kullanmayı etkinleştir
+  message: Teminat olarak kullanılan her varlık borç limitinizi yükseltir. Eğer
+    Sağlık <0></0> 1'e düşerse teminat olarak kullandığınız varlıklar likide
+    edilebiliceğini lütfen unutmayın.
+  actions:
+    enableCollateral: "{{token}} 'ı teminat olarak kullan"
+CollateralToggleSpinnerModal:
+  confirm:
+    enabling:
+      title: Etkinleştirme
+      message: Teminat olarak {{token}} kullanımını etkinleştirmeyi onayla.
+    disabling:
+      title: Teminat kullanımını devre dışı bırak
+      message: Teminat olarak {{token}} kullanımını devre dışı bırakmayı onayla.
+  confirmed:
+    title: Blok bekleniyor
+    message: Transferin bir bloka işlenmesi için bekleniyor.
+  rejected:
+    title: Transfer reddedildi.
+    message: Transfer reddedildi, teminat etkilenmedi.
+  finished:
+    enabling:
+      success:
+        title: Teminat Olarak Kullanım Etkinleştirildi
+        message: "{{token}} için teminat olarak kullanım etkinleştirildi"
+      failure:
+        title: Teminat Olarak Kullanım Etkinleştirilmesi Başarısız Oldu
+        message: "{{token}} için teminat olarak kullanım etkinleştirilmesi başarısız oldu"
+    disabling:
+      success:
+        title: Teminat Olarak Kullanım Devre Dışı Bırakıldı
+        message: "{{token}} için teminat olarak kullanım devre dışı bırakıldı"
+      failure:
+        title: Teminat Olarak Kullanım Devre Dışı Bırakılması Başarısız Oldu
+        message: "{{token}} için teminat olarak kullanım devre dışı bırakılması başarısız oldu"
+DistributionApyInfoModal:
+  info:
+    supply: QI ve AVAX olarak yatırılan varlıkların yıllık tahmini getirisi
+    borrow: QI ve AVAX olarak borç alınan varlıkların yıllık tahmini getirisi
+  rewards:
+    qi: QI Ödülleri
+    avax: AVAX Ödülleri
+  distributionApy: Dağıtım APY
+HealthFactorInfoModal:
+  title: Sağlık
+  text: "<0>Sağlık çekilen kredinin emniyet seviyesini gösterir, kredi değerine karşı
+    yatırılan temniatın orantısı olarak tanımlanır.</0><1>Bu değer arttıkça, kullanıcının
+    sermayesinin tasfiyeye karşı daha fazla güvenliğe sahip olduğunu gösterir. Ancak Sağlık 1'e
+    düşerse, kullanıcının teminatı tafsiye edilir.</1>"
+BorrowLimitInfoModal:
+  title: Borç Limiti
+  text: Borç limiti, teminat değeri ve mevcut likiditeye göre alınabilicek maksimum borç
+    miktarını gösterir.
+RedeemPglModal:
+  title: Yatırılmış PGL Tokenlarını çek
+  depositedAmount: Yatırılmış Miktar
+  max: Maksimum
+  actions:
+    withdraw: Çek
+RepayModal:
+  title: Geri öde
+  notifications:
+    insufficientBalance:
+      title: Yetersiz cüzdan bakiyesi
+      message: Cüzdanında yeterli {{token}} yok
+    repaymentAmountTooLarge:
+      title: Geri ödeme çok büyük
+      message: Borcunuz geri ödemeye çalıştığınız miktardan daha düşük.
+    repaymentExcess:
+      message: "Not: Sürekli tahakkuk eden faiz nedeniyle gerçek geri ödeme tutarı, borcu
+        kapatmak için gereken olarak gösterilen miktardan biraz daha yüksek olacaktır."
+    approveTransacting:
+      title: "{{token}} İşlemleri İçin Onay Ver"
+      message: Kalan borcunuzu ödemek için {{token}} işlemlerini onaylamanız gerekmektedir.
+    insufficientAllowance:
+      title: "{{token}} ödeneğini arttır"
+      message: Kalan borcunuzu ödemek için {{token}} ödeneğini arttırmanız gerekiyor.
+  availableToRepay: Geri ödenebilir miktar
+  repayAll:
+    title: "{{token}} borcunun tamamını öde"
+    label: Maksimum
+  actions:
+    repay: Geri Öde
+    approve: Onayla
+  transactions:
+    repay:
+      confirm:
+        title: Geri ödemeyi onayla
+        message: "{{amount}} {{token}} için geri ödemeyi onayla"
+      confirmed:
+        title: Geri ödeme onaylandı
+        message: İşlemin sonuçlanması için bekleniyor
+      rejected:
+        title: İşlem reddedildi
+        message: Geri ödeme tamamlanamadı
+      finished:
+        success:
+          title: Geri ödendi
+          message: "{{amount}} {{token}} geri ödendi"
+        failure:
+          title: Geri ödeme başarısız oldu
+          message: Borcun geri ödenmesi başarısız oldu
+    approve:
+      confirm:
+        title: Kabul edilme işlemini onayla
+        message: Harcama ödeneğini ayarlamak için işlemi onaylayın
+      confirmed:
+        title: Kabul edilme işlemi onaylandı
+        message: İşlemin tamamlanması için bekleniyor
+      rejected:
+        title: Kabul edilme reddedildi
+        message: Tokenlarla işlem için kabul edilme reddedildi
+      finished:
+        success:
+          title: Ödenek ayarlandı
+          message: İşlem ödeneği ayarlandı. Borcunuzu geri ödemek için devam edebilirsiniz.
+        failure:
+          title: Ödenek Ayarlaması Başarısız Oldu
+          message: Setting transaction allowance failed.
+SwitchNetworkModal:
+  title: Yanlış Ağ
+  message: Lütfen Avalanche ağına bağlanın.
+  buttons:
+    changeNetwork: Avalanche Ağına Geç
+TransactionModal:
+  status:
+    confirm:
+      title: İşlemi Onayla
+      message: İşlemi onayla
+    confirmed:
+      title: Block için bekleniyor
+      message: İşlemin bir bloğa işlenmesi için bekleniyor
+    rejected:
+      title: İşlem Reddedildi
+      message: İşlem reddedildi
+    finished:
+      success:
+        title: İşlem Tamamlandı
+        message: İşlem tamamlandı
+      failure:
+        title: İşlem Başarısız Oldu
+        message: İşlem başarısız oldu
+  viewTransaction: İşlemi C-Chain Explorer da incele
+WithdrawModal:
+  title: Çek
+  availableToWithdraw: Çekilebilir Miktar
+  withdrawAll:
+    title: Yatırılan bütün {{token}} çek
+    label: Maksimum
+  healthAfterWithdrawal: Çekilen Miktardan Sonra Sağlık
+  notifications:
+    insufficientLiquidity:
+      title: Yetersiz piyasa likiditesi
+      message: Havuzda çekilecek yeterli kullanılabilir varlık yok.
+    insufficientHealthAfterWithdrawal:
+      title: Yeni pozisyon tasfiye edilecek
+      message: Sağlığınız 1'in altına düşeceği ve pozisyonunuz tasfiye edilebiliceği için bu miktarı çekemezsiniz.
+    withdrawalTooLarge:
+      title: Yetersiz yatırılmış bakiye
+      message: Yatırım bakiyeniz, çekilme girişiminden daha düşük.
+  actions:
+    withdraw: Çek
+  transaction:
+    confirm:
+      title: Çekmeyi Onayla
+      message: "{{amount}} {{token}} çekmeyi onayla."
+    finished:
+      success:
+        title: Çekilen Tokenlar
+        message: "{{amount}} {{token}} çekildi!"
+      failure:
+        title: Çekme başarısız oldu
+        message: Çekme başarısızı oldu
+AccountModal:
+  title: Hesap
+  connectedWallet:
+    label: Bağlanılan Cüzdan
+    actions:
+      viewOnExplorer: Explorer’da Gör
+      copyAddress:
+        label: Adresi Kopyala
+        response:
+          success: Kopyalandı!
+  network: Ağ
+BreakdownModal:
+  title: QI Miktarın
+  fields:
+    balance: Bakiye
+    unclaimed: Talep Edilebilir Miktar
+  actions:
+    claim: Talep Et
+DepositPglModal:
+  title: PGL Tokens Yatır
+  sectionSeparator: ve
+  sections:
+    addLiquidity:
+      title: Likidite ekle
+      form:
+        header:
+          balance: Bakiye
+        actions:
+          depositMaxQiAvaxAmount: Maksimum
+          deposit: Para Yatır
+          removeLiquidity: Pangolin'deki Likiditeyi Kaldır
+          approveTransacting: Onayla
+      info:
+        qiPerAvax: AVAX için QI
+        avaxPerQi: QI için AVAX
+        slippage: Kayma Orani
+        poolShare: Havuz Payı
+    depositPgl:
+      title: QI-AVAX PGL Tokenlarını Yatır
+      form:
+        header:
+          balance: Bakiye
+        actions:
+          depositMaxPglAmount: Maksimum
+          deposit: Para Yatır
+          approveTransacting: Approve
+      info:
+        apr: Mevduat APR
+collateralFactor:
+  title: Teminat Yüzdesi
+  description: Bu varlık teminat olarak kullanıldığında BENQI Protokol'ünden alınabilicek maksimum borç miktarı.
+depositApy:
+  title: Mevduat APY
+  description: Likidite sağlamanın yıllık tahmini getirisi.
+borrowApy:
+  title: Borrow APY
+  description: Borç almanın yıllık tahmini getirisi
+borrowLimit:
+  title: Teminat Faktörü
+  description: Borç limiti, teminat değeri ve mevcut likiditeye göre alınabilicek maksimum borç miktarını gösterir.

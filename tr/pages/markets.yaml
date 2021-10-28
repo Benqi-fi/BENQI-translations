@@ -1,0 +1,131 @@
+header:
+  netApy: Net APY
+tabs:
+  supply:
+    label: Para Yatır
+    form:
+      availableWalletBalance: Mevcut olan
+      buttons:
+        deposit: Para Yatır
+        depositMaxBalance: Maksimum
+        approve: Onayla & Para Yatır
+    info:
+      depositRates:
+        label: Mevduat Oranları
+        distributionApy: Distribution APY
+      collateralFactor: Teminat Yüzdesi
+      useAsCollateral: Teminat Olarak Göstermek
+    notifications:
+      wavaxDetected:
+        title: WAVAX tokenları saptandı
+        message: Cüzdanınızda WAVAX tokenları bulunmakta ancak BENQI sadece yerli AVAX kullanmaktadır.
+      oldTokensDetected:
+        title: Eski AEB bridge tokenları saptandı
+        message: Cüzdanınızda eski Avalanche-Ethereum bridge tokenlarınız var. BENQI'de kullanmak
+          için lütfen bu eski tokenları yenileriyle değiştiriniz.
+        links:
+          convert: Değiştirmek için {{url}}.
+      approveTransacting:
+        title: "{{token}} işlemini onayla"
+        message: "{{token}} yatırmadan önce ilk işleminizi onaylamanız gerekmektedir."
+      allowanceTooLow:
+        title: "{{token}} ödeneğini arttır"
+        message: "{{token}} yatırmadan önce, işlemi tamamlamak için ödeneğinizi arttırmanız gerekmektedir."
+    transactions:
+      deposit:
+        confirm:
+          title: Yatırma İşlemini Onayla
+          message: "{{amount}} {{token}} için yatırma işlemini onaylayın"
+        finished:
+          success:
+            title: Token Yatırıldı
+            message: "{{amount}} {{token}} yatırıldı"
+          failure:
+            message: Tokenları yatırma başarısız oldu
+      approve:
+        confirm:
+          title: "{{token}} İşlemini Onayla"
+          message: "{{token}} yatırmadan önce ilk işlemi onaylamanız gerekmektedir."
+        rejected:
+          message: İşlem onayı iptal edildi.
+        finished:
+          success:
+            message: Onaylandı! Yatırım işleminin başlaması için lütfen bekleyin.
+  borrow:
+    label: Borç Al
+    form:
+      borrowLimit: Borç Limiti
+      healthAfterBorrowing: Borç aldıktan sonraki sağlık
+      buttons:
+        borrow: Borç Al
+    info:
+      borrowRates: Borç Oranları
+      borrowLimit:
+        label: Borç Limiti
+        limitUsed: Kullanılan Limit
+      borrowCap: Piyasa Borçlanma Sınırı
+      liquidity: Havuzun Likiditesi
+    notifications:
+      borrowCapReached:
+        title: Borç Sınırına Ulaşıldı
+        message: Havuz borç sınırına ulaştı. Havuzda yeterli likidite olduğundan emin
+          olmak için, borç sınırına ulaşıldığında daha fazla borç alınamaz.
+        supplyNote: Protokole hâlâ yatırım eklemek için {{token}} yatırılabileceğinizi lütfen aklınızda bulundurun.
+      insufficientLiquidity:
+        title: Yeterli mevcut varlık yok
+        mesage: Piyasada, borç almak için yeterli serbest varlık yok.
+      borrowLimitExceeded:
+        title: Borç Miktarı Çok Yüksek
+        message: Bu borcu tamamlamak için borç limitiniz çok düşük.
+      borrowLimitWarning:
+        title: Lütfen tasfiye riskine dikkat edin
+        message: Alacağınız borç, limitinizin %80'inin üzerindedir. Eğer Borç Limitiniz <InfoButton /> %100'e
+          veya üzerine çıkarsa, sağladığınız teminatın bir kısmı borcunuzun bir kısmını
+          ödemek için tasfiye edilebilir.
+      noCollateral:
+        title: Teminat olarak gösterilmiş bir varlık yok
+        message: Lütfen yatırılan varlıklarınızı teminat olarak kullanmak için <0>enable</0> edin.
+    transaction:
+      confirm:
+        title: Borç İşlemini Onayla
+        message: "{{amount}} {{token}} için borç işlemini onaylayın."
+      finished:
+        success:
+          message: "{{amount}} {{token}} borç alındı!"
+        failure:
+          message: Borç Alma Başarısız Oldu
+tables:
+  limitUsed: Kullanılan Limit
+  sorting:
+    usdValue: USD değeri
+  supply:
+    label: Yatırılan
+    noAssets: Yatırılan bir varlık yok
+    columns:
+      asset: Varlık
+      collateral: Teminat
+      supplyApy: Mevduat APY
+      supplied: Yatırılan
+      apy: APY
+      value: Yatırılan Değer
+    footer:
+      total: Toplam yatırılan
+      borrowLimitUsed: Kullanılan Limit
+    actions:
+      withdraw: Çek
+  borrow:
+    label: Borç Alınan
+    noAssets: Borç alınan bir varlık yok
+    columns:
+      asset: Varlık
+      apy: APY
+      borrowApy: Borç APY
+      borrowed: Borç Alınan
+      borrowedValue: Borç Alınan Değer
+    footer:
+      health: Sağlık
+      borrowLimit: Limit
+      borrowLimitUsed: Kullanılan Limit
+      totalBorrowed: Toplam Alınan Borç
+    actions:
+      repay: Geri Öde
