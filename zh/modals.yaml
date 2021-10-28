@@ -97,9 +97,9 @@ RepayModal:
     approve:
       confirm:
         title: 批准 {{token}} 交易
-        message: Confirm transaction to set spending allowance
+        message: 确认交易以设置消费限额
       confirmed:
-        title: Approval Transaction Confirmed
+        title: 批准交易已确认
         message: 请等待区块链交易通过
       rejected:
         title: 确认被拒绝
@@ -107,10 +107,10 @@ RepayModal:
       finished:
         success:
           title: 已批准！
-          message: Transaction allowance set. You can proceed to repay your loan.
+          message: 交易限额已设定
         failure:
-          title: Failed to Set Allowance
-          message: Setting transaction allowance failed.
+          title: 限额设定失败
+          message: 交易限额设定失败
 SwitchNetworkModal:
   title: 错误的网络
   message: 请连接到 Avalanche 网络。

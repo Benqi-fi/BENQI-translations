@@ -27,6 +27,6 @@ tables:
       totalBorrow: 借款总额
       totalLiquidity: 总流动性
     actions:
-      goToAnalytics: Go to {{token}} analytics page
+      goToAnalytics: 进入 {{token}} 分析页
   sorting:
     usdValue: USD 价值

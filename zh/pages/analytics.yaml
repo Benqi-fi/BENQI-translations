@@ -1,7 +1,7 @@
 header:
   links:
     backToOverview: 返回总览
-    markets: 提供或借贷
+    markets: 供应或借贷
 totalSupply: 总供应量
 totalBorrows: 借款总额
 tokenSelector:
