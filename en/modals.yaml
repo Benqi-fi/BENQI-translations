@@ -234,6 +234,6 @@ borrowApy:
   title: Borrow APY
   description: Annualized projected cost of borrowing.
 borrowLimit:
-  title: Borrow Limit
+  title: Collateral Factor
   description: Borrow Limit represents the maximum amount you can borrow based
     on the value of your deposited collateral and the available liquidity.
