@@ -78,7 +78,7 @@ RepayModal:
       title: Increase {{token}} allowance
       message: To repay your outstanding loan, you need to increase the allowance to
         transact your {{token}}.
-  availableToRepay: Available to Repay
+  availableToRepay: Availabe to Repay
   repayAll:
     title: Repay full {{token}} loan
     label: Max
@@ -102,7 +102,7 @@ RepayModal:
           message: Repaid {{amount}} {{token}}
         failure:
           title: Repayment Failed
-          message: Failed to repay load
+          message: Failed to repay loan
     approve:
       confirm:
         title: Confirm Approval Transaction

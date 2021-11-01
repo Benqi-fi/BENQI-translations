@@ -30,3 +30,5 @@ tables:
       goToAnalytics: Go to {{token}} analytics page
   sorting:
     usdValue: USD value
+buttons:
+  changeViewMode: View Mode
