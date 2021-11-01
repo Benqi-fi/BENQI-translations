@@ -1,0 +1,51 @@
+header:
+  links:
+    backToOverview: Retour à la vue d'ensemble
+    markets: Dépôts & Emprunts
+totalSupply: Taille du marché
+totalBorrows: Total emprunté
+tokenSelector:
+  switchToken: Changement de jeton
+graphs:
+  market:
+    title: Dépôts & Emprunts
+    series:
+      supply:
+        label: Total des dépôts
+      borrows:
+        label: Total des emprunts
+      utilization:
+        label: Utilisation
+  price:
+    title: Prix
+  interestRate:
+    title: Taux d'intérêt
+    series:
+      utilization:
+        title: Utilisation {{percentage}} %
+      supplyApy:
+        label: APY des dépôts
+      borrowApy:
+        label: APY des emprunts
+    annotations:
+      utilization:
+        label: Utilisation {{percentage}} %
+cards:
+  supply: Dépôts
+  borrows: Emprunts
+  apy: APY
+  distributionApy: APY de distribution
+marketInfo:
+  title: Information de marché
+  price: Prix
+  numberOfSuppliers: "# de déposants"
+  numberOfBorrowers: "# d'emprunteurs"
+  reserveFactor: Reserve Factor
+  collateralFactor: Collateral Factor
+  borrowCap:
+    label: Coût maximal d'emprunt
+    unlimited: Aucune limite
+  liquidity: Liquidités
+  dailyRewards: Récompenses par jour
+  qiTokenMinted: "{{token}} généré"
+  exchangeRate: Taux de change

@@ -1,0 +1,32 @@
+header:
+  title: Vue d'ensemble
+footer:
+  analyticsHelp: Cliquer sur un jeton pour afficher les analyses.
+banners:
+  supply: Total déposé
+  borrow: Total emprunté
+  status:
+    borrowLimit: Votre limite d'emprunt
+    health: Health
+    remaining: Restant
+tables:
+  supply:
+    title: Déposé
+  borrow:
+    title: Emprunté
+  market:
+    groups:
+      supply: Dépôt
+      borrow: Emprunt
+    columns:
+      asset: Actif
+      totalApy: APY Total
+      totalSupplyApy: APY Dépôt total
+      totalBorrowApy: APY Emprunt total
+      totalSupply: Dépôt total
+      totalBorrow: Emprunt total
+      totalLiquidity: Liquidités totales
+    actions:
+      goToAnalytics: Aller à la page d'analyse du jeton {{token}}
+  sorting:
+    usdValue: Montant en USD

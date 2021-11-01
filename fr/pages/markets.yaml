@@ -1,0 +1,133 @@
+header:
+  netApy: APY net
+tabs:
+  supply:
+    label: Offre
+    form:
+      availableWalletBalance: Disponible
+      buttons:
+        deposit: Déposer
+        depositMaxBalance: Max
+        approve: Approuver & Déposer
+    info:
+      depositRates:
+        label: Taux des dépôts
+        distributionApy: APY de distribution
+      collateralFactor: Collateral Factor
+      useAsCollateral: Utilisé en tant que collatéral
+    notifications:
+      wavaxDetected:
+        title: jetons WAVAX détectés
+        message: Votre wallet contient des jetons WAVAX mais BENQI utilise le jeton natif AVAX.
+      oldTokensDetected:
+        title: Ancien jetons du AEB bridge détectés
+        message: Vous avez quelques jetons de l'ancien bridge Avalanche-Ethereum dans votre wallet.
+          Veuillez les convertir en nouveaux jetons pour les utiliser dans BENQI.
+        links:
+          convert: Convertir via {{url}}.
+      approveTransacting:
+        title: Approuver la transaction {{token}}
+        message: Avant de déposer des {{token}}, vous devez approuver la première transaction.
+      allowanceTooLow:
+        title: Augmenter l'allocation des {{token}}
+        message: Avant de déposer des {{token}}, vous devez augmenter l'allocation pour terminer
+          la transaction.
+    transactions:
+      deposit:
+        confirm:
+          title: Confirmer la transaction de dépôt
+          message: Confirmer la transaction de dépôt pour {{amount}} {{token}}
+        finished:
+          success:
+            title: Jeton déposé
+            message: "{{amount}} {{token}} déposés"
+          failure:
+            message: Échec du dépôt des jetons
+      approve:
+        confirm:
+          title: Approuver la transaction des {{token}}
+          message: Avant de déposer des {{token}}, vous devez approuver la première transaction.
+        rejected:
+          message: L'approbation de la transaction a été annulée.
+        finished:
+          success:
+            message: Approuvé! Veuillez attendre que la transaction de dépôt commence.
+  borrow:
+    label: Emprunter
+    form:
+      borrowLimit: Limite d'emprunt
+      healthAfterBorrowing: Health après avoir emprunté
+      buttons:
+        borrow: Emprunter
+    info:
+      borrowRates: Taux d'emprunt
+      borrowLimit:
+        label: Limite d'emprunt
+        limitUsed: Limite utilisée
+      borrowCap: Plafond d'emprunt du marché
+      liquidity: Pool de liquidités
+    notifications:
+      borrowCapReached:
+        title: Cap d'emprunt atteint
+        message: Le pool a actuellement atteint son plafond d'emprunt. Pour s'assurer que le
+          pool dispose de liquidités suffisantes, aucun emprunt supplémentaire ne peut être
+          effectué au-delà du plafond d'emprunt.
+        supplyNote: Veuillez noter que {{token}} peut toujours être fourni au protocole.
+      insufficientLiquidity:
+        title: Pas assez d'actifs disponibles
+        mesage: Le marché n'a pas assez d'actifs libres à emprunter.
+      borrowLimitExceeded:
+        title: Le montant emprunté est trop élevé
+        message: Votre limite d'emprunt est trop faible pour terminer cet emprunt.
+      borrowLimitWarning:
+        title: Attention au risque de liquidation
+        message: Votre emprunt dépassera 80 % de votre limite. Si votre limite d'emprunt <InfoButton />
+          est à 100 % ou plus, une partie de votre collatéral pourrait être liquidée pour rembourser une
+          partie de votre emprunt.
+      noCollateral:
+        title: Aucun actif comme collatéral
+        message: Veuillez <0>activer</0> vos actifs fournis comme collatéral pour emprunter.
+    transaction:
+      confirm:
+        title: Confirmer la transaction d'emprunt
+        message: Confirmer la transaction d'emprunt pour {{amount}} {{token}}.
+      finished:
+        success:
+          message: "{{amount}} {{token}} empruntés!"
+        failure:
+          message: Échec de l'emprunt
+tables:
+  limitUsed: Limite utilisée
+  sorting:
+     usdValue: Montant en USD
+  supply:
+    label: Actif
+    noAssets: Aucun actif fourni
+    columns:
+      asset: Actif
+      collateral: Collatéral
+      supplyApy: APY des dépôts
+      supplied: Fourni
+      apy: APY
+      value: Montant fourni
+    footer:
+      total: Total fourni
+      borrowLimitUsed: Limite utilisée
+    actions:
+      withdraw: Retirer
+  borrow:
+    label: Emprunté
+    noAssets: Aucun actif emprunté
+    columns:
+      asset: Actif
+      apy: APY
+      borrowApy: APY des emprunts
+      borrowed: Emprunté
+      borrowedValue: Montant emprunté
+    footer:
+      health: Health
+      borrowLimit: Limite
+      borrowLimitUsed: Limite utilisée
+      totalBorrowed: Total emprunté
+    actions:
+      repay: Rembourser

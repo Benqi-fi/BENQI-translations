@@ -1,0 +1,238 @@
+CollateralModal:
+  title: Activer en tant que collatéral
+  message: Chaque actif utilisé en tant que collatéral augmente votre limite d'emprunt. Veuillez
+    noter que les actifs en collatéral peuvent être liquidés si votre santé <0></0> va à 1.
+  actions:
+    enableCollateral: Utiliser {{token}} en tant que collatéral
+CollateralToggleSpinnerModal:
+  confirm:
+    enabling:
+      title: Activation
+      message: Confirmer l'activation de l'utilisation de {{token}} en tant que collatéral
+    disabling:
+      title: Désactivation en tant que collatéral
+      message: Confirmer la désactivation de  l'utilisation de {{token}} en tant que collatéral
+  confirmed:
+    title: En attente de bloc
+    message: En attente de la validation de la transaction dans un bloc
+  rejected:
+    title: Transaction rejetée
+    message: Transaction rejetée, collatéral non affectée
+  finished:
+    enabling:
+      success:
+        title: Collatéral activé
+        message: Collatéral activé pour {{token}}
+      failure:
+        title: Échec de l'activation du collatéral
+        message: Échec de l'activation du collatéral pour {{token}}
+    disabling:
+      success:
+        title: Collatéral désactivé
+        message: Collatéral désactivé pour {{token}}
+      failure:
+        title: Échec de la désactivation du collatéral
+        message: Échec de la désactivation du collatéral pour {{token}}
+DistributionApyInfoModal:
+  info:
+    supply: Rendement projeté annualisé récompensé en QI et AVAX pour la fourniture d'actifs
+    borrow: Rendement projeté annualisé récompensé en QI et AVAX pour les actifs empruntés
+  rewards:
+    qi: Récompenses en QI
+    avax: Récompenses en AVAX
+  distributionApy: APY de distribution
+HealthFactorInfoModal:
+  title: Health
+  text: <0>Health représente la sécurité d'un prêt, définie comme la proportion
+    de la garantie déposée par rapport à la valeur du prêt.</0><1>Une valeur plus élevée indique
+    que les fonds de l'utilisateur sont mieux protégés de la liquidation. Cependant, si la santé
+    atteint 1, les actifs en collatéral de l'utilisateur peuvent être liquidés.</1>
+BorrowLimitInfoModal:
+  title: Limite d'emprunt
+  text: La limite d'emprunt représente le montant maximum que vous pouvez emprunter en fonction de la valeur
+    de vos actifs en collatéral déposés et de la liquidité disponible.
+RedeemPglModal:
+  title: Retirer les jetons PGL déposés
+  depositedAmount: Déposés
+  max: Max
+  actions:
+    withdraw: Retirer
+RepayModal:
+  title: Rembourser
+  notifications:
+    insufficientBalance:
+      title: Solde du wallet insuffisant
+      message: Le montant de votre prêt est inférieur à la demande de remboursement.
+    repaymentAmountTooLarge:
+      title: Remboursement trop important
+      message: Le montant de votre prêt est inférieur à la tentative de remboursement.
+    repaymentExcess:
+      message: "Remarque: En raison de l'accumulation continue d'intérêts, le montant remboursé
+        sera légèrement supérieur à la valeur affichée pour rembourser et fermer intégralement cette
+        position d'emprunt."
+    approveTransacting:
+      title: Approuver la transaction {{token}}
+      message: Pour rembourser votre prêt en cours, vous devez approuver la transaction de vos {{token}}.
+    insufficientAllowance:
+      title: Augmenter l'allocation de {{token}}
+      message: Pour rembourser votre prêt en cours, vous devez augmenter l'allocation pour
+        opérer une transaction de vos {{token}}.
+  availableToRepay: Disponible pour rembourser
+  repayAll:
+    title: Rembourser l'intégralité du prêt pour {{token}}
+    label: Max
+  actions:
+    repay: Rembourser
+    approve: Approuver
+  transactions:
+    repay:
+      confirm:
+        title: Confirmer le remboursement
+        message: Confirmer le remboursement de {{amount}} {{token}}
+      confirmed:
+        title: Remboursement confirmé
+        message: En attente de la finalisation de la transaction
+      rejected:
+        title: Transaction rejetée
+        message: Remboursement non terminé
+      finished:
+        success:
+          title: Remboursé
+          message: "{{amount}} {{token}} remboursé"
+        failure:
+          title: Échec du remboursement
+          message: Échec du remboursement de l'emprunt
+    approve:
+      confirm:
+        title: Confirmer la transaction d'approbation
+        message: Confirmer la transaction pour définir l'allocation de dépenses
+      confirmed:
+        title: Transaction d'approbation confirmée
+        message: En attente de la finalisation de la transactiond
+      rejected:
+        title: Approbation rejetée
+        message: Approbation de la transaction des jetons rejetée
+      finished:
+        success:
+          title: Définir l'allocation de transaction
+          message: L'allocation de transaction a été définie. Vous pouvez procéder au remboursement de votre prêt.
+        failure:
+          title: Échec de l'allocation de transaction
+          message: Échec de la définition de l'allocation de transaction.
+SwitchNetworkModal:
+  title: Mauvais réseau
+  message: Veuillez vous connecter au réseau Avalanche.
+  buttons:
+    changeNetwork: Changer de réseau pour Avalanche
+TransactionModal:
+  status:
+    confirm:
+      title: Confirmer la transaction
+      message: Confirmer la transaction
+    confirmed:
+      title: En attente de bloc
+      message: En attente de la validation de la transaction dans un bloc
+    rejected:
+      title: Transaction rejetée
+      message: Transaction rejetée
+    finished:
+      success:
+        title: Transaction terminée
+        message: Transaction terminée
+      failure:
+        title: Echec de la transaction
+        message: La transaction a échoué
+  viewTransaction: Voir la transaction sur le C-Chain Explorer
+WithdrawModal:
+  title: Retirer
+  availableToWithdraw: Disponibles pour retrait
+  withdrawAll:
+    title: Échanger tous les {{token}} fournis
+    label: Max
+  healthAfterWithdrawal: Health après retrait
+  notifications:
+    insufficientLiquidity:
+      title: Liquidité insuffisante sur le marché
+      message: Il n'y a pas assez d'actifs disponibles dans le pool pour ce retrait.
+    insufficientHealthAfterWithdrawal:
+      title: La nouvelle position sera liquidée
+      message: Impossible de retirer ce montant car votre health tombera en dessous de 1
+        et votre position pourrait être liquidée.
+    withdrawalTooLarge:
+      title: Solde de dépôts insuffisant
+      message: Votre solde de dépôts est inférieur à la tentative de retrait.
+  actions:
+    withdraw: Retirer
+  transaction:
+    confirm:
+      title: Confirmer le retrait
+      message: Confirmer le retrait pour {{amount}} {{token}}
+    finished:
+      success:
+        title: Jetons retirés
+        message: "{{amount}} {{token}} retirés!"
+      failure:
+        title: Échec du retrait
+        message: Échec du retrait
+AccountModal:
+  title: Compte
+  connectedWallet:
+    label: Wallet connecté
+    actions:
+      viewOnExplorer: Afficher dans l'explorateur
+      copyAddress:
+        label: Copier l'adresse
+        response:
+          success: Copié!
+  network: Réseau
+BreakdownModal:
+  title: Votre répartition de QI
+  fields:
+    balance: Balance
+    unclaimed: Non réclamés
+  actions:
+    claim: Réclamer
+DepositPglModal:
+  title: Déposer des jetons PGL
+  sectionSeparator: et
+  sections:
+    addLiquidity:
+      title: Ajouter de la liquidité
+      form:
+        header:
+          balance: Balance
+        actions:
+          depositMaxQiAvaxAmount: Max
+          deposit: Déposer
+          removeLiquidity: Retirer de la liquidité sur Pangolin
+          approveTransacting: Approuver
+      info:
+        qiPerAvax: QI par AVAX
+        avaxPerQi: AVAX par QI
+        slippage: Slippage
+        poolShare: Part dans la Pool
+    depositPgl:
+      title: Déposer des jetons QI-AVAX PGL
+      form:
+        header:
+          balance: Balance
+        actions:
+          depositMaxPglAmount: Max
+          deposit: Déposer
+          approveTransacting: Approuver
+      info:
+        apr: APR des dépôts
+collateralFactor:
+  title: Collateral Factor
+  description: Montant maximum pouvant être emprunté auprès du protocole BENQI
+    avec cet actif utilisé comme collatéral.
+depositApy:
+  title: APY des dépôts
+  description: Rendement projeté annualisé de la liquidité des dépôts.
+borrowApy:
+  title: APY de emprunts
+  description: Coût d'emprunt prévisionnel annualisé.
+borrowLimit:
+  title: Limite d'emprunt
+  description: La limite d'emprunt représente le montant maximum que vous pouvez emprunter
+    en fonction de la valeur de votre garantie déposée et de la liquidité disponible.

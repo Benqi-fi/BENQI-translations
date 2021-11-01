@@ -1,0 +1,31 @@
+benqi: BENQI
+sorting:
+  direction:
+    asc: croissant
+    desc: décroissant
+  sortBy: Trier par {{direction}} {{sortBy}}
+  sortByLabel: Trier par
+pangolin: Pangolin
+apy:
+  apy: APY
+  supplyApy: APY des dépôts
+  borrowApy: APY des emprunts
+  distributionApy: APY de distribution
+images:
+  alt:
+    info: Icône d'informations
+    token: Icône de jeton
+domainWarning: Veuillez vous assurer d'être sur le site <0>app.benqi.fi</0> avant
+  d'interagir avec l'application - ajoutez-le à vos favoris pour plus de sécurité.
+  BENQI ne vous demandera jamais votre seed phrase ou clé privée. Ne donnez jamais
+  cette information à qui que ce soit.
+currencies:
+  usd:
+    label: USD
+    symbol: $
+wallets:
+  metamask: MetaMask
+  trustWallet: Trust Wallet
+  coinbase: Coinbase Wallet
+  coin98: Coin98
+  walletConnect: WalletConnect

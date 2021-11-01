@@ -1,0 +1,29 @@
+AddQiTokenToMetaMaskButton:
+  label: Ajouter QI
+  title: Ajouter le jeton QI à MetaMask
+  metamask:
+    alt: MetaMask
+AssetInputForm:
+  buttons:
+    max:
+      label: Max
+      title: Ajouter le montant maximum disponible de {{token}}
+SimpleBalanceTable:
+  columns:
+    asset: Actifs
+    balance: Balance
+  footer:
+    totalBalance: "Balance: ${{balance}}"
+BorrowLimitProgressBar:
+  borrowLimitUsed: "{{limit}} % utilisé de votre limite d'emprunt"
+CollateralToggle:
+  title:
+    zeroCollateralFactor: "{{token}} ne peut être utilisé en collatéral"
+    outstandingLoans: Il n'est pas possible de désactiver le collatéral
+      pour {{token}} en raison de vos prêts en cours.
+    insufficientHealth: Il n'est pas possible  de désactiver le collatéral
+      pour {{token}}, cela ferait tomber votre ratio health en dessous de 1.
+    enable: Autoriser {{token}} comme collatéral
+    disable: Désactiver {{token}} en tant que collatéral
+ConnectPage:
+  text: Veuillez connecter votre wallet
