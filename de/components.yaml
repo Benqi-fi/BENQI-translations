@@ -1,0 +1,27 @@
+AddQiTokenToMetaMaskButton:
+  label: QI hinzufügen
+  title: QI-Token zu MetaMask hinzufügen
+  metamask:
+    alt: MetaMask
+AssetInputForm:
+  buttons:
+    max:
+      label: Max
+      title: Maximal verfügbaren {{token}} Betrag einfügen
+SimpleBalanceTable:
+  columns:
+    asset: Asset
+    balance: Saldo
+  footer:
+    totalBalance: "Saldo: ${{balance}}"
+BorrowLimitProgressBar:
+  borrowLimitUsed: "{{limit}} % Ihres Kreditlimits genutzt"
+CollateralToggle:
+  title:
+    zeroCollateralFactor: "{{token}} kann nicht als Sicherheit verwendet werden"
+    outstandingLoans: Kann Sicherheiten für {{token}} nicht deaktivieren, da Sie dafür ausstehende Kredite haben
+    insufficientHealth: Kann Sicherheiten für {{token}} nicht deaktivieren, da Ihre Health unter 1 sinken würde
+    enable: "{{token}} als Sicherheit aktivieren"
+    disable: "{{token}} als Sicherheit deaktivieren"
+ConnectPage:
+  text: Bitte verbinde dein Wallet

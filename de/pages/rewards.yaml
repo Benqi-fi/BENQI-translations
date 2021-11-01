@@ -1,0 +1,25 @@
+header:
+  title: Rewards
+  description: Verdiene Belohnungen, indem Sie das Protokoll verwenden und/oder
+    Ihre Pangolin Liquiditätsprovider-Token (PGL) hinterlegen.
+rewards:
+  protocol:
+    title: Protokol Belohnungen ({{token}})
+    fields:
+      unclaimed: Nicht beansprucht
+      unclaimedValue: Nicht beanspruchter Wert
+    actions:
+      claim: Beanspruchen
+  pgl:
+    title: Pangolin DEX Rewards (QI-AVAX PGL)
+    fields:
+      depositedTokens: Eingezahlte Tokens
+      depositedValue: Gesamtwert der eingezahlten Mittel
+      pglBreakdown: PGL Aufschlüsselung
+      totalDepositedValue: Gesamtwert der eingezahlten Tokens
+      unclaimedRewards: Nicht beanspruchte Rewards
+      apr: APR
+    actions:
+      withdraw: Abheben
+      deposit: Einzahlen
+      claim: Beanspruchen

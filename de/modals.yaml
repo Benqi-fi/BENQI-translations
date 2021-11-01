@@ -1,0 +1,243 @@
+CollateralModal:
+  title: Als Sicherheit aktivieren
+  message: Jeder Asset der als Sicherheit verwendet wird, erhöht Ihr Kreditlimit. Bitte
+    beachten Sie, dass kollateralisierte Assets liquidiert werden können, wenn
+    Ihr Health <0></0> auf 1 geht.
+  actions:
+    enableCollateral: Verwende {{token}} als Sicherheit
+CollateralToggleSpinnerModal:
+  confirm:
+    enabling:
+      title: Freigabe
+      message: Bestätigen Sie die Freigabe von {{token}} zur Verwendung als Sicherheit
+    disabling:
+      title: Deaktivierung als Sicherheit
+      message: Bestätigen Sie, dass {{token}} als Sicherheit deaktiviert ist
+  confirmed:
+    title: Warten auf Block
+    message: Warten darauf, dass die Transaktion in einen Block übertragen wird
+  rejected:
+    title: Transaktion abgelehnt
+    message: Transaktion abgelehnt, Sicherheiten nicht betroffen
+  finished:
+    enabling:
+      success:
+        title: Sicherheiten aktiviert
+        message: Sicherheiten für {{token}} aktiviert 
+      failure:
+        title: Sicherheiten konnten nicht aktiviert werden
+        message: Sicherheiten konnten für {{token}} nicht aktiviert werden
+    disabling:
+      success:
+        title: Sicherheiten deaktiviert
+        message: Sicherheiten deaktiviert für {{token}}
+      failure:
+        title: Deaktivierung von Sicherheiten fehlgeschlagen
+        message: Deaktivierung von Sicherheiten für {{token}} fehlgeschlagen
+DistributionApyInfoModal:
+  info:
+    supply: Annualisierte prognostizierte Rendite, die in QI und AVAX für die
+      Bereitstellung von Assets belohnt wird.
+    borrow: Annualisierte prognostizierte Rendite, die in QI und AVAX für die
+      Kreditaufnahme belohnt wird.
+  rewards:
+    qi: QI Rewards
+    avax: AVAX Rewards
+  distributionApy: Verteilungs-APY
+HealthFactorInfoModal:
+  title: Health
+  text: <0>Health steht für die Sicherheit eines Kredits, definiert als das Verhältnis der
+    hinterlegten Sicherheiten zum Wert des Kredits.</0><1>Ein höherer Wert bedeutet, dass
+    die Gelder des Nutzers besser vor Liquidierung geschützt sind. Wenn jedoch Health
+    den Wert 1 erreicht, können die Sicherheiten des Nutzers liquidiert werden.</1>
+BorrowLimitInfoModal:
+  title: Kreditrahmen
+  text: Kreditlimit stellt den Höchstbetrag dar, den Sie auf der Grundlage des Werts Ihrer
+    hinterlegten Sicherheiten und der verfügbaren Liquidität ausleihen können.
+RedeemPglModal:
+  title: Eingezahlte PGL-Token abheben
+  depositedAmount: Eingezahlt
+  max: Max
+  actions:
+    withdraw: Abheben
+RepayModal:
+  title: Zurückzahlen
+  notifications:
+    insufficientBalance:
+      title: Unzureichendes Guthaben im Wallet
+      message: Du hast nicht genug {{Token}} in deinem Wallet.
+    repaymentAmountTooLarge:
+      title: Zu hohe Rückzahlung
+      message: Ihr Kreditbetrag ist niedriger als die angestrebte Rückzahlung.
+    repaymentExcess:
+      message: "Hinweis: Aufgrund der laufend anfallenden Zinsen wird der zurückgezahlte
+        Betrag etwas größer sein als der Wert, der angezeigt wird, um diese Position
+        vollständig zu tilgen und die Kreditposition zu schließen."
+    approveTransacting:
+      title: Genehmige {{Token}} für die Transaktion
+      message: Um den ausstehenden Kredit zurückzuzahlen, muss die Transaktion
+        des {{Token}} genehmigt werden.
+    insufficientAllowance:
+      title: Erhöhe den Freibetrag für {{Token}}
+      message: Um Ihren ausstehenden Kredit zu tilgen, müssen Sie den Freibetrag für den
+        Handel mit Ihrem {{Token}} erhöhen.
+  availableToRepay: Zur Rückzahlung verfügbar
+  repayAll:
+    title: Rückzahlung des gesamten {{token}} Darlehens
+    label: Max
+  actions:
+    repay: Zurückzahlen
+    approve: Bewilligen
+  transactions:
+    repay:
+      confirm:
+        title: Zurückzahlung bestätigen
+        message: Bestätige die Rückzahlung von {{amount}} {{token}}
+      confirmed:
+        title: Zurückzahlung bestätigt
+        message: Warte auf die Finalisierung der Transaktion
+      rejected:
+        title: Zurückzahlung abgelehnt
+        message: Zurückzahlung nicht abgeschlossen
+      finished:
+        success:
+          title: Zurückgezahlt
+          message: Zurückgezahlt {{amount}} {{token}}
+        failure:
+          title: Zurückzahlung abgelehnt
+          message: Zurückzahlung fehlgeschlagen
+    approve:
+      confirm:
+        title: Genehmigungsvorgang bestätigen
+        message: Bestätige die Transaktion, um das Ausgabenvolumen festzulegen.
+      confirmed:
+        title: Genehmigungsvorgang bestätigt
+        message: Warte auf die Finalisierung der Transaktion
+      rejected:
+        title: Bestätigung abgelehnt
+        message: Genehmigung zur Transaktion von Token abgelehnt
+      finished:
+        success:
+          title: Ausgabenvolumen festgelegt
+          message: Transaktionsfreibetrag festgelegt. Sie können mit der Rückzahlung
+            Ihres Darlehens fortfahren.
+        failure:
+          title: Ausgabenvolumen einrichten fehlgeschlagen
+          message: Die Einrichtung des Transaktionsfreibetrag ist fehlgeschlagen.
+SwitchNetworkModal:
+  title: Falsches Netzwerk
+  message: Bitte verbinde dich mit dem Avalanche Netzwerk.
+  buttons:
+    changeNetwork: Wechsel zu Avalanche
+TransactionModal:
+  status:
+    confirm:
+      title: Transaktion bestätigen
+      message: Transaktion bestätigen
+    confirmed:
+      title: Warten auf Block
+      message: Warten darauf, dass die Transaktion in einen Block übertragen wird
+    rejected:
+      title: Transaktion abgelehnt
+      message: Transaktion abgelehnt
+    finished:
+      success:
+        title: Transaktion vollständig
+        message: Transaktion vollständig
+      failure:
+        title: Transaktion fehlgeschlagen
+        message: Transaktion fehlgeschlagen
+  viewTransaction: Transaktion im C-Chain Explorer verfolgen
+WithdrawModal:
+  title: Abheben
+  availableToWithdraw: Zum Abheben verfügbar
+  withdrawAll:
+    title: Alle bereitgestellten Mittel abheben {{token}}
+    label: Max
+  healthAfterWithdrawal: Health nach der Auszahlung
+  notifications:
+    insufficientLiquidity:
+      title: Unzureichende Marktliquidität
+      message: Es sind nicht genügend Mittel im Pool vorhanden, um abgehoben zu werden.
+    insufficientHealthAfterWithdrawal:
+      title: Die neue Position wird liquidiert
+      message: Du kannst diesen Betrag nicht abheben, da deine Health unter 1 fällt und
+        deine Position liquidiert werden könnte.
+    withdrawalTooLarge:
+      title: Unzureichende Mittel
+      message: Deine Mittel sind niedriger als die versuchte Abhebung.
+  actions:
+    withdraw: Auszahlen
+  transaction:
+    confirm:
+      title: Auszahlung bestätigen
+      message: Bestätige die Auszahlung von {{amount}} {{token}}
+    finished:
+      success:
+        title: Tokens ausgezahlt
+        message: "{{amount}} {{token}} ausgezahlt!"
+      failure:
+        title: Abheben fehlgeschlagen
+        message: Abheben fehlgeschlagen
+AccountModal:
+  title: Account
+  connectedWallet:
+    label: Verbundendes Wallet
+    actions:
+      viewOnExplorer: Im Explorer betrachten
+      copyAddress:
+        label: Addresse kopieren
+        response:
+          success: Kopiert!
+  network: Netzwerk
+BreakdownModal:
+  title: Deine QI Aufschlüsselung
+  fields:
+    balance: Saldo
+    unclaimed: Unbeansprucht
+  actions:
+    claim: Beanspruchen
+DepositPglModal:
+  title: PGL Tokens einzahlen
+  sectionSeparator: und
+  sections:
+    addLiquidity:
+      title: Liquidität hinzufügen
+      form:
+        header:
+          balance: Saldo
+        actions:
+          depositMaxQiAvaxAmount: Max
+          deposit: Einzahlen
+          removeLiquidity: Liquidität auf Pangolin entfernen
+          approveTransacting: Bestätigen
+      info:
+        qiPerAvax: QI per AVAX
+        avaxPerQi: AVAX per QI
+        slippage: Slippage
+        poolShare: Pool-Anteil
+    depositPgl:
+      title: QI-AVAX PGL Tokens einzahlen
+      form:
+        header:
+          balance: Saldo
+        actions:
+          depositMaxPglAmount: Max
+          deposit: Einzahlen
+          approveTransacting: Bestätigen
+      info:
+        apr: Angebot APR
+collateralFactor:
+  title: Sicherheiten-Faktor
+  description: Maximaler Betrag, der im Rahmen des BENQI-Protokolls geliehen werden kann,
+    wenn dieser Asset als Sicherheit verwendet wird.
+depositApy:
+  title: Bereritstellungs-APY
+  description: Annualisierte Renditeprognose für die Bereitstellung von Liquidität.
+borrowApy:
+  title: Leih-APY
+  description: Annualisierte, voraussichtliche Kosten der Kreditaufnahme.
+borrowLimit:
+  title: Kreditlimit
+  description: Das Kreditlimit ist der Höchstbetrag, den Sie auf der Grundlage auf dem Wert
+    Ihrer hinterlegten Sicherheiten und der verfügbaren Liquidität.

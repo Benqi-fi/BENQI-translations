@@ -1,0 +1,135 @@
+header:
+  netApy: Netto APY
+tabs:
+  supply:
+    label: Bereitstellen
+    form:
+      availableWalletBalance: Verfügbar
+      buttons:
+        deposit: Einzahlen
+        depositMaxBalance: Max
+        approve: Bestätigen & Einzahlen
+    info:
+      depositRates:
+        label: Einzahlungs-Raten
+        distributionApy: Verteilungs-APY
+      collateralFactor: Sicherheiten-Faktor
+      useAsCollateral: Als Sicherheit nutzen
+    notifications:
+      wavaxDetected:
+        title: WAVAX tokens identifiziert
+        message: Dein Wallet hat WAVAX Tokens aber BENQI verwendet die nativen AVAX Tokens.
+      oldTokensDetected:
+        title: Alte AEB bridge Tokens identifiziert
+        message: Du hast einige Tokens von der alten Avalanche-Ethereum-Bridge in deiner Wallet.
+          Bitte wandel diese in die neuen Token um, um sie in BENQI zu verwenden.
+        links:
+          convert: Konvertien auf {{url}}.
+      approveTransacting:
+        title: Bestätige {{token}} Transaktion
+        message: Vor der Einzahlung von {{token}}, musst du die erste Transaktion bestätigen.
+      allowanceTooLow:
+        title: Erhöhe {{token}} Freibetrag
+        message: Vor der Einzahlung von {{Token}} müssen Sie den Freibetrag erhöhen, um die die
+          Transaktion abzuschließen.
+    transactions:
+      deposit:
+        confirm:
+          title: Bestätige Einzahlungs-Transaktion
+          message: Bestätige Einzahlungs-Transaktion für {{amount}} {{token}}
+        finished:
+          success:
+            title: Token eingezahlt
+            message: Einzahlung von {{amount}} {{token}}
+          failure:
+            message: Token-Einzahlung ist fehlgeschlagen
+      approve:
+        confirm:
+          title: Bestätige {{token}} Transaktion
+          message: Vor der Einzahlung von {{token}}, musst du die erste Transaktion bestätigen.
+        rejected:
+          message: Transaktion Bestätigung abgebrochen.
+        finished:
+          success:
+            message: Bestätigt! Bitte warten, bis der Einzahlungsvorgang beginnt.
+  borrow:
+    label: Kredit aufnehmen
+    form:
+      borrowLimit: Kreditrahmen
+      healthAfterBorrowing: Health nach Darlehen
+      buttons:
+        borrow: Kredit aufnehmen
+    info:
+      borrowRates: Zinssätze
+      borrowLimit:
+        label: Kreditrahmen
+        limitUsed: Nutzung des Kreditrahmens
+      borrowCap: Marktkreditrahmen
+      liquidity: Pool-Liquidität
+    notifications:
+      borrowCapReached:
+        title: Kreditrahmen erreicht
+        message: Der Pool hat derzeit den Kreditrahmen erreicht. Um sicherzustellen, dass der
+          Pool über genügend Liquidität verfügt, können keine weiteren Kredite über die
+          Obergrenze hinaus aufgenommen werden.
+        supplyNote: Bitte beachten Sie, dass {{token}} dem Protokoll immer noch zur Verfügung
+          gestellt werden kann.
+      insufficientLiquidity:
+        title: Nicht genügend verfügbare Assets
+        mesage: Der Markt verfügt nicht über genügend freie Mittel, um Kredite aufzunehmen.
+      borrowLimitExceeded:
+        title: Der Kreditbetrag ist zu hoch
+        message: Dein Kreditrahmen ist zu niedrig, um diese Kreditaufnahme abzuschließen.
+      borrowLimitWarning:
+        title: Bitte beachte das Liquidationsrisiko
+        message: Dein Kredit wird 80 % deines Limits überschreiten. Wenn dein
+          Kreditrahmen <InfoButton /> bei oder über 100 % liegt, könnte ein Teil deiner
+          Sicherheiten liquidiert werden, um einen Teil deines Kredits zurückzuzahlen.
+      noCollateral:
+        title: Keine Assets als Sicherheiten
+        message: Bitte <0>aktiviere</0> die von dir zur Verfügung gestellten Vermögenswerte
+          als Kreditsicherheit.
+    transaction:
+      confirm:
+        title: Kreditaufnahmevorgang bestätigen
+        message: Kreditaufnahmevorgang für {{amount}} {{token}} bestätigen .
+      finished:
+        success:
+          message: "{{amount}} {{token}} ausgeliehen!"
+        failure:
+          message: Kreditaufnahme gescheitert
+tables:
+  limitUsed: Kreditrahmen genutzt
+  sorting:
+    usdValue: USD Wert
+  supply:
+    label: Bereitgestellt
+    noAssets: Keine bereitgestellte Assets
+    columns:
+      asset: Asset
+      collateral: Sicherheiten
+      supplyApy: Bereitstellungs-APY
+      supplied: Bereitgestellt
+      apy: APY
+      value: Bereitgestellte Werte
+    footer:
+      total: Bereitgestellte Summe
+      borrowLimitUsed: Kreditrahmen genutzt
+    actions:
+      withdraw: Abheben
+  borrow:
+    label: Geliehene Assets
+    noAssets: Keine geliehenen Assets
+    columns:
+      asset: Asset
+      apy: APY
+      borrowApy: Leih-APY
+      borrowed: Geliehen
+      borrowedValue: Geliehene Werte
+    footer:
+      health: Health
+      borrowLimit: Kreditrahmen
+      borrowLimitUsed: Kreditrahmen genutzt
+      totalBorrowed: Total geliehen
+    actions:
+      repay: Zurückzahlen

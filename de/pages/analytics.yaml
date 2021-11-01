@@ -1,0 +1,51 @@
+header:
+  links:
+    backToOverview: Zurück zur Übersicht
+    markets: Versorgung & Darlehen
+totalSupply: Gesamtversorgung
+totalBorrows: Summe der Darlehen
+tokenSelector:
+  switchToken: Token wechseln
+graphs:
+  market:
+    title: Versorgung & Darlehen
+    series:
+      supply:
+        label: Gesamtversorgung
+      borrows:
+        label: Summe der Darlehen
+      utilization:
+        label: Verwendung
+  price:
+    title: Preis
+  interestRate:
+    title: Zinssatz
+    series:
+      utilization:
+        title: Nutzung {{percentage}} %
+      supplyApy:
+        label: Bereitstellungs-APY
+      borrowApy:
+        label: Leih-APY
+    annotations:
+      utilization:
+        label: Nutzung {{percentage}} %
+cards:
+  supply: Versorgung
+  borrows: Darlehen
+  apy: APY
+  distributionApy: Verteilungs-APY
+marketInfo:
+  title: Marktinformationen
+  price: Preis
+  numberOfSuppliers: "# Versorger"
+  numberOfBorrowers: "# Kreditnehmer"
+  reserveFactor: Reservefaktor
+  collateralFactor: Sicherheitenfaktor
+  borrowCap:
+    label: Kreditrahmen
+    unlimited: Kein Limit
+  liquidity: Liquidität
+  dailyRewards: 24h Rewards
+  qiTokenMinted: "{{token}} geschürft"
+  exchangeRate: Wechselkurs

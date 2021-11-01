@@ -1,0 +1,32 @@
+header:
+  title: Übersicht
+footer:
+  analyticsHelp: Klicke auf einen Token, um die Analyse zu sehen.
+banners:
+  supply: Bereitstellungs-APY
+  borrow: Leih-APY
+  status:
+    borrowLimit: Dein Kreditrahmen
+    health: Health
+    remaining: Verbleibend
+tables:
+  supply:
+    title: Versorgung
+  borrow:
+    title: Darlehen
+  market:
+    groups:
+      supply: Angebot
+      borrow: Darlehen
+    columns:
+      asset: Asset
+      totalApy: APY insgesamt
+      totalSupplyApy: Bereitstellungs-APY insgesamt
+      totalBorrowApy: Leih-APY insgesamt
+      totalSupply: Versorgung insgesamt
+      totalBorrow: Darlehen insgesamt
+      totalLiquidity: Liquidität insgesamt
+    actions:
+      goToAnalytics: Gehe zur {{token}} Analyse-Seite
+  sorting:
+    usdValue: USD Wert
