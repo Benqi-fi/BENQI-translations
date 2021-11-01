@@ -3,20 +3,20 @@ header:
 footer:
   analyticsHelp: Klicke auf einen Token, um die Analyse zu sehen.
 banners:
-  supply: Bereitstellungs-APY
-  borrow: Leih-APY
+  supply: Bereitstellung insgesamt
+  borrow: Darlehen insgesamt
   status:
     borrowLimit: Dein Kreditrahmen
     health: Health
     remaining: Verbleibend
 tables:
   supply:
-    title: Versorgung
+    title: Bereitgestellt
   borrow:
-    title: Darlehen
+    title: Geliehen
   market:
     groups:
-      supply: Angebot
+      supply: Bereitstellung
       borrow: Darlehen
     columns:
       asset: Asset
