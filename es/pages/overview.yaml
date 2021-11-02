@@ -1,0 +1,32 @@
+header:
+  title: Vista General
+footer:
+  analyticsHelp: Haz click en un token para ver las analíticas.
+banners:
+  supply: Total Depositado
+  borrow: Total Tomado en Préstamo
+  status:
+    borrowLimit: Tu Límite de Préstamo
+    health: Salud
+    remaining: Restante
+tables:
+  supply:
+    title: Depositado
+  borrow:
+    title: Tomado en Préstamo
+  market:
+    groups:
+      supply: Depósito
+      borrow: Préstamo
+    columns:
+      asset: Activo
+      totalApy: APY Total
+      totalSupplyApy: APY Total de Depósito
+      totalBorrowApy: APY Total de Préstamo
+      totalSupply: Total Depositado
+      totalBorrow: Total Préstamos
+      totalLiquidity: Liquidez Total
+    actions:
+      goToAnalytics: Ir a la página de analíticas de {{token}}
+  sorting:
+    usdValue: Valor en USD

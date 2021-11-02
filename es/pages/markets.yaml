@@ -1,0 +1,132 @@
+header:
+  netApy: APY Neto
+tabs:
+  supply:
+    label: Depósito
+    form:
+      availableWalletBalance: Disponible
+      buttons:
+        deposit: Depositar
+        depositMaxBalance: Máximo
+        approve: Aprobar y Depositar
+    info:
+      depositRates:
+        label: Tasas de Depósito
+        distributionApy: APY de Distribución
+      collateralFactor: Factor de Colateralización
+      useAsCollateral: Usar como Colateral
+    notifications:
+      wavaxDetected:
+        title: Tokens WAVAX detectados
+        message: Tu billetera tiene tokens WAVAX pero BENQI utiliza AVAX nativo.
+      oldTokensDetected:
+        title: Tokens antiguos del puente AEB detectados
+        message: Tienes tokens del antiguo puente Avalanche-Ethereum en tu billetera.
+          Por favor, conviértelos a los nuevos tokens para utilizarlos en BENQI.
+        links:
+          convert: Convertir en {{url}}.
+      approveTransacting:
+        title: Aprobar transacción de {{token}}
+        message: Antes de depositar {{token}}, necesitas aprobar la primera transacción.
+      allowanceTooLow:
+        title: Aumenta la autorización de {{token}}
+        message: Antes de depositar {{token}}, necesitas aumentar la autorización para completar
+          la transacción.
+    transactions:
+      deposit:
+        confirm:
+          title: Confirmar la Transacción de Depósito
+          message: Confirma la transacción de depósito por {{amount}} {{token}}
+        finished:
+          success:
+            title: Token Depositado
+            message: Depositaste {{amount}} {{token}}
+          failure:
+            message: Fallo para depositar tokens
+      approve:
+        confirm:
+          title: Aprobar transacción de {{token}}
+          message: Antes de depositar {{token}}, necesitas aprobar la primera transacción.
+        rejected:
+          message: Aprobación de transacción cancelada.
+        finished:
+          success:
+            message: ¡Aprobado! Por favor, espera que comience la transacción de depósito.
+  borrow:
+    label: Préstamo
+    form:
+      borrowLimit: Límite de Préstamo
+      healthAfterBorrowing: Salud Después de Tomar Préstamo
+      buttons:
+        borrow: Tomar Préstamo
+    info:
+      borrowRates: Tasas de Préstamo
+      borrowLimit:
+        label: Límite de Préstamo
+        limitUsed: Límite Utilizado
+      borrowCap: Límite de Préstamo del Mercado
+      liquidity: Liquidez del Pool
+    notifications:
+      borrowCapReached:
+        title: Límite de Préstamo Alcanzado
+        message: El pool ha alcanzado actualmente su límite de préstamo. Para asegurar que el pool
+          tiene suficiente liquidez, no se pueden tomar préstamos adicionales sobre el límite de préstamo.
+        supplyNote: Por favor, nota que {{token}} aún puede ser depositado en el protocolo.
+      insufficientLiquidity:
+        title: No hay activos suficientes disponibles
+        mesage: El mercado no tiene suficientes activos libres para tomar en préstamo.
+      borrowLimitExceeded:
+        title: El monto del préstamo es demasiado alto
+        message: Tu límite de préstamo es demasiado bajo para completar este préstamo.
+      borrowLimitWarning:
+        title: Por favor, ten precaución con el riesgo de liquidación
+        message: Tu préstamo excederá el 80 % de tu límite. Si tu Límite de Préstamo <InfoButton /> alcanza
+          o excede el 100%, una porción de tu colateral puede ser liquidada para repagar
+          parte de tu préstamo.
+      noCollateral:
+        title: No existen activos colateralizados
+        message: Por favor, <0>activa</0> tus activos depositados como colateral para tomar un préstamo.
+    transaction:
+      confirm:
+        title: Confirmar Transacción de Préstamo
+        message: Confirma la transacción de préstamo por {{amount}} {{token}}.
+      finished:
+        success:
+          message: "¡{{amount}} {{token}} prestados!"
+        failure:
+          message: Préstamo Fallido
+tables:
+  limitUsed: Límite Utilizado
+  sorting:
+    usdValue: Valor en USD
+  supply:
+    label: Depositado
+    noAssets: No hay activos depositados
+    columns:
+      asset: Activo
+      collateral: Colateral
+      supplyApy: APY de Depósito
+      supplied: Depositado
+      apy: APY
+      value: Valor Depositado
+    footer:
+      total: Total Depositado
+      borrowLimitUsed: Límite Utilizado
+    actions:
+      withdraw: Retirar
+  borrow:
+    label: Tomado en Préstamo
+    noAssets: No hay activos tomados en préstamo
+    columns:
+      asset: Activo
+      apy: APY
+      borrowApy: APY de Préstamo
+      borrowed: Tomado en Préstamo
+      borrowedValue: Valor Tomado en Préstamo
+    footer:
+      health: Salud
+      borrowLimit: Límite
+      borrowLimitUsed: Límite Utilizado
+      totalBorrowed: Total Tomado en Préstamo
+    actions:
+      repay: Repagar

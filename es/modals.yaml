@@ -1,0 +1,238 @@
+CollateralModal:
+  title: Activar como colateral
+  message: Cada activo utilizado como colateral aumenta tu límite de préstamo. Por favor ten en
+    cuenta que los activos colateralizados pueden ser liquidados si tu Salud <0></0> Llega a 1.
+  actions:
+    enableCollateral: Usar {{token}} como Colateral
+CollateralToggleSpinnerModal:
+  confirm:
+    enabling:
+      title: Activando
+      message: Confirmar activación de {{token}} para ser utilizado como colateral
+    disabling:
+      title: Desactivando como Colateral
+      message: Confirmar desactivación de {{token}} para ser utilizado como colateral
+  confirmed:
+    title: Esperando por Bloque
+    message: Esperando que la transacción sea incluída en un bloque
+  rejected:
+    title: Transacción rechazada
+    message: Transacción rechazada, el colateral no se ha afectado
+  finished:
+    enabling:
+      success:
+        title: Colateral Activado
+        message: Colateral activado para {{token}}
+      failure:
+        title: Fallo para Activar el Colateral
+        message: Fallo para activar el colateral para {{token}}
+    disabling:
+      success:
+        title: Colateral Desactivado
+        message: Colateral desactivado para {{token}}
+      failure:
+        title: Fallo para Desactivar Colateral
+        message: Fallo para desactivar colateral para {{token}}
+DistributionApyInfoModal:
+  info:
+    supply: Retorno anualizado proyectado recompensado en QI y AVAX para depositar activos
+    borrow: Retorno anualizado proyectado recompensado en QI y AVAX para préstamos de activos
+  rewards:
+    qi: Recompensas en QI
+    avax: Recompensas en AVAX
+  distributionApy: APY de Distribución
+HealthFactorInfoModal:
+  title: Salud
+  text: <0>La Salud representa la seguridad de un préstamo, definida como la proporción
+    de colateral depositado contra el valor del préstamo.</0><1>Un mayor valor indica
+    que los fondos del usuario tienen mayor seguridad ante su liquidación. Sin embargo, si la Salud
+    alcanza 1, el colateral del usuario puede ser liquidado.</1>
+BorrowLimitInfoModal:
+  title: Límite de Préstamo
+  text: El límite de préstamo representa la máxima cantidad que puedes tomar prestado basado en el valor
+    de tu colateral depositado y la liquidez disponible.
+RedeemPglModal:
+  title: Retirar Tokens PGL Depositados
+  depositedAmount: Depositado
+  max: Máximo
+  actions:
+    withdraw: Retirar
+RepayModal:
+  title: Repagar
+  notifications:
+    insufficientBalance:
+      title: Saldo insuficiente en la billetera
+      message: No tienes suficiente {{token}} en tu billetera.
+    repaymentAmountTooLarge:
+      title: Repago demasiado grande
+      message: El monto de tu préstamo es más bajo que el repago intentado.
+    repaymentExcess:
+      message: "Nota: Debido al interés continuamente acumulado, el monto repagado
+        será ligeramente superior que el valor mostrado para repagar completamente y cerrar esta
+        posición de préstamo."
+    approveTransacting:
+      title: Aprobar transacción de {{token}}
+      message: Para repagar tu préstamo pendiente, necesitas aprobar la transacción de tu {{token}}.
+    insufficientAllowance:
+      title: Aumenta la autorización de {{token}}
+      message: Para repagar tu préstamo pendiente, necesitas aumentar la autorización
+        para hacer la transacción en {{token}}.
+  availableToRepay: Disponible para Repagar
+  repayAll:
+    title: Repagar el préstamo de {{token}} en su totalidad
+    label: Máximo
+  actions:
+    repay: Repagar
+    approve: Aprobar
+  transactions:
+    repay:
+      confirm:
+        title: Confirmar Repago
+        message: Confirma el repago por {{amount}} {{token}}
+      confirmed:
+        title: Repago confirmado
+        message: Esperando que la transacción finalice
+      rejected:
+        title: Transacción Rechazada
+        message: Repago no completado
+      finished:
+        success:
+          title: Repagado
+          message: Repagado {{amount}} {{token}}
+        failure:
+          title: Repago Fallido
+          message: Fallo para repagar la posición
+    approve:
+      confirm:
+        title: Confirmar la Aprobación de la Transacción
+        message: Confirma la transacción para ajustar la autorización de gasto
+      confirmed:
+        title: Aprobación de Transacción Confirmada
+        message: Esperando que la transacción finalice
+      rejected:
+        title: Aprobación Rechazada
+        message: Aprobación para transaccionar tokens rechazada
+      finished:
+        success:
+          title: Autorización Ajustada
+          message: Autorización para la transacción ajustada. Puedes proceder a repagar tu préstamo.
+        failure:
+          title: Fallo para Ajustar Autorización
+          message: El ajuste de la autorización para la transacción ha fallado.
+SwitchNetworkModal:
+  title: Red Incorrecta
+  message: Por favor, conéctate a la red Avalanche.
+  buttons:
+    changeNetwork: Cambiar a Avalanche
+TransactionModal:
+  status:
+    confirm:
+      title: Confirmar Transacción
+      message: Confirma la transacción
+    confirmed:
+      title: Esperando Bloque
+      message: Esperando que la transacción sea incluída en un bloque
+    rejected:
+      title: Transacción Rechazada
+      message: Transacción rechazada
+    finished:
+      success:
+        title: Transacción Completada
+        message: Transacción completada
+      failure:
+        title: Transacción Fallida
+        message: Transacción fallida
+  viewTransaction: Ver transacción en el Explorador de la Cadena-C
+WithdrawModal:
+  title: Retirar
+  availableToWithdraw: Disponible para Retirar
+  withdrawAll:
+    title: Rescatar todo el {{token}} depositado
+    label: Máximo
+  healthAfterWithdrawal: Salud Después del Retiro
+  notifications:
+    insufficientLiquidity:
+      title: Liquidez de mercado insuficiente
+      message: No hay activos suficientes disponibles en el pool para ser retirados.
+    insufficientHealthAfterWithdrawal:
+      title: La nueva posición será liquidada
+      message: No es posible retirar esta cantidad ya que tu Salud caerá debajo de 1 y
+        tu posición podría ser liquidada.
+    withdrawalTooLarge:
+      title: Saldo de depósito insuficiente
+      message: Tu saldo de depósito es menor que el retiro intentado.
+  actions:
+    withdraw: Retirar
+  transaction:
+    confirm:
+      title: Confirmar el Retiro
+      message: Confirma el retiro por {{amount}} {{token}}
+    finished:
+      success:
+        title: Tokens Retirados
+        message: "¡{{amount}} {{token}} retirados!"
+      failure:
+        title: Retiro Fallido
+        message: El retiro ha fallado
+AccountModal:
+  title: Account
+  connectedWallet:
+    label: Billetera Conectada
+    actions:
+      viewOnExplorer: Ver en el Explorador
+      copyAddress:
+        label: Copiar Dirección
+        response:
+          success: ¡Copiada!
+  network: Red
+BreakdownModal:
+  title: Desglose de tu QI
+  fields:
+    balance: Saldo
+    unclaimed: No reclamado
+  actions:
+    claim: Reclamar
+DepositPglModal:
+  title: Depositar Tokens PGL
+  sectionSeparator: y
+  sections:
+    addLiquidity:
+      title: Agregar Liquidez
+      form:
+        header:
+          balance: Saldo
+        actions:
+          depositMaxQiAvaxAmount: Máximo
+          deposit: Depositar
+          removeLiquidity: Retirar Liquidez en Pangolin
+          approveTransacting: Aprobar
+      info:
+        qiPerAvax: QI por AVAX
+        avaxPerQi: AVAX por QI
+        slippage: Deslizamiento
+        poolShare: Participación en el Pool
+    depositPgl:
+      title: Depositar Tokens QI-AVAX PGL
+      form:
+        header:
+          balance: Saldo
+        actions:
+          depositMaxPglAmount: Máximo
+          deposit: Depositar
+          approveTransacting: Aprobar
+      info:
+        apr: APR de Depósito
+collateralFactor:
+  title: Factor de Colateralización
+  description: Máxima cantidad que puede ser tomada en préstamo del Protocolo BENQI con
+    este activo utilizado como colateral.
+depositApy:
+  title: APY de Depósito
+  description: Retorno anualizado proyectado para aportar liquidez.
+borrowApy:
+  title: APY de Préstamo
+  description: Costo anualizado proyectado al tomar en préstamo.
+borrowLimit:
+  title: Límite de Préstamo
+  description: El Límite de Préstamo representa la máxima cantidad que puedes pedir prestada en base al
+    valor de tu colateral depositado y la liquidez disponible.

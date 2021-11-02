@@ -1,0 +1,29 @@
+AddQiTokenToMetaMaskButton:
+  label: Agregar QI
+  title: Agregar el token QI a MetaMask
+  metamask:
+    alt: MetaMask
+AssetInputForm:
+  buttons:
+    max:
+      label: Máximo
+      title: Ingresa el máximo de {{token}} disponible
+SimpleBalanceTable:
+  columns:
+    asset: Activo
+    balance: Saldo
+  footer:
+    totalBalance: "Saldo: ${{balance}}"
+BorrowLimitProgressBar:
+  borrowLimitUsed: "{{limit}} % utilizado de tu límite de préstamo"
+CollateralToggle:
+  title:
+    zeroCollateralFactor: "{{token}} no puede ser utilizado como colateral"
+    outstandingLoans: No se puede desactivar el colateral para {{token}} porque
+      tienes préstamos pendientes en ese activo
+    insufficientHealth: No se puede desactivar el colateral para {{token}} porque
+      tu salud caería por debajo de 1
+    enable: Activar {{token}} como colateral
+    disable: Desactivar {{token}} como colateral
+ConnectPage:
+  text: Por favor, conecta tu billetera

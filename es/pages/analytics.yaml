@@ -1,0 +1,51 @@
+header:
+  links:
+    backToOverview: Volver a Vista General
+    markets: Depósito & Préstamo
+totalSupply: Total Depositado
+totalBorrows: Total de Préstamos
+tokenSelector:
+  switchToken: Cambiar Token
+graphs:
+  market:
+    title: Depósito & Préstamos
+    series:
+      supply:
+        label: Total Depositado
+      borrows:
+        label: Total de Préstamos
+      utilization:
+        label: Utilización
+  price:
+    title: Precio
+  interestRate:
+    title: Tasa de Interés
+    series:
+      utilization:
+        title: Utilización {{percentage}} %
+      supplyApy:
+        label: APY de Depósito
+      borrowApy:
+        label: APY de Préstamo
+    annotations:
+      utilization:
+        label: Utilización {{percentage}} %
+cards:
+  supply: Depósito
+  borrows: Préstamos
+  apy: APY
+  distributionApy: APY de Distribución
+marketInfo:
+  title: Información de Mercado
+  price: Precio
+  numberOfSuppliers: "# de Depositantes"
+  numberOfBorrowers: "# de Prestatarios"
+  reserveFactor: Factor de Reserva
+  collateralFactor: Factor de Colateralización
+  borrowCap:
+    label: Límite de Préstamo
+    unlimited: Sin límite
+  liquidity: Liquidez
+  dailyRewards: Recompensas en las últimas 24h
+  qiTokenMinted: "{{token}} Acuñado"
+  exchangeRate: Tasa de Cambio
