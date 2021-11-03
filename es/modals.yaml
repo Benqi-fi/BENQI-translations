@@ -101,7 +101,7 @@ RepayModal:
           message: Repagado {{amount}} {{token}}
         failure:
           title: Repago Fallido
-          message: Fallo para repagar la posición
+          message: Fallo para repagar el préstamo
     approve:
       confirm:
         title: Confirmar la Aprobación de la Transacción
