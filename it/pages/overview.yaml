@@ -1,0 +1,32 @@
+header:
+  title: Vista generale
+footer:
+  analyticsHelp: Clicca su un token per visualizzare le statistiche.
+banners:
+  supply: Totale depositato
+  borrow: Totale preso in prestito
+  status:
+    borrowLimit: Il tuo limite di credito
+    health: Salute
+    remaining: Rimanente
+tables:
+  supply:
+    title: Depositato
+  borrow:
+    title: Preso in prestito
+  market:
+    groups:
+      supply: Depoisito
+      borrow: Prestito
+    columns:
+      asset: Asset
+      totalApy: APY totale
+      totalSupplyApy: APY di deposito totale
+      totalBorrowApy: APY di prestito totale
+      totalSupply: Depositi totali
+      totalBorrow: Prestiti totale
+      totalLiquidity: Liquidità totale
+    actions:
+      goToAnalytics: Vai alla pagina delle statistiche per {{token}}
+  sorting:
+    usdValue: Valore in USD

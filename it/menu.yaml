@@ -1,0 +1,19 @@
+mobile:
+  toggle: Attiva/Disattiva menù
+links:
+  pages:
+    markets: Mercati
+    overview: Vista generale
+    rewards: Ricompense
+  external:
+    avalancheBridge:
+      label: Bridge
+      title: Vai a Avalanche Bridge
+    celerBridge:
+      label: cBridge
+      title: Vai al Celer Bridge
+    coinMarketCap:
+      label: CoinMarketCap
+      title: Visualizza QI su CoinMarketCap
+footer:
+  betaWarning: <0>Qusto progetto è in beta.</0><1>Usalo a tuo rischio.</1>

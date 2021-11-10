@@ -1,0 +1,51 @@
+header:
+  links:
+    backToOverview: Torna a vista generale
+    markets: Deposita e prendi in prestito
+totalSupply: Totale depositato
+totalBorrows: Totale preso in prestito
+tokenSelector:
+  switchToken: Cambia token
+graphs:
+  market:
+    title: Deposita e prendi in prestito
+    series:
+      supply:
+        label: Totale depositato
+      borrows:
+        label: Totale preso in prestito
+      utilization:
+        label: Utilizzazione
+  price:
+    title: Prezzo
+  interestRate:
+    title: Tasso di interesse
+    series:
+      utilization:
+        title: Utilizzazione {{percentage}} %
+      supplyApy:
+        label: APY di deposito
+      borrowApy:
+        label: APY del prestito
+    annotations:
+      utilization:
+        label: Utilizzazione {{percentage}} %
+cards:
+  supply: Depositi
+  borrows: Prestiti
+  apy: APY
+  distributionApy: APY di distribuzione
+marketInfo:
+  title: Informazioni sul mercato
+  price: Prezzo
+  numberOfSuppliers: "# depositanti"
+  numberOfBorrowers: "# debitori"
+  reserveFactor: Fattore di riserva
+  collateralFactor: Fattore di collateralizzazione
+  borrowCap:
+    label: Limite di credito
+    unlimited: Nessun limite
+  liquidity: Liquidità
+  dailyRewards: Ricompense giornaliere
+  qiTokenMinted: "{{token}} Minted"
+  exchangeRate: Tasso di cambio

@@ -1,0 +1,25 @@
+header:
+  title: Ricompense
+  description: Guadagna le ricompense usando il protocollo e/o depositando i tuoi token
+    Pangolin DEX Liquidity Provider (PGL).
+rewards:
+  protocol:
+    title: Ricompense del protocollo ({{token}})
+    fields:
+      unclaimed: Non riscattate
+      unclaimedValue: Valore non riscattato
+    actions:
+      claim: Riscatta
+  pgl:
+    title: Ricompense Pangolin DEX (QI-AVAX PGL)
+    fields:
+      depositedTokens: Token depositati
+      depositedValue: Valore depositato
+      pglBreakdown: PGL Breakdown
+      totalDepositedValue: Valore totale depositato
+      unclaimedRewards: Ricompense non riscattate
+      apr: APR
+    actions:
+      withdraw: Preleva
+      deposit: Deposita
+      claim: Riscatta

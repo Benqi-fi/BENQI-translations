@@ -1,0 +1,239 @@
+CollateralModal:
+  title: Abilita come collaterale
+  message: Ogni asset usato come collaterale aumenta la quantità di token che puoi prendere in
+    prestito. Sii consapevole che gli asset collateralizzati possono essere liquidati se la tua
+    salute <0></0> arriva a 1.
+  actions:
+    enableCollateral: Usa {{token}} come collaterale
+CollateralToggleSpinnerModal:
+  confirm:
+    enabling:
+      title: Attiva
+      message: Conferma l'abilitazione di {{token}} come collaterale
+    disabling:
+      title: Disabilita come collaterale
+      message: Conferma la disabilitazione di {{token}} come collaterale
+  confirmed:
+    title: Aspettando il blocco
+    message: Aspettando che la transazione sia inclusa in un blocco
+  rejected:
+    title: Transazione rifiutata
+    message: Transazione rifiutata, il collaterale non è stato affetto
+  finished:
+    enabling:
+      success:
+        title: Collaterale abilitato
+        message: Collaterale abilitato per {{token}}
+      failure:
+        title: Impossibile abilitare collaterale
+        message: Impossibile abilitare collaterale per {{token}}
+    disabling:
+      success:
+        title: Collaterale disabilitato
+        message: Collaterale disabilitato per {{token}}
+      failure:
+        title: Impossibile disabilitare collaterale
+        message: Impossibile abilitare collaterale per {{token}}
+DistributionApyInfoModal:
+  info:
+    supply: Proiezione delle ricompense annualizzate in QI e AVAX per gli asset forniti in prestito
+    borrow: Proiezione delle ricompense annualizzate in QI e AVAX per gli asset presi in prestito
+  rewards:
+    qi: Ricompense in QI
+    avax: Ricompense in AVAX
+  distributionApy: APY di distribuzione
+HealthFactorInfoModal:
+  title: Salute
+  text: <0>La salute rappresenta la salute di un prestito, definita come la proporzione
+    tra il collaterale depositato e il valore dei token presi in prestito.</0><1>
+    Un valore alto indica che il collaterale è più protetto dalla liquidazione. Se la salute
+    raggiunge 1, il collaterale può essere liquidato.</1>
+BorrowLimitInfoModal:
+  title: Limite di indebitamento
+  text: Il limite di credito rappresenta la massima quantità che può essere presa in prestito
+    in base al valore del collaterale depositato e della liquidità disponibile.
+RedeemPglModal:
+  title: Preleva i token PGL depositati
+  depositedAmount: Depositati
+  max: Massimo
+  actions:
+    withdraw: Preleva
+RepayModal:
+  title: Ripaga
+  notifications:
+    insufficientBalance:
+      title: Saldo nel wallet insufficiente
+      message: Non hai abbastanza {{token}} nel tuo wallet.
+    repaymentAmountTooLarge:
+      title: Restituzione troppo alta
+      message: L'ammontare del tuo prestito è minore della restituzione appena tentata.
+    repaymentExcess:
+      message: "Nota: Per via dell'interesse accumulato continuamente, l'ammontare ripagato
+        sarà leggermente maggiore di quanto mostrato per poter ripagare complentamente e
+        chiudere il prestito."
+    approveTransacting:
+      title: Approva la transazione per {{token}}
+      message: Per ripagare il tuo prestito, devi approvare la transazione per {{token}}.
+    insufficientAllowance:
+      title: Aumenta il permesso per {{token}}
+      message: Per ripagare il tuo prestito, devi aumentare la quantità permessa di
+        transazione per {{token}}.
+  availableToRepay: Disponibile per ripagare
+  repayAll:
+    title: Ripaga tutto il prestito di {{token}}
+    label: Massimo
+  actions:
+    repay: Ripaga
+    approve: Approva
+  transactions:
+    repay:
+      confirm:
+        title: Conferma restituzione
+        message: Conferma restituzione per {{amount}} {{token}}
+      confirmed:
+        title: Restituzione confermata
+        message: In attesa della finalizzazione della transazione
+      rejected:
+        title: Transazione rifiutata
+        message: Restituzione non completata
+      finished:
+        success:
+          title: Ripagato
+          message: Ripagato {{amount}} {{token}}
+        failure:
+          title: Restituzione fallita
+          message: Impossibile ripagare il prestito
+    approve:
+      confirm:
+        title: Conferma la transazione di approvazione
+        message: Conferma la transazione per permettere di spendere
+      confirmed:
+        title: Transazione di approvazione confermata
+        message: In attesa della finalizzazione della transazione
+      rejected:
+        title: Approvazione rifutata
+        message: Approvazione per spendere i token rifiutata
+      finished:
+        success:
+          title: Imposta il permesso di spesa dei token
+          message: Permesso di spesa. Puoi procedere a ripagare il prestito
+        failure:
+          title: Impossibile impostare il permesso
+          message: Impossibile impostare il permesso di spendere i token
+SwitchNetworkModal:
+  title: Network errato
+  message: Per favore connettiti a Avalanche Network
+  buttons:
+    changeNetwork: Passa ad Avalanche
+TransactionModal:
+  status:
+    confirm:
+      title: Conferma transazione
+      message: Conferma transazione
+    confirmed:
+      title: In attesa del blocco
+      message: In attesa che la transazione sia inserita in un blocco
+    rejected:
+      title: Transazione rifiutata
+      message: Transazione rifiutata
+    finished:
+      success:
+        title: Transazione completata
+        message: Transazione completata
+      failure:
+        title: Transazione fallita
+        message: Transazione fallita
+  viewTransaction: Visualizza la transazione su SnowTrace
+WithdrawModal:
+  title: Preleva
+  availableToWithdraw: Disponibile per il prelievo
+  withdrawAll:
+    title: Riscatta tutti i {{token}} forniti
+    label: Massimo
+  healthAfterWithdrawal: Salute dopo il prelievo
+  notifications:
+    insufficientLiquidity:
+      title: Liquidità del mercato insufficiente
+      message: Non ci sono abbastanza asset nel pool da prelevare.
+    insufficientHealthAfterWithdrawal:
+      title: La nuova posizione sarà liquidata
+      message: Impossibile prelevare questa quantità perchè la salute scenderebbe sotto 1
+        e la tua posizione potrebbe essere liquidata.
+    withdrawalTooLarge:
+      title: Importo depositato insufficiente
+      message: L'importo depositato è minore di quello che hai tentato di prelevare.
+  actions:
+    withdraw: Preleva
+  transaction:
+    confirm:
+      title: Conferma prelievo
+      message: Conferma prelievo per {{amount}} {{token}}
+    finished:
+      success:
+        title: Token prelevati
+        message: "{{amount}} {{token}} prelevati!"
+      failure:
+        title: Prelievo fallito
+        message: Prelievo fallito
+AccountModal:
+  title: Account
+  connectedWallet:
+    label: Wallet connesso
+    actions:
+      viewOnExplorer: Visualizza sull'Explorer
+      copyAddress:
+        label: Copia indirizzo
+        response:
+          success: Copiato!
+  network: Network
+BreakdownModal:
+  title: I tuoi QI
+  fields:
+    balance: Saldo
+    unclaimed: Non riscattati
+  actions:
+    claim: Riscatta
+DepositPglModal:
+  title: Deposita token PGL
+  sectionSeparator: e
+  sections:
+    addLiquidity:
+      title: Aggiungi liquidità
+      form:
+        header:
+          balance: Saldo
+        actions:
+          depositMaxQiAvaxAmount: Massimo
+          deposit: Deposita
+          removeLiquidity: Rimuovi liquidità su Pangolin
+          approveTransacting: Approva
+      info:
+        qiPerAvax: QI per AVAX
+        avaxPerQi: AVAX per QI
+        slippage: Slippage
+        poolShare: Porzione del pool
+    depositPgl:
+      title: Deposita token QI-AVAX PGL
+      form:
+        header:
+          balance: Saldo
+        actions:
+          depositMaxPglAmount: Massimo
+          deposit: Deposita
+          approveTransacting: Approva
+      info:
+        apr: APR del prestito
+collateralFactor:
+  title: Fattore di collateralizzazione
+  description: L'ammontare massimo che può essere preso in prestito da BENQI protocol
+    con questo asset usato come collaterale
+depositApy:
+  title: APY di deposito
+  description: Proiezione del guadagno annualizzato per la liquiditá depositata
+borrowApy:
+  title: APY del prestito
+  description: Proiezione del costo annualizzato del prestito.
+borrowLimit:
+  title: Limite di indebitamento
+  description: Il limite di credito rappresenta la massima quantità che può essere presa in prestito
+    in base al valore del collaterale depositato e della liquidità disponibile.
