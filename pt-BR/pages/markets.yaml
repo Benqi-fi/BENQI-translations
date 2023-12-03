@@ -1,132 +1,132 @@
 header:
-  netApy: Net APY
+  netApy: APY (Rendimento Percentual Anual) da Rede
 tabs:
   supply:
-    label: Supply
+    label: Depósito
     form:
-      availableWalletBalance: Available
+      availableWalletBalance: Disponível
       buttons:
-        deposit: Deposit
-        depositMaxBalance: Max
-        approve: Approve & Deposit
+        deposit: Depositar
+        depositMaxBalance: Máximo
+        approve: Approvar & Depositar
     info:
       depositRates:
-        label: Deposit Rates
-        distributionApy: Distribution APY
-      collateralFactor: Collateral Factor
-      useAsCollateral: Use as Collateral
+        label: Taxas de Depósito
+        distributionApy: APY (Rendimento Percentual Anual) de Distribuição
+      collateralFactor: Fator de Colaterização
+      useAsCollateral: Use como Garantia
     notifications:
       wavaxDetected:
-        title: WAVAX tokens detected
-        message: Your wallet has WAVAX tokens but BENQI uses the native AVAX.
+        title: Tokens WAVAX detectados
+        message: Sua carteira possui tokens WAVAX, mas BENQI utiliza o AVAX nativo.
       oldTokensDetected:
-        title: Old AEB bridge tokens detected
-        message: You have some tokens from the old Avalanche-Ethereum bridge in your wallet.
-          Please convert them to the new tokens to use them in BENQI.
+        title: Detectados tokens da ponte AEB antiga
+        message: Você tem alguns tokens da antiga ponte Avalanche-Ethereum em sua carteira.
+          Por favor, converta-os para os novos tokens para usá-los na BENQI.
         links:
-          convert: Convert on {{url}}.
+          convert: Converter em {{url}}.
       approveTransacting:
-        title: Approve {{token}} transaction
-        message: Before depositing {{token}}, you need to approve the first transaction.
+        title: Approvar transação do {{token}} 
+        message: Antes de depositar o {{token}}, você precisa aprovar a primeira transação.
       allowanceTooLow:
-        title: Increase {{token}} allowance
-        message: Before depositing {{token}}, you need to increase the allowance to complete
-          the transaction.
+        title: Aumente a provisão de {{token}} 
+        message: Antes de depositar o {{token}}, você precisa aumentar a provisão para concluir 
+          a transação
     transactions:
       deposit:
         confirm:
-          title: Confirm Deposit Transaction
-          message: Confirm deposit transaction for {{amount}} {{token}}
+          title: Confirmar a transação de depósito
+          message: Confirmar a transação de depósito para {{amount}} {{token}}
         finished:
           success:
-            title: Token Deposited
-            message: Deposited {{amount}} {{token}}
+            title: Token Depositado
+            message: Foi depositado {{amount}} {{token}}
           failure:
-            message: Failed to deposit tokens
+            message: Falha ao depositar tokens
       approve:
         confirm:
-          title: Approve {{token}} transaction
-          message: Before depositing {{token}}, you need to approve the first transaction.
+          title: Approvar transação de {{token}} 
+          message: Antes de depositar {{token}}, você precisa aprovar a primeira transação.
         rejected:
-          message: Transaction approval cancelled.
+          message: Aprovação de transação cancelada.
         finished:
           success:
-            message: Approved! Please wait for deposit transaction to begin.
+            message: Aprovado! Por favor, aguarde o início da transação de depósito.
   borrow:
-    label: Borrow
+    label: Pegar Emprestado
     form:
-      borrowLimit: Borrow Limit
-      healthAfterBorrowing: Health After Borrowing
+      borrowLimit: Limite de empréstimo
+      healthAfterBorrowing: Saúde Após Pegar o Empréstimo
       buttons:
-        borrow: Borrow
+        borrow: Pegar Emprestado
     info:
-      borrowRates: Borrow Rates
+      borrowRates: Taxas de Empréstimo
       borrowLimit:
-        label: Borrow Limit
-        limitUsed: Limit Used
-      borrowCap: Market Borrow Cap
-      liquidity: Pool Liquidity
+        label: Limite de Empréstimo
+        limitUsed: Limite Utilizado
+      borrowCap: Limite de Empréstimo do Mercado
+      liquidity: Liquidez de Pool
     notifications:
       borrowCapReached:
-        title: Borrow Cap Reached
-        message: The pool has currently reached it's borrow cap. To ensure that the pool
-          has sufficient liquidity, no additional borrowings can be made above the borrow cap.
-        supplyNote: Please note that {{token}} can still be supplied to the protocol.
+        title: Limite de Empréstimo Atingido
+        message: Atualmente, o pool atingiu seu limite de empréstimo. Para garantir que o pool
+          tenha liquidez suficiente, nenhum empréstimo adicional pode ser feito acima do limite de empréstimo.
+        supplyNote: Por favor, observe que o {{token}} ainda pode ser fornecido ao protocolo.
       insufficientLiquidity:
-        title: Not enough available assets
-        mesage: The market does not have enough free assets to borrow.
+        title: Não há ativos disponíveis suficientes
+        mesage: O mercado não tem ativos livres suficientes para serem emprestados.
       borrowLimitExceeded:
-        title: The borrow amount is too high
-        message: Your borrow limit is too low to complete this borrow.
+        title: O valor de empréstimo é muito alto
+        message: Seu limite de empréstimo é muito baixo para concluir esse empréstimo.
       borrowLimitWarning:
-        title: Please beware of liquidation risk
-        message: Your borrow will exceed 80 % of your limit. If your Borrow Limit <InfoButton /> is
-          at or exceeds 100%, a portion of your collateral could be liquidated to repay
-          part of your borrow.
+        title: Cuidado com o risco de liquidação
+        message: Seu empréstimo excederá 80% do seu limite. Se seu Limite de Empréstimo <InfoButton /> for
+          igual ou superior a 100%, uma parte de sua garantia poderá ser liquidada para pagar
+          parte de seu empréstimo.
       noCollateral:
-        title: No collateralized assets
-        message: Please <0>enable</0> your supplied assets as collateral to borrow.
+        title: Nenhum ativo colaterizado
+        message: Por favor, <0>permita</0> que seus ativos fornecidos sejam usados como garantia para empréstimos.
     transaction:
       confirm:
-        title: Confirm Borrow Transaction
-        message: Confirm borrow transaction for {{amount}} {{token}}.
+        title: Confirmar a Transação de Empréstimo
+        message: Confirmar a transação de empréstimo para {{amount}} {{token}}.
       finished:
         success:
-          message: "{{amount}} {{token}} borrowed!"
+          message: "{{amount}} {{token}} emprestados!"
         failure:
-          message: Borrowing Failed
+          message: Empréstimo Não Realizado
 tables:
-  limitUsed: Limit Used
+  limitUsed: Limite Utilizado
   sorting:
-    usdValue: USD value
+    usdValue: valor em USD
   supply:
-    label: Supplied
-    noAssets: No supplied assets
+    label: Fornecido
+    noAssets: Nenhum ativo fornecido
     columns:
-      asset: Asset
-      collateral: Collateral
-      supplyApy: Supply APY
-      supplied: Supplied
+      asset: Ativo
+      collateral: Garantia
+      supplyApy: APY de Suprimento
+      supplied: Fornecido
       apy: APY
-      value: Supplied Value
+      value: Valores Fornecidos
     footer:
       total: Total Supplied
       borrowLimitUsed: Limit Used
     actions:
-      withdraw: Withdraw
+      withdraw: Retirada
   borrow:
-    label: Borrowed
-    noAssets: No borrowed assets
+    label: Tomado emprestado
+    noAssets: Nenhum ativo emprestado
     columns:
-      asset: Asset
+      asset: Ativo
       apy: APY
-      borrowApy: Borrow APY
-      borrowed: Borrowed
-      borrowedValue: Borrowed Value
+      borrowApy: APY de Empréstimo
+      borrowed: Tomado Emprestado
+      borrowedValue: Valor Tomado Emprestado
     footer:
-      health: Health
-      borrowLimit: Limit
-      borrowLimitUsed: Limit Used
-      totalBorrowed: Total Borrowed
+      health: Saúde
+      borrowLimit: Limite
+      borrowLimitUsed: Limite Utilizado
+      totalBorrowed: Total Tomado Emprestado
     actions:
-      repay: Repay
+      repay: Reembolsar
