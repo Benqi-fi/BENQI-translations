@@ -1,0 +1,34 @@
+header:
+  title: Overview
+footer:
+  analyticsHelp: Click on a token to view analytics.
+banners:
+  supply: Total Supply
+  borrow: Total Borrow
+  status:
+    borrowLimit: Your Borrow Limit
+    health: Health
+    remaining: Remaining
+tables:
+  supply:
+    title: Supplied
+  borrow:
+    title: Borrowed
+  market:
+    groups:
+      supply: Supply
+      borrow: Borrow
+    columns:
+      asset: Asset
+      totalApy: Total APY
+      totalSupplyApy: Total Supply APY
+      totalBorrowApy: Total Borrow APY
+      totalSupply: Total Supply
+      totalBorrow: Total Borrow
+      totalLiquidity: Total Liquidity
+    actions:
+      goToAnalytics: Go to {{token}} analytics page
+  sorting:
+    usdValue: USD value
+buttons:
+  changeViewMode: View Mode

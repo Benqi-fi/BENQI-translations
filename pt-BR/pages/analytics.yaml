@@ -1,0 +1,51 @@
+header:
+  links:
+    backToOverview: De volta à Visão Geral
+    markets: Depósito & Empréstimo
+totalSupply: Depósito Total
+totalBorrows: Empréstimo Total
+tokenSelector:
+  switchToken: Trocar Tokens
+graphs:
+  market:
+    title: Depósito & Empréstimo
+    series:
+      supply:
+        label: Depósito Total
+      borrows:
+        label: Empréstimo Total
+      utilization:
+        label: Utilização
+  price:
+    title: Preço
+  interestRate:
+    title: Taxa de Juros
+    series:
+      utilization:
+        title: Utilização {{porcentagem}} %
+      supplyApy:
+        label:  Rendimento Percentual Anual (APY) de Depósito
+      borrowApy:
+        label: Rendimento Percentual Anual (APY) de Empréstimo
+    annotations:
+      utilization:
+        label: Utilização {{porcentagem}} %
+cards:
+  supply: Depósito
+  borrows: Empréstimos
+  apy: APY (Rendimento Percentual Anual)
+  distributionApy: APY (Rendimento Percentual Anual) de Distribuição
+marketInfo:
+  title: Informação de Mercado
+  price: Preço
+  numberOfSuppliers: "# Depositantes"
+  numberOfBorrowers: "# Devedores"
+  reserveFactor: Fator de Reserva
+  collateralFactor: Fator de Colaterização
+  borrowCap:
+    label: Limite de Empréstimo
+    unlimited: Sem limite
+  liquidity: Liquidez
+  dailyRewards: Recompensas em 24 horas
+  qiTokenMinted: "{{token}} Cunhado"
+  exchangeRate: Taxa de Câmbio
