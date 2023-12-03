@@ -1,34 +1,34 @@
 header:
-  title: Overview
+  title: Visão Geral
 footer:
-  analyticsHelp: Click on a token to view analytics.
+  analyticsHelp: Clique em um token para visualizar as análises.
 banners:
-  supply: Total Supply
-  borrow: Total Borrow
+  supply: Total Fornecido
+  borrow: Total Tomado Emprestado
   status:
-    borrowLimit: Your Borrow Limit
-    health: Health
-    remaining: Remaining
+    borrowLimit: Seu Limite de Empréstimo
+    health: Saúde
+    remaining: Restante
 tables:
   supply:
-    title: Supplied
+    title: Fornecido
   borrow:
-    title: Borrowed
+    title: Tomado Emprestado
   market:
     groups:
-      supply: Supply
-      borrow: Borrow
+      supply: Fornecer
+      borrow: Tomar Emprestado
     columns:
-      asset: Asset
-      totalApy: Total APY
-      totalSupplyApy: Total Supply APY
-      totalBorrowApy: Total Borrow APY
-      totalSupply: Total Supply
-      totalBorrow: Total Borrow
-      totalLiquidity: Total Liquidity
+      asset: Ativo
+      totalApy: APY Total
+      totalSupplyApy: APY Total de Suprimento
+      totalBorrowApy: APY Total de Empréstimo
+      totalSupply: Total Fornecido
+      totalBorrow: Total Tomado Emprestado
+      totalLiquidity: Liquidez Total
     actions:
-      goToAnalytics: Go to {{token}} analytics page
+      goToAnalytics: Vá para a página de análises de {{token}}
   sorting:
-    usdValue: USD value
+    usdValue: Valor em USD 
 buttons:
-  changeViewMode: View Mode
+  changeViewMode: Modo de Visualização
