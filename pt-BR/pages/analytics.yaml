@@ -24,17 +24,17 @@ graphs:
       utilization:
         title: Utilização {{porcentagem}} %
       supplyApy:
-        label:  Rendimento Percentual Anual (APY) de Depósito
+        label:  APY de Depósito
       borrowApy:
-        label: Rendimento Percentual Anual (APY) de Empréstimo
+        label: APY de Empréstimo
     annotations:
       utilization:
         label: Utilização {{porcentagem}} %
 cards:
   supply: Depósito
   borrows: Empréstimos
-  apy: APY (Rendimento Percentual Anual)
-  distributionApy: APY (Rendimento Percentual Anual) de Distribuição
+  apy: APY 
+  distributionApy: APY de Distribuição
 marketInfo:
   title: Informação de Mercado
   price: Preço
