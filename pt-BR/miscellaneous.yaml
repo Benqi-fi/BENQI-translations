@@ -1,23 +1,22 @@
 benqi: BENQI
 sorting:
   direction:
-    asc: ascending
-    desc: descending
-  sortBy: Sort by {{direction}} {{sortBy}}
-  sortByLabel: Sort By
+    asc: crescente
+    desc: decrescente
+  sortBy: Ordenar por {{direction}} {{sortBy}}
+  sortByLabel: Ordenar Por
 pangolin: Pangolin
 apy:
   apy: APY
-  supplyApy: Supply APY
-  borrowApy: Borrow APY
-  distributionApy: Distribution APY
+  supplyApy: APY de Suprimento
+  borrowApy: APY de Empréstimo
+  distributionApy: APY de Distribuição
 images:
   alt:
-    info: Info Icon
-    token: Token Icon
-domainWarning: Please ensure that you are on <0>app.benqi.fi</0> before interacting with
-  the app - bookmark it to be safe. BENQI will never ask you for your seed phrase
-  or private key. Never give this information to anyone.
+    info: Ícone de Informação
+    token: Ícone de Token
+domainWarning: Por favor, certifique-se de que você esteja em <0>app.benqi.fi</0> antes de interagir com o app - marque-o como favorito por segurança. BENQI nunca lhe pedirá sua frase semente
+  ou sua chave privada. Nunca dê essa informação para ninguém.
 currencies:
   usd:
     label: USD
