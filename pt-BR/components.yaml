@@ -1,29 +1,29 @@
 AddQiTokenToMetaMaskButton:
-  label: Add QI
-  title: Add QI token to MetaMask
+  label: Adicione QI
+  title: Adicione o token QI na MetaMask
   metamask:
     alt: MetaMask
 AssetInputForm:
   buttons:
     max:
-      label: Max
-      title: Insert maximum available {{token}} amount
+      label: Máximo
+      title: Inserir o valor máximo disponível de {{token}}
 SimpleBalanceTable:
   columns:
-    asset: Asset
-    balance: Balance
+    asset: Ativo
+    balance: Balanço
   footer:
-    totalBalance: "Balance: ${{balance}}"
+    totalBalance: "Balanço: ${{balance}}"
 BorrowLimitProgressBar:
-  borrowLimitUsed: "{{limit}} % used of your borrow limit"
+  borrowLimitUsed: "{{limit}} % utilizado para seu limite de empréstimo"
 CollateralToggle:
   title:
-    zeroCollateralFactor: "{{token}} cannot be used as collateral"
-    outstandingLoans: Cannot disable collateral for {{token}} because you have outstanding
-      loans for it
-    insufficientHealth: Cannot disable collateral for {{token}} because your health would
-      drop below 1
-    enable: Enable {{token}} as collateral
-    disable: Disable {{token}} as collateral
+    zeroCollateralFactor: "{{token}} não pode ser usado como garantia"
+    outstandingLoans: Não é possível desabilitar a garantia para o {{token}} porque você tem empréstimos
+      pendentes sobre ele
+    insufficientHealth: Não é possível desabilitar a garantia para o {{token}} porque sua saúde
+      ficaria abaixo de 1
+    enable: Habilitar {{token}} como garantia
+    disable: Desabilitar {{token}} como garantia
 ConnectPage:
-  text: Please connect your wallet
+  text: Por favor, conecte sua carteira
