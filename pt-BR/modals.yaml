@@ -1,239 +1,239 @@
 CollateralModal:
-  title: Enable as Collateral
-  message: Each asset used as collateral increases your borrowing limit. Please
-    be aware that collateralized assets can be liquidated if your Health <0></0> goes
-    to 1.
+  title: Habilite como Garantia
+  message:Cada ativo utilizado como garantia aumenta o seu limite de empréstimo. PPor favor,
+    que seus ativos colateralizados podem ser liquidados se a sua Saúde <0></0> chegar
+    em 1.
   actions:
-    enableCollateral: Use {{token}} as Collateral
+    enableCollateral: Utilize o {{token}} como Garantia
 CollateralToggleSpinnerModal:
   confirm:
     enabling:
-      title: Enabling
-      message: Confirm enabling {{token}} to be used as collateral
+      title: Habilitação
+      message: Confirme habilitação do {{token}} para ser usado como garantia
     disabling:
-      title: Disabling as Collateral
-      message: Confirm disabling {{token}} to be used as collateral
+      title: Desabilite como garantia
+      message: Confirme a desabilitação do {{token}} para ser usado como garantia
   confirmed:
-    title: Waiting for Block
-    message: Waiting for the transaction to be commited into a block
+    title: Aguardando o Bloco
+    message: Aguardando que seja feito commit da transação em um bloco
   rejected:
-    title: Transaction rejected
-    message: Transaction rejected, collateral not affected
+    title: Transação recusada
+    message: Transação rejeitada, garantia não afetada
   finished:
     enabling:
       success:
-        title: Collateral Enabled
-        message: Collateral enabled for {{token}}
+        title: Garantia habilitada
+        message: Garantia habilitada para o {{token}}
       failure:
-        title: Failed to Enable Collateral
-        message: Failed to enable collateral for {{token}}
+        title: Falha ao habilitar a garantia
+        message: Falha ao habilitar a garantia para o {{token}}
     disabling:
       success:
-        title: Collateral Disabled
-        message: Collateral disabled for {{token}}
+        title: Garantia Desabilitada
+        message: Garantia Desabilitada para o {{token}}
       failure:
-        title: Failed to Disable Collateral
-        message: Failed to disable collateral for {{token}}
+        title: Falha em desabilitar a garantia
+        message: Falha em desabilitar a garantia do {{token}}
 DistributionApyInfoModal:
   info:
-    supply: Annualized projected return rewarded in QI and AVAX for supplying assets
-    borrow: Annualized projected return rewarded in QI and AVAX for borrowing assets
+    supply: Retorno projetado por ano recompensado em QI e AVAX para suprimento de ativos
+    borrow: Retorno projetado por ano recompensado em QI e AVAX para empréstimos de ativos
   rewards:
-    qi: QI Rewards
-    avax: AVAX Rewards
-  distributionApy: Distribution APY
+    qi: Recompensas em QI 
+    avax: Recompensas em AVAX
+  distributionApy: APY de Distribuição
 HealthFactorInfoModal:
-  title: Health
-  text: <0>Health represents the safety of a loan, defined as the proportion
-    of deposited collateral against the value of the loan.</0><1>A higher value indicates
-    that the user's funds have greater safety from liquidation. However, if Health
-    reaches 1, the user's collateral can be liquidated.</1>
+  title: Saúde
+  text: <0>A saúde representa a segurança de um empréstimo, definida como uma proporção
+    de garantias depositadas em relação ao valor do empréstimo.</0><1>Um valor alto indica 
+    que os fundos do usuário estão mais seguros contra liquidação. Entretanto, se a Saúde
+    chegar a 1, a garantia do usuário pode ser liquidada.</1>
 BorrowLimitInfoModal:
-  title: Borrow Limit
-  text: Borrow Limit represents the maximum amount you can borrow based on the value
-    of your deposited collateral and the available liquidity.
+  title: Limite de Empréstimo
+  text: Limite de Empréstimo representa o valor máximo que você pode tomar emprestado com base no valor
+    de sua garantia depositada e na liquidez disponível.
 RedeemPglModal:
-  title: Withdraw Deposited PGL Tokens
-  depositedAmount: Deposited
+  title: Retirada de Tokens PGL Depositados
+  depositedAmount: Depositado
   max: Max
   actions:
-    withdraw: Withdraw
+    withdraw: Retirada
 RepayModal:
-  title: Repay
+  title: Reembolsar
   notifications:
     insufficientBalance:
-      title: Insufficient wallet balance
-      message: You do not have enough {{token}} in your wallet.
+      title: Saldo de carteira insuficiente
+      message: Você não possui {{token}} suficiente em sua carteira.
     repaymentAmountTooLarge:
-      title: Too large repayment
-      message: Your loan amount is lower than the attempted repayment.
+      title: Reembolso muito grande
+      message: O valor de seu empréstimo é menor do que a tentativa de reembolso.
     repaymentExcess:
-      message: "Note: Due to continuously accruing interest, the repaid amount
-        will be slightly larger than the value displayed to fully repay and close this
-        borrow position."
+      message: "Nota: Devido ao acúmulo contínuo de juros, o valor reembolsado
+        será um pouco maior do que o valor exibido, para pagar totalmente e fechar a
+        posição de empréstimo."
     approveTransacting:
-      title: Approve {{token}} transacting
-      message: To repay your outstanding loan, you need to approve transacting your {{token}}.
+      title: Aprovar transação de {{token}}
+      message: Para pagar seu empréstimo pendente, você precisa aprovar a transação de seu {{token}}.
     insufficientAllowance:
-      title: Increase {{token}} allowance
-      message: To repay your outstanding loan, you need to increase the allowance to
-        transact your {{token}}.
-  availableToRepay: Availabe to Repay
+      title: Aumentar a provisão de {{token}} 
+      message: Para reembolsar seu empréstimo pendente, você precisa aumentar a provisão para
+        negociar seu {{token}}.
+  availableToRepay: Disponível para Reembolso
   repayAll:
-    title: Repay full {{token}} loan
+    title: Reembolsar o empréstimo total de {{token}}
     label: Max
   actions:
-    repay: Repay
-    approve: Approve
+    repay: Reembolsar
+    approve: Approvar
   transactions:
     repay:
       confirm:
-        title: Confirm Repayment
-        message: Confirm repayment for {{amount}} {{token}}
+        title: Confirma Reembolso
+        message: Confirmar reembolso para o {{amount}} {{token}}
       confirmed:
-        title: Repayment confirmed
-        message: Waiting for the transaction to be finalized
+        title: Reembolso Confirmado
+        message: Aguardando que a transação seja finalizada
       rejected:
-        title: Transaction Rejected
-        message: Repayment not completed
+        title: Transação Recusada
+        message: Reembolso não conluído
       finished:
         success:
-          title: Repaid
-          message: Repaid {{amount}} {{token}}
+          title: Reembolsado
+          message: Reembolsado {{amount}} {{token}}
         failure:
-          title: Repayment Failed
-          message: Failed to repay loan
+          title: Reembolso falhou
+          message: Falha ao reembolsar empréstimo
     approve:
       confirm:
-        title: Confirm Approval Transaction
-        message: Confirm transaction to set spending allowance
+        title: Confirmar Transação de Aprovação
+        message: Confirme a transação para configurar a autorização de gasto
       confirmed:
-        title: Approval Transaction Confirmed
-        message: Waiting for the transaction to be finalized
+        title: Transação de Aprovação confirmada
+        message: Aguardando que a transação seja finalizada
       rejected:
-        title: Approval Rejected
-        message: Approval to transact tokens rejected
+        title: Aprovação Recusada
+        message: Aprovação para negociar tokens recusada
       finished:
         success:
-          title: Allowance Set
-          message: Transaction allowance set. You can proceed to repay your loan.
+          title: Configuração de Autorização
+          message: Transação de Aprovação configurada. Você pode realizar o reembolso do seu empréstimo.
         failure:
-          title: Failed to Set Allowance
+          title: Falha ao Configurar Autorização
           message: Setting transaction allowance failed.
 SwitchNetworkModal:
-  title: Wrong Network
-  message: Please connect to the Avalanche network.
+  title: Rede errada
+  message: Por favor, conecte-se à rede Avalanche.
   buttons:
-    changeNetwork: Switch to Avalanche
+    changeNetwork: Mude para a Avalanche
 TransactionModal:
   status:
     confirm:
-      title: Confirm Transaction
-      message: Confirm transaction
+      title: Confirmar Transação
+      message: Confirmar transação
     confirmed:
-      title: Waiting for Block
-      message: Waiting for the transaction to be committed into a block
+      title: Aguardando o Bloco
+      message: Aguardando que seja feito commit da transação em um bloco
     rejected:
-      title: Transaction Rejected
-      message: Transaction rejected
+      title: Transação Recusada
+      message: Transação recusada
     finished:
       success:
-        title: Transaction Completed
-        message: Transaction completed
+        title: Transação Concluída
+        message: Transação concluída
       failure:
-        title: Transaction Failed
-        message: Transaction failed
-  viewTransaction: View transaction on the C-Chain Explorer
+        title: Falha na Transação
+        message: Falha na transação
+  viewTransaction: Visualizar transação no Explorer da C-Chain
 WithdrawModal:
-  title: Withdraw
-  availableToWithdraw: Available to Withdraw
+  title: Retirada
+  availableToWithdraw: Disponível para Retirada
   withdrawAll:
-    title: Redeem all supplied {{token}}
+    title: Resgatar todo {{token}} depositado
     label: Max
-  healthAfterWithdrawal: Health After Withdrawal
+  healthAfterWithdrawal: Saúde Após a Retirada
   notifications:
     insufficientLiquidity:
-      title: Insufficient market liquidity
-      message: There is not enough available asset in the pool to be withdrawn.
+      title: Liquidez de Mercado Insuficiente
+      message: Não existe ativo disponível suficiente no poll para ser retirado.
     insufficientHealthAfterWithdrawal:
-      title: New position will be liquidated
+      title: A nova posição será liquidada
       message: Unable to withdraw this amount as your Health will fall below 1 and
         your position could be liquidated.
     withdrawalTooLarge:
       title: Insufficient supply balance
       message: Your supply balance is lower than the attempted withdrawal.
   actions:
-    withdraw: Withdraw
+    withdraw: Retirada
   transaction:
     confirm:
-      title: Confirm Withdrawal
-      message: Confirm withdrawal for {{amount}} {{token}}
+      title: Confirmar Retirada
+      message: Confirmar Retirada de {{amount}} {{token}}
     finished:
       success:
-        title: Tokens Withdrawn
-        message: "{{amount}} {{token}} withdrawn!"
+        title: Tokens Retirados
+        message: "{{amount}} {{token}} retirado!"
       failure:
-        title: Withdrawal Failed
-        message: Withdrawal failed
+        title: Falha da Retirada
+        message: Falha da Retirada
 AccountModal:
-  title: Account
+  title: Conta
   connectedWallet:
-    label: Connected Wallet
+    label: Carteira Conectada
     actions:
-      viewOnExplorer: View on Explorer
+      viewOnExplorer: Visualizar no Explorador
       copyAddress:
-        label: Copy Address
+        label: Copiar Endereço
         response:
-          success: Copied!
-  network: Network
+          success: Copiado!
+  network: Rede
 BreakdownModal:
-  title: Your QI Breakdown
+  title: Quebra do seu QI
   fields:
-    balance: Balance
-    unclaimed: Unclaimed
+    balance: Saldo
+    unclaimed: Não solicitado
   actions:
-    claim: Claim
+    claim: Solicitar
 DepositPglModal:
-  title: Deposit PGL Tokens
-  sectionSeparator: and
+  title: Depositar Tokens PGL
+  sectionSeparator: e
   sections:
     addLiquidity:
-      title: Add Liquidity
+      title: Adicionar Liquidez
       form:
         header:
-          balance: Balance
+          balance: Saldo
         actions:
           depositMaxQiAvaxAmount: Max
-          deposit: Deposit
-          removeLiquidity: Remove Liquidity on Pangolin
-          approveTransacting: Approve
+          deposit: Depositar
+          removeLiquidity: Remover Liquididez no Pangolin
+          approveTransacting: Approvar
       info:
-        qiPerAvax: QI per AVAX
-        avaxPerQi: AVAX per QI
-        slippage: Slippage
-        poolShare: Pool Share
+        qiPerAvax: QI por AVAX
+        avaxPerQi: AVAX por QI
+        slippage: Derrapagem
+        poolShare: Compartilhar Pool
     depositPgl:
-      title: Deposit QI-AVAX PGL Tokens
+      title: Depositar Tokens QI-AVAX PGL
       form:
         header:
-          balance: Balance
+          balance: Saldo
         actions:
           depositMaxPglAmount: Max
-          deposit: Deposit
-          approveTransacting: Approve
+          deposit: Depositar
+          approveTransacting: Approvar
       info:
-        apr: Supply APR
+        apr: APR de Suprimento
 collateralFactor:
-  title: Collateral Factor
-  description: Maximum amount that can be borrowed from the BENQI Protocol with
-    this asset used as collateral.
+  title: Fator de Colaterização
+  description: Valor máximo que pode ser tomada emprestado do Protocolo BENQI com
+    este ativo utilizado como garantia.
 depositApy:
-  title: Deposit APY
+  title: Depositar APY
   description: Annualized projected return of supplying liquidity.
 borrowApy:
-  title: Borrow APY
-  description: Annualized projected cost of borrowing.
+  title: APY de Empréstimo
+  description: Custo de empréstimo projetado por ano.
 borrowLimit:
   title: Collateral Factor
-  description: Borrow Limit represents the maximum amount you can borrow based
-    on the value of your deposited collateral and the available liquidity.
+  description: Limite de Empréstimo representa o valor máximo que você pode tomar emprestado com base
+      no valor de sua garantia depositada e na liquidez disponível.
