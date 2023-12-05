@@ -2,13 +2,13 @@ header:
   netApy: APY da Rede
 tabs:
   supply:
-    label: Depósito
+    label: Fornecimento
     form:
       availableWalletBalance: Disponível
       buttons:
         deposit: Depositar
         depositMaxBalance: Máximo
-        approve: Approvar & Depositar
+        approve: Aprovar & Depositar
     info:
       depositRates:
         label: Taxas de Depósito
@@ -53,12 +53,12 @@ tabs:
           success:
             message: Aprovado! Por favor, aguarde o início da transação de depósito.
   borrow:
-    label: Pegar Emprestado
+    label: Tomar Emprestado
     form:
       borrowLimit: Limite de empréstimo
-      healthAfterBorrowing: Saúde Após Pegar o Empréstimo
+      healthAfterBorrowing: Saúde Após Tomar o Empréstimo
       buttons:
-        borrow: Pegar Emprestado
+        borrow: Tomar Emprestado
     info:
       borrowRates: Taxas de Empréstimo
       borrowLimit:
@@ -69,7 +69,7 @@ tabs:
     notifications:
       borrowCapReached:
         title: Limite de Empréstimo Atingido
-        message: Atualmente, o pool atingiu seu limite de empréstimo. Para garantir que o pool
+        message: Neste momento, o pool atingiu seu limite de empréstimo. Para garantir que o pool
           tenha liquidez suficiente, nenhum empréstimo adicional pode ser feito acima do limite de empréstimo.
         supplyNote: Por favor, observe que o {{token}} ainda pode ser fornecido ao protocolo.
       insufficientLiquidity:
@@ -98,20 +98,20 @@ tabs:
 tables:
   limitUsed: Limite Utilizado
   sorting:
-    usdValue: valor em USD
+    usdValue: Valor em USD
   supply:
     label: Fornecido
     noAssets: Nenhum ativo fornecido
     columns:
       asset: Ativo
       collateral: Garantia
-      supplyApy: APY de Suprimento
+      supplyApy: APY de Fornecimento
       supplied: Fornecido
       apy: APY
       value: Valores Fornecidos
     footer:
-      total: Total Supplied
-      borrowLimitUsed: Limit Used
+      total: Total Fornecido
+      borrowLimitUsed: Limite Usado
     actions:
       withdraw: Retirada
   borrow:
