@@ -1,17 +1,17 @@
 header:
   links:
     backToOverview: De volta à Visão Geral
-    markets: Depósito & Empréstimo
-totalSupply: Depósito Total
+    markets: Fornecimento & Empréstimo
+totalSupply: Fornecimento Total
 totalBorrows: Empréstimo Total
 tokenSelector:
   switchToken: Trocar Tokens
 graphs:
   market:
-    title: Depósito & Empréstimo
+    title: Fornecimento & Empréstimo
     series:
       supply:
-        label: Depósito Total
+        label: Fornecimento Total
       borrows:
         label: Empréstimo Total
       utilization:
@@ -24,14 +24,14 @@ graphs:
       utilization:
         title: Utilização {{porcentagem}} %
       supplyApy:
-        label:  APY de Depósito
+        label:  APY de Fornecimento
       borrowApy:
         label: APY de Empréstimo
     annotations:
       utilization:
         label: Utilização {{porcentagem}} %
 cards:
-  supply: Depósito
+  supply: Fornecimento
   borrows: Empréstimos
   apy: APY 
   distributionApy: APY de Distribuição
