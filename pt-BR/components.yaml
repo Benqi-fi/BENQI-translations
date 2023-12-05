@@ -1,6 +1,6 @@
 AddQiTokenToMetaMaskButton:
   label: Adicione QI
-  title: Adicione o token QI na MetaMask
+  title: Adicionar o token QI na MetaMask
   metamask:
     alt: MetaMask
 AssetInputForm:
