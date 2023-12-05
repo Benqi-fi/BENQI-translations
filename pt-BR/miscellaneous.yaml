@@ -8,7 +8,7 @@ sorting:
 pangolin: Pangolin
 apy:
   apy: APY
-  supplyApy: APY de Suprimento
+  supplyApy: APY de Fornecimento
   borrowApy: APY de Empréstimo
   distributionApy: APY de Distribuição
 images:
