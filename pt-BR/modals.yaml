@@ -1,23 +1,23 @@
 CollateralModal:
   title: Habilite como Garantia
-  message:Cada ativo utilizado como garantia aumenta o seu limite de empréstimo. PPor favor,
+  message: Cada ativo utilizado como garantia aumenta o seu limite de empréstimo. PPor favor,
     que seus ativos colateralizados podem ser liquidados se a sua Saúde <0></0> chegar
     em 1.
   actions:
     enableCollateral: Utilize o {{token}} como Garantia
-CollateralToggleSpinnerModal:
-  confirm:
+Collairm:
     enabling:
-      title: Habilitação
+      titeralToggleSpinnerModal:
+  title: Habilitação
       message: Confirme habilitação do {{token}} para ser usado como garantia
     disabling:
-      title: Desabilite como garantia
-      message: Confirme a desabilitação do {{token}} para ser usado como garantia
+       title: Desabilite como garantia
+       message: Confirme a desabilitação do {{token}} para ser usado como garantia
   confirmed:
     title: Aguardando o Bloco
     message: Aguardando que seja feito commit da transação em um bloco
   rejected:
-    title: Transação recusada
+    title: Transação rejeitada
     message: Transação rejeitada, garantia não afetada
   finished:
     enabling:
@@ -36,7 +36,7 @@ CollateralToggleSpinnerModal:
         message: Falha em desabilitar a garantia do {{token}}
 DistributionApyInfoModal:
   info:
-    supply: Retorno projetado por ano recompensado em QI e AVAX para suprimento de ativos
+    supply: Retorno projetado por ano recompensado em QI e AVAX para fornecimento de ativos
     borrow: Retorno projetado por ano recompensado em QI e AVAX para empréstimos de ativos
   rewards:
     qi: Recompensas em QI 
@@ -55,7 +55,7 @@ BorrowLimitInfoModal:
 RedeemPglModal:
   title: Retirada de Tokens PGL Depositados
   depositedAmount: Depositado
-  max: Max
+  max: Máximo
   actions:
     withdraw: Retirada
 RepayModal:
@@ -66,7 +66,7 @@ RepayModal:
       message: Você não possui {{token}} suficiente em sua carteira.
     repaymentAmountTooLarge:
       title: Reembolso muito grande
-      message: O valor de seu empréstimo é menor do que a tentativa de reembolso.
+      message: O valor de seu empréstimo é menor do que o da tentativa de reembolso.
     repaymentExcess:
       message: "Nota: Devido ao acúmulo contínuo de juros, o valor reembolsado
         será um pouco maior do que o valor exibido, para pagar totalmente e fechar a
@@ -75,33 +75,33 @@ RepayModal:
       title: Aprovar transação de {{token}}
       message: Para pagar seu empréstimo pendente, você precisa aprovar a transação de seu {{token}}.
     insufficientAllowance:
-      title: Aumentar a provisão de {{token}} 
-      message: Para reembolsar seu empréstimo pendente, você precisa aumentar a provisão para
+      title: Aumentar o fornecimento de {{token}} 
+      message: Para reembolsar seu empréstimo pendente, você precisa aumentar o fornecimento para
         negociar seu {{token}}.
   availableToRepay: Disponível para Reembolso
   repayAll:
     title: Reembolsar o empréstimo total de {{token}}
-    label: Max
+    label: Máximo
   actions:
     repay: Reembolsar
     approve: Approvar
   transactions:
     repay:
       confirm:
-        title: Confirma Reembolso
+        title: Confirmar Reembolso
         message: Confirmar reembolso para o {{amount}} {{token}}
       confirmed:
         title: Reembolso Confirmado
         message: Aguardando que a transação seja finalizada
       rejected:
-        title: Transação Recusada
+        title: Transação Rejeitada
         message: Reembolso não conluído
       finished:
         success:
           title: Reembolsado
-          message: Reembolsado {{amount}} {{token}}
+          message: Reembolsado o {{amount}} {{token}}
         failure:
-          title: Reembolso falhou
+          title: Falha no reembolso
           message: Falha ao reembolsar empréstimo
     approve:
       confirm:
@@ -111,15 +111,15 @@ RepayModal:
         title: Transação de Aprovação confirmada
         message: Aguardando que a transação seja finalizada
       rejected:
-        title: Aprovação Recusada
-        message: Aprovação para negociar tokens recusada
+        title: Aprovação Rejeitada
+        message: Aprovação para negociar tokens rejeitada
       finished:
         success:
           title: Configuração de Autorização
           message: Transação de Aprovação configurada. Você pode realizar o reembolso do seu empréstimo.
         failure:
           title: Falha ao Configurar Autorização
-          message: Setting transaction allowance failed.
+          message: Falha ao configurar a autorização da transação.
 SwitchNetworkModal:
   title: Rede errada
   message: Por favor, conecte-se à rede Avalanche.
@@ -134,8 +134,8 @@ TransactionModal:
       title: Aguardando o Bloco
       message: Aguardando que seja feito commit da transação em um bloco
     rejected:
-      title: Transação Recusada
-      message: Transação recusada
+      title: Transação Rejeitada
+      message: Transação rejeitada
     finished:
       success:
         title: Transação Concluída
@@ -143,25 +143,25 @@ TransactionModal:
       failure:
         title: Falha na Transação
         message: Falha na transação
-  viewTransaction: Visualizar transação no Explorer da C-Chain
+  viewTransaction: Visualizar a transação no Explorer da C-Chain
 WithdrawModal:
   title: Retirada
   availableToWithdraw: Disponível para Retirada
   withdrawAll:
     title: Resgatar todo {{token}} depositado
-    label: Max
+    label: Máximo
   healthAfterWithdrawal: Saúde Após a Retirada
   notifications:
     insufficientLiquidity:
       title: Liquidez de Mercado Insuficiente
-      message: Não existe ativo disponível suficiente no poll para ser retirado.
+      message: Não existe ativo disponível suficiente no pool para ser retirado.
     insufficientHealthAfterWithdrawal:
       title: A nova posição será liquidada
-      message: Unable to withdraw this amount as your Health will fall below 1 and
-        your position could be liquidated.
+      message: Não é possível sacar esse valor, pois sua Saúde ficará abaixo de 1 e
+        sua posição pode ser liquidada.
     withdrawalTooLarge:
-      title: Insufficient supply balance
-      message: Your supply balance is lower than the attempted withdrawal.
+      title: Saldo de Fornecimento Insuficiente
+      message: Seu saldo de fornecimento está inferior à tentativa de retirada.
   actions:
     withdraw: Retirada
   transaction:
@@ -173,8 +173,8 @@ WithdrawModal:
         title: Tokens Retirados
         message: "{{amount}} {{token}} retirado!"
       failure:
-        title: Falha da Retirada
-        message: Falha da Retirada
+        title: Falha de Retirada
+        message: Falha de retirada
 AccountModal:
   title: Conta
   connectedWallet:
@@ -203,10 +203,10 @@ DepositPglModal:
         header:
           balance: Saldo
         actions:
-          depositMaxQiAvaxAmount: Max
+          depositMaxQiAvaxAmount: Máximo
           deposit: Depositar
           removeLiquidity: Remover Liquididez no Pangolin
-          approveTransacting: Approvar
+          approveTransacting: Aprovar
       info:
         qiPerAvax: QI por AVAX
         avaxPerQi: AVAX por QI
@@ -218,22 +218,22 @@ DepositPglModal:
         header:
           balance: Saldo
         actions:
-          depositMaxPglAmount: Max
+          depositMaxPglAmount: Máximo
           deposit: Depositar
-          approveTransacting: Approvar
+          approveTransacting: Aprovar
       info:
-        apr: APR de Suprimento
+        apr: APR de Fornecimento
 collateralFactor:
   title: Fator de Colaterização
-  description: Valor máximo que pode ser tomada emprestado do Protocolo BENQI com
+  description: Valor máximo que pode ser tomado emprestado do Protocolo BENQI com
     este ativo utilizado como garantia.
 depositApy:
-  title: Depositar APY
-  description: Annualized projected return of supplying liquidity.
+  title: APY de Depósito
+  description: Retorno projetado por ano de fornecimento de liquidez.
 borrowApy:
   title: APY de Empréstimo
   description: Custo de empréstimo projetado por ano.
 borrowLimit:
-  title: Collateral Factor
-  description: Limite de Empréstimo representa o valor máximo que você pode tomar emprestado com base
+  title: Fator de Colaterização
+  description: O Limite de Empréstimo representa o valor máximo que você pode tomar emprestado com base
       no valor de sua garantia depositada e na liquidez disponível.
