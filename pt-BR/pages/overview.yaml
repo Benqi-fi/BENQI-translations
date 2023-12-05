@@ -21,7 +21,7 @@ tables:
     columns:
       asset: Ativo
       totalApy: APY Total
-      totalSupplyApy: APY Total de Suprimento
+      totalSupplyApy: APY Total de Fornecimento
       totalBorrowApy: APY Total de Empréstimo
       totalSupply: Total Fornecido
       totalBorrow: Total Tomado Emprestado
