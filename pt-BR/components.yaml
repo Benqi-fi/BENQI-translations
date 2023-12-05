@@ -11,9 +11,9 @@ AssetInputForm:
 SimpleBalanceTable:
   columns:
     asset: Ativo
-    balance: Balanço
+    balance: Saldo
   footer:
-    totalBalance: "Balanço: ${{balance}}"
+    totalBalance: "Saldo: ${{balance}}"
 BorrowLimitProgressBar:
   borrowLimitUsed: "{{limit}} % utilizado para seu limite de empréstimo"
 CollateralToggle:
