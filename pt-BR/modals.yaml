@@ -1,6 +1,6 @@
 CollateralModal:
   title: Habilite como Garantia
-  message: Cada ativo utilizado como garantia aumenta o seu limite de empréstimo. PPor favor,
+  message: Cada ativo utilizado como garantia aumenta o seu limite de empréstimo. Por favor,
     que seus ativos colateralizados podem ser liquidados se a sua Saúde <0></0> chegar
     em 1.
   actions:
