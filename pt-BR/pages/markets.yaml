@@ -2,7 +2,7 @@ header:
   netApy: APY da Rede
 tabs:
   supply:
-    label: Fornecimento
+    label: Depósito
     form:
       availableWalletBalance: Disponível
       buttons:
@@ -12,17 +12,17 @@ tabs:
     info:
       depositRates:
         label: Taxas de Depósito
-        distributionApy: APY (Rendimento Percentual Anual) de Distribuição
+        distributionApy: APY (Rendimento Percentual Anualizado) de Distribuição
       collateralFactor: Fator de Colaterização
       useAsCollateral: Use como Garantia
     notifications:
       wavaxDetected:
         title: Tokens WAVAX detectados
-        message: Sua carteira possui tokens WAVAX, mas BENQI utiliza o AVAX nativo.
+        message: Sua carteira possui tokens WAVAX, mas o BENQI utiliza o AVAX nativo.
       oldTokensDetected:
         title: Detectados tokens da ponte AEB antiga
         message: Você tem alguns tokens da antiga ponte Avalanche-Ethereum em sua carteira.
-          Por favor, converta-os para os novos tokens para usá-los na BENQI.
+          Por favor, converta-os para os novos tokens para usá-los no BENQI.
         links:
           convert: Converter em {{url}}.
       approveTransacting:
