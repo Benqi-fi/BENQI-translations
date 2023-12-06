@@ -15,7 +15,8 @@ images:
   alt:
     info: Ícone de Informação
     token: Ícone de Token
-domainWarning: Por favor, certifique-se de que você esteja em <0>app.benqi.fi</0> antes de interagir com o app - marque-o como favorito por segurança. BENQI nunca lhe pedirá sua frase semente
+domainWarning: Por favor, certifique-se de que você esteja em <0>app.benqi.fi</0> antes de interagir com 
+  o app - marque-o como favorito por segurança. BENQI nunca lhe pedirá sua frase semente
   ou sua chave privada. Nunca dê essa informação para ninguém.
 currencies:
   usd:
