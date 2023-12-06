@@ -1,0 +1,239 @@
+CollateralModal:
+  title: Habilite como Garantia
+  message: Cada ativo utilizado como garantia aumenta o seu limite de empréstimo. Por favor,
+    esteja ciente de que seus ativos colateralizados podem ser liquidados se a sua Saúde <0></0> chegar
+    em 1.
+  actions:
+    enableCollateral: Utilize o {{token}} como Garantia
+Collairm:
+    enabling:
+      titeralToggleSpinnerModal:
+  title: Habilitação
+      message: Confirme habilitação do {{token}} para ser usado como garantia
+    disabling:
+       title: Desabilite como garantia
+       message: Confirme a desabilitação do {{token}} para ser usado como garantia
+  confirmed:
+    title: Aguardando o Bloco
+    message: Aguardando que seja feito commit da transação em um bloco
+  rejected:
+    title: Transação rejeitada
+    message: Transação rejeitada, garantia não afetada
+  finished:
+    enabling:
+      success:
+        title: Garantia habilitada
+        message: Garantia habilitada para o {{token}}
+      failure:
+        title: Falha ao Habilitar a Garantia
+        message: Falha ao habilitar a garantia para o {{token}}
+    disabling:
+      success:
+        title: Garantia Desabilitada
+        message: Garantia Desabilitada para o {{token}}
+      failure:
+        title: Falha em Desabilitar a Garantia
+        message: Falha em desabilitar a garantia do {{token}}
+DistributionApyInfoModal:
+  info:
+    supply: Retorno projetado anualizado recompensado em QI e AVAX para fornecimento de ativos
+    borrow: Retorno projetado anualizado recompensado em QI e AVAX para empréstimos de ativos
+  rewards:
+    qi: Recompensas em QI 
+    avax: Recompensas em AVAX
+  distributionApy: APY de Distribuição
+HealthFactorInfoModal:
+  title: Saúde
+  text: <0>A saúde representa a segurança de um empréstimo, definida como uma proporção
+    de garantias depositadas em relação ao valor do empréstimo.</0><1>Um valor alto indica 
+    que os fundos do usuário estão mais seguros contra liquidação. Entretanto, se a Saúde
+    chegar a 1, a garantia do usuário pode ser liquidada.</1>
+BorrowLimitInfoModal:
+  title: Limite de Empréstimo
+  text: Limite de Empréstimo representa o valor máximo que você pode tomar emprestado com base no valor
+    de sua garantia depositada e na liquidez disponível.
+RedeemPglModal:
+  title: Retirada de Tokens PGL Depositados
+  depositedAmount: Depositado
+  max: Máximo
+  actions:
+    withdraw: Retirada
+RepayModal:
+  title: Reembolsar
+  notifications:
+    insufficientBalance:
+      title: Saldo de carteira insuficiente
+      message: Você não possui {{token}} suficiente em sua carteira.
+    repaymentAmountTooLarge:
+      title: Reembolso muito grande
+      message: O valor de seu empréstimo é menor do que o da tentativa de reembolso.
+    repaymentExcess:
+      message: "Nota: Devido ao acúmulo contínuo de juros, o valor reembolsado
+        será um pouco maior do que o valor exibido, para pagar totalmente e fechar a
+        posição de empréstimo."
+    approveTransacting:
+      title: Aprovar transação de {{token}}
+      message: Para pagar seu empréstimo pendente, você precisa aprovar a transação de seu {{token}}.
+    insufficientAllowance:
+      title: Aumentar o fornecimento de {{token}} 
+      message: Para reembolsar seu empréstimo pendente, você precisa aumentar o fornecimento para
+        negociar seu {{token}}.
+  availableToRepay: Disponível para Reembolso
+  repayAll:
+    title: Reembolsar o empréstimo total de {{token}}
+    label: Máximo
+  actions:
+    repay: Reembolsar
+    approve: Approvar
+  transactions:
+    repay:
+      confirm:
+        title: Confirmar Reembolso
+        message: Confirmar reembolso para o {{amount}} {{token}}
+      confirmed:
+        title: Reembolso Confirmado
+        message: Aguardando que a transação seja finalizada
+      rejected:
+        title: Transação Rejeitada
+        message: Reembolso não conluído
+      finished:
+        success:
+          title: Reembolsado
+          message: Reembolsado o {{amount}} {{token}}
+        failure:
+          title: Falha no reembolso
+          message: Falha ao reembolsar empréstimo
+    approve:
+      confirm:
+        title: Confirmar Transação de Aprovação
+        message: Confirme a transação para configurar a autorização de gasto
+      confirmed:
+        title: Transação de Aprovação confirmada
+        message: Aguardando que a transação seja finalizada
+      rejected:
+        title: Aprovação Rejeitada
+        message: Aprovação para negociar tokens rejeitada
+      finished:
+        success:
+          title: Configuração de Autorização
+          message: Transação de Aprovação configurada. Você pode realizar o reembolso do seu empréstimo.
+        failure:
+          title: Falha ao Configurar Autorização
+          message: Falha ao configurar a autorização da transação.
+SwitchNetworkModal:
+  title: Rede errada
+  message: Por favor, conecte-se à rede Avalanche.
+  buttons:
+    changeNetwork: Mude para a Avalanche
+TransactionModal:
+  status:
+    confirm:
+      title: Confirmar Transação
+      message: Confirmar transação
+    confirmed:
+      title: Aguardando o Bloco
+      message: Aguardando que seja feito commit da transação em um bloco
+    rejected:
+      title: Transação Rejeitada
+      message: Transação rejeitada
+    finished:
+      success:
+        title: Transação Concluída
+        message: Transação concluída
+      failure:
+        title: Falha na Transação
+        message: Falha na transação
+  viewTransaction: Visualizar a transação no Explorer da C-Chain
+WithdrawModal:
+  title: Retirada
+  availableToWithdraw: Disponível para Retirada
+  withdrawAll:
+    title: Resgatar todo {{token}} depositado
+    label: Máximo
+  healthAfterWithdrawal: Saúde Após a Retirada
+  notifications:
+    insufficientLiquidity:
+      title: Liquidez de Mercado Insuficiente
+      message: Não existe ativo disponível suficiente no pool para ser retirado.
+    insufficientHealthAfterWithdrawal:
+      title: A nova posição será liquidada
+      message: Não é possível sacar esse valor, pois sua Saúde ficará abaixo de 1 e
+        sua posição pode ser liquidada.
+    withdrawalTooLarge:
+      title: Saldo de Fornecimento Insuficiente
+      message: Seu saldo de fornecimento está inferior à tentativa de retirada.
+  actions:
+    withdraw: Retirada
+  transaction:
+    confirm:
+      title: Confirmar Retirada
+      message: Confirmar Retirada de {{amount}} {{token}}
+    finished:
+      success:
+        title: Tokens Retirados
+        message: "{{amount}} {{token}} retirado!"
+      failure:
+        title: Falha de Retirada
+        message: Falha de retirada
+AccountModal:
+  title: Conta
+  connectedWallet:
+    label: Carteira Conectada
+    actions:
+      viewOnExplorer: Visualizar no Explorador
+      copyAddress:
+        label: Copiar Endereço
+        response:
+          success: Copiado!
+  network: Rede
+BreakdownModal:
+  title: Quebra do seu QI
+  fields:
+    balance: Saldo
+    unclaimed: Não solicitado
+  actions:
+    claim: Solicitar
+DepositPglModal:
+  title: Depositar Tokens PGL
+  sectionSeparator: e
+  sections:
+    addLiquidity:
+      title: Adicionar Liquidez
+      form:
+        header:
+          balance: Saldo
+        actions:
+          depositMaxQiAvaxAmount: Máximo
+          deposit: Depositar
+          removeLiquidity: Remover Liquididez no Pangolin
+          approveTransacting: Aprovar
+      info:
+        qiPerAvax: QI por AVAX
+        avaxPerQi: AVAX por QI
+        slippage: Derrapagem
+        poolShare: Compartilhar Pool
+    depositPgl:
+      title: Depositar Tokens QI-AVAX PGL
+      form:
+        header:
+          balance: Saldo
+        actions:
+          depositMaxPglAmount: Máximo
+          deposit: Depositar
+          approveTransacting: Aprovar
+      info:
+        apr: APR de Fornecimento
+collateralFactor:
+  title: Fator de Colaterização
+  description: Valor máximo que pode ser tomado emprestado do Protocolo BENQI com
+    este ativo utilizado como garantia.
+depositApy:
+  title: APY de Depósito
+  description: Retorno projetado por ano de fornecimento de liquidez.
+borrowApy:
+  title: APY de Empréstimo
+  description: Custo de empréstimo projetado por ano.
+borrowLimit:
+  title: Fator de Colaterização
+  description: O Limite de Empréstimo representa o valor máximo que você pode tomar emprestado com base
+      no valor de sua garantia depositada e na liquidez disponível.

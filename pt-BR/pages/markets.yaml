@@ -1,0 +1,132 @@
+header:
+  netApy: APY da Rede
+tabs:
+  supply:
+    label: Depósito
+    form:
+      availableWalletBalance: Disponível
+      buttons:
+        deposit: Depositar
+        depositMaxBalance: Máximo
+        approve: Aprovar & Depositar
+    info:
+      depositRates:
+        label: Taxas de Depósito
+        distributionApy: APY (Rendimento Percentual Anualizado) de Distribuição
+      collateralFactor: Fator de Colaterização
+      useAsCollateral: Use como Garantia
+    notifications:
+      wavaxDetected:
+        title: Tokens WAVAX detectados
+        message: Sua carteira possui tokens WAVAX, mas o BENQI utiliza o AVAX nativo.
+      oldTokensDetected:
+        title: Detectados tokens da ponte AEB antiga
+        message: Você tem alguns tokens da antiga ponte Avalanche-Ethereum em sua carteira.
+          Por favor, converta-os para os novos tokens para usá-los no BENQI.
+        links:
+          convert: Converter em {{url}}.
+      approveTransacting:
+        title: Approvar transação do {{token}} 
+        message: Antes de depositar o {{token}}, você precisa aprovar a primeira transação.
+      allowanceTooLow:
+        title: Aumente a provisão de {{token}} 
+        message: Antes de depositar o {{token}}, você precisa aumentar a provisão para concluir 
+          a transação
+    transactions:
+      deposit:
+        confirm:
+          title: Confirmar a transação de depósito
+          message: Confirmar a transação de depósito para {{amount}} {{token}}
+        finished:
+          success:
+            title: Token Depositado
+            message: Foi depositado {{amount}} {{token}}
+          failure:
+            message: Falha ao depositar tokens
+      approve:
+        confirm:
+          title: Approvar transação de {{token}} 
+          message: Antes de depositar {{token}}, você precisa aprovar a primeira transação.
+        rejected:
+          message: Aprovação de transação cancelada.
+        finished:
+          success:
+            message: Aprovado! Por favor, aguarde o início da transação de depósito.
+  borrow:
+    label: Tomar Emprestado
+    form:
+      borrowLimit: Limite de empréstimo
+      healthAfterBorrowing: Saúde Após Tomar o Empréstimo
+      buttons:
+        borrow: Tomar Emprestado
+    info:
+      borrowRates: Taxas de Empréstimo
+      borrowLimit:
+        label: Limite de Empréstimo
+        limitUsed: Limite Utilizado
+      borrowCap: Limite de Empréstimo do Mercado
+      liquidity: Liquidez de Pool
+    notifications:
+      borrowCapReached:
+        title: Limite de Empréstimo Atingido
+        message: Neste momento, o pool atingiu seu limite de empréstimo. Para garantir que o pool
+          tenha liquidez suficiente, nenhum empréstimo adicional pode ser feito acima do limite de empréstimo.
+        supplyNote: Por favor, observe que o {{token}} ainda pode ser fornecido ao protocolo.
+      insufficientLiquidity:
+        title: Não há ativos disponíveis suficientes
+        mesage: O mercado não tem ativos livres suficientes para serem emprestados.
+      borrowLimitExceeded:
+        title: O valor de empréstimo é muito alto
+        message: Seu limite de empréstimo é muito baixo para concluir esse empréstimo.
+      borrowLimitWarning:
+        title: Cuidado com o risco de liquidação
+        message: Seu empréstimo excederá 80% do seu limite. Se seu Limite de Empréstimo <InfoButton /> for
+          igual ou superior a 100%, uma parte de sua garantia poderá ser liquidada para pagar
+          parte de seu empréstimo.
+      noCollateral:
+        title: Nenhum ativo colaterizado
+        message: Por favor, <0>permita</0> que seus ativos fornecidos sejam usados como garantia para empréstimos.
+    transaction:
+      confirm:
+        title: Confirmar a Transação de Empréstimo
+        message: Confirmar a transação de empréstimo para {{amount}} {{token}}.
+      finished:
+        success:
+          message: "{{amount}} {{token}} emprestados!"
+        failure:
+          message: Empréstimo Não Realizado
+tables:
+  limitUsed: Limite Utilizado
+  sorting:
+    usdValue: Valor em USD
+  supply:
+    label: Fornecido
+    noAssets: Nenhum ativo fornecido
+    columns:
+      asset: Ativo
+      collateral: Garantia
+      supplyApy: APY de Fornecimento
+      supplied: Fornecido
+      apy: APY
+      value: Valores Fornecidos
+    footer:
+      total: Total Fornecido
+      borrowLimitUsed: Limite Usado
+    actions:
+      withdraw: Retirada
+  borrow:
+    label: Tomado emprestado
+    noAssets: Nenhum ativo emprestado
+    columns:
+      asset: Ativo
+      apy: APY
+      borrowApy: APY de Empréstimo
+      borrowed: Tomado Emprestado
+      borrowedValue: Valor Tomado Emprestado
+    footer:
+      health: Saúde
+      borrowLimit: Limite
+      borrowLimitUsed: Limite Utilizado
+      totalBorrowed: Total Tomado Emprestado
+    actions:
+      repay: Reembolsar

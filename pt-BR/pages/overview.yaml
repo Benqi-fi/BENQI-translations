@@ -1,0 +1,34 @@
+header:
+  title: Visão Geral
+footer:
+  analyticsHelp: Clique em um token para visualizar as análises.
+banners:
+  supply: Total Fornecido
+  borrow: Total Tomado Emprestado
+  status:
+    borrowLimit: Seu Limite de Empréstimo
+    health: Saúde
+    remaining: Restante
+tables:
+  supply:
+    title: Fornecido
+  borrow:
+    title: Tomado Emprestado
+  market:
+    groups:
+      supply: Fornecer
+      borrow: Tomar Emprestado
+    columns:
+      asset: Ativo
+      totalApy: APY Total
+      totalSupplyApy: APY Total de Fornecimento
+      totalBorrowApy: APY Total de Empréstimo
+      totalSupply: Total Fornecido
+      totalBorrow: Total Tomado Emprestado
+      totalLiquidity: Liquidez Total
+    actions:
+      goToAnalytics: Vá para a página de análises de {{token}}
+  sorting:
+    usdValue: Valor em USD 
+buttons:
+  changeViewMode: Modo de Visualização
