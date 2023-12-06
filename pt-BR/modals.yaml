@@ -1,7 +1,7 @@
 CollateralModal:
   title: Habilite como Garantia
   message: Cada ativo utilizado como garantia aumenta o seu limite de empréstimo. Por favor,
-    que seus ativos colateralizados podem ser liquidados se a sua Saúde <0></0> chegar
+    esteja ciente de que seus ativos colateralizados podem ser liquidados se a sua Saúde <0></0> chegar
     em 1.
   actions:
     enableCollateral: Utilize o {{token}} como Garantia
@@ -25,19 +25,19 @@ Collairm:
         title: Garantia habilitada
         message: Garantia habilitada para o {{token}}
       failure:
-        title: Falha ao habilitar a garantia
+        title: Falha ao Habilitar a Garantia
         message: Falha ao habilitar a garantia para o {{token}}
     disabling:
       success:
         title: Garantia Desabilitada
         message: Garantia Desabilitada para o {{token}}
       failure:
-        title: Falha em desabilitar a garantia
+        title: Falha em Desabilitar a Garantia
         message: Falha em desabilitar a garantia do {{token}}
 DistributionApyInfoModal:
   info:
-    supply: Retorno projetado por ano recompensado em QI e AVAX para fornecimento de ativos
-    borrow: Retorno projetado por ano recompensado em QI e AVAX para empréstimos de ativos
+    supply: Retorno projetado anualizado recompensado em QI e AVAX para fornecimento de ativos
+    borrow: Retorno projetado anualizado recompensado em QI e AVAX para empréstimos de ativos
   rewards:
     qi: Recompensas em QI 
     avax: Recompensas em AVAX
