@@ -20,7 +20,7 @@ CollateralToggle:
   title:
     zeroCollateralFactor: "{{token}} não pode ser usado como garantia"
     outstandingLoans: Não é possível desabilitar a garantia para o {{token}} porque você tem empréstimos
-      pendentes sobre ele
+      pendentes para ele
     insufficientHealth: Não é possível desabilitar a garantia para o {{token}} porque sua saúde
       ficaria abaixo de 1
     enable: Habilitar {{token}} como garantia
