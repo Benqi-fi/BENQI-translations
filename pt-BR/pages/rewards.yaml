@@ -3,10 +3,10 @@ header:
   description: Ganhe recompensas ao usar o protocolo e/ou depositar seus tokens do Provedor de Liquidez da DEX Pangolin (PGL).
 rewards:
   protocol:
-    title: Protocolo Recompensa ({{token}})
+    title: Recompensas de Protocolo ({{token}})
     fields:
-      unclaimed: Não solicitado
-      unclaimedValue: Valor não solicitado
+      unclaimed: Não reivindicado
+      unclaimedValue: Valor não reivindicado
     actions:
       claim: Reivindicar
   pgl:
